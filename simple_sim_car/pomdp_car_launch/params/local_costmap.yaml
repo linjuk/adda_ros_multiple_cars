@@ -1,0 +1,14 @@
+local_costmap:
+  global_frame: map
+  robot_base_frame: base_link
+  update_frequency: 5.0
+  publish_frequency: 5.0
+  rolling_window: true
+  width: 10
+  height: 10
+  resolution: 0.1
+
+  inflation_layer:
+    enabled:              true
+    cost_scaling_factor:  4.0  # exponential rate at which the obstacle cost drops off (default: 10)
+    inflation_radius:     3.0  # max. distance from an obstacle at which costs are incurred for planning paths.

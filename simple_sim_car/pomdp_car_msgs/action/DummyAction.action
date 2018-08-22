@@ -1,0 +1,9 @@
+# Action to do something
+string dummy_string
+---
+# Action result
+uint8 result
+---
+# Action feedback
+uint8 feedback
+

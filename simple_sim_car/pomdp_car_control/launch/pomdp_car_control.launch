@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+    <!-- World/Map frame name -->
+    <param name="world_frame" value="map" />
+
+    <!-- Set the maximum velocity here -->
+    <param name="/move_base/TebLocalPlannerROS/max_vel_x" value="1.0" />
+
+    <!-- Get the configuration file for the car -->
+    <rosparam command="load" file="$(find pomdp_car_control)/config/car.yaml" />
+
+    <!-- Launch the Control Node -->
+    <node name="car_control" pkg="pomdp_car_control" type="pomdp_car_control_node" respawn="true" output="screen" />
+
+</launch>

@@ -1,0 +1,14 @@
+global_costmap:
+  update_frequency: 5.0
+  publish_frequency: 5.0
+  static_map: true
+  footprint: [[-0.5, -0.35], [-0.5, 0.35], [0.5, 0.35], [0.5, -0.35]]
+  
+  inflation_layer:
+    enabled: true
+    cost_scaling_factor: 4.0
+    inflation_radius: 3.0
+
+
+
+

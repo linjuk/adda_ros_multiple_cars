@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <name>pomdp_car_description</name>
+  <version>0.0.2</version>
+  <description>adda car urdf</description>
+
+  <maintainer email="bla@bla.de">Dorothea Koert</maintainer>
+
+  <license>BSD</license>
+
+  <author email="bla@bla.de">Doro</author>
+ 
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>xacro</build_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+  <run_depend>position_controllers</run_depend>
+  <run_depend>gazebo_ros_control</run_depend>
+
+</package>

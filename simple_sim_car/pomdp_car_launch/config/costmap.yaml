@@ -1,0 +1,6 @@
+global_frame: /map
+robot_base_frame: base_link
+update_frequency: 5.0
+publish_frequency: 5.0
+footprint: [[-0.5, -0.35], [-0.5, 0.35], [0.5, 0.35], [0.5, -0.35]]
+

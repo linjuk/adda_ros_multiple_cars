@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Map Server including rViz -->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find pomdp_car_launch)/maps/testmap.yaml"/>
+    <node pkg="rviz" type="rviz" name="map" args="-d $(find pomdp_car_control)/config/sim_car.rviz" />
+
+    <!-- URDF Car Model -->
+    <arg name="gui" default="true" />
+    <param name="robot_description" textfile="$(find pomdp_car_description)/robots/pomdp_car.urdf" />
+    <param name="use_gui" value="$(arg gui)"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+    <!-- POMDP Car Controller Interface -->
+    <include file="$(find pomdp_car_control)/launch/pomdp_car_control.launch" />
+
+    <!-- Move Base -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+        <rosparam file="$(find pomdp_car_launch)/config/costmap.yaml" command="load"/>
+        <rosparam file="$(find pomdp_car_launch)/params/global_costmap.yaml" command="load"/>
+        <rosparam file="$(find pomdp_car_launch)/params/local_costmap.yaml" command="load"/>
+        <rosparam file="$(find pomdp_car_launch)/config/teb_local_planner.yaml" command="load" />
+            
+        <param name="base_global_planner" value="global_planner/GlobalPlanner"/> 
+        <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+    </node>
+    
+    <!-- Publishes the voxel grid to rviz for display -->
+    <!--
+    <node pkg="costmap_2d" type="costmap_2d_markers" name="voxel_visualizer">
+            <remap from="voxel_grid" to="costmap/voxel_grid"/>
+    </node>
+    -->
+    
+    <!-- Run the costmap node -->
+    <!--
+    <node name="costmap_node" pkg="costmap_2d" type="costmap_2d_node" >
+            <rosparam file="$(find pomdp_car_launch)/config/costmap.yaml" command="load"/>
+    </node>
+    -->
+</launch>

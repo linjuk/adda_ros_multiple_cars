@@ -1,0 +1,4 @@
+# Initial Position and Orientation of the car
+car_start_x: 5.0
+car_start_y: 5.0
+car_start_orientation: 1.570796327
