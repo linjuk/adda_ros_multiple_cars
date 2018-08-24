@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 
 <launch>
-    
-    <arg name="pomdp_car" default="RobotModel" />
 
     <arg name="world_frame_" default="map" />
     <arg name="base_frame_" default="map" />
     <arg name="car_start_x_" default= "default" />
     <arg name="car_start_y_" default="default" />
     <arg name="car_start_orientation_" default="default" />
+
+
+    <arg name="vel_topic_" default="default" />
 
     <!-- World/Map frame name -->
     <param name="world_frame" value="map" />
@@ -23,6 +24,8 @@
     <param name="car_start_x" value="$(arg car_start_x_)" />
     <param name="car_start_y" value="$(arg car_start_y_)" />
     <param name="car_start_orientation" value="$(arg car_start_orientation_)" />
+
+<param name="vel_topic" value="$(arg vel_topic_)" />
 
 
     <!-- Launch the Control Node -->

@@ -5,7 +5,8 @@ namespace pomdp_car_control
 {
 CarControl::CarControl(ros::NodeHandle& nh, ros::NodeHandle& private_nh) : nh(nh), p_nh(private_nh)
 {
-    cmd_vel_sub_ = nh.subscribe("/cmd_vel", 10, &CarControl::cmd_vel_callback, this);
+
+
 
     odom_pub_    = nh.advertise<nav_msgs::Odometry>("/odom", 100);
 
@@ -22,6 +23,12 @@ CarControl::CarControl(ros::NodeHandle& nh, ros::NodeHandle& private_nh) : nh(nh
     std::cout << "car_start_x:  " <<  odom_.pose.pose.position.x << std::endl;
     std::cout << "car_start_y:  " <<  odom_.pose.pose.position.y << std::endl;
     std::cout << "car_start_orientation:  " <<  th_ << std::endl;
+
+
+
+    nh.getParam("vel_topic", vel_topic_);
+    cmd_vel_sub_ = nh.subscribe(vel_topic_, 10, &CarControl::cmd_vel_callback, this);
+
 }
 
 void CarControl::setup()

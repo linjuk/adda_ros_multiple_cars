@@ -34,7 +34,7 @@ private:
 	//ros::Publisher pub_;
         //ros::Subscriber sub_;
 
-    MoveBaseClient* simple_action_client;
+    MoveBaseClient* simple_action_client_car1;
 
     //tell the action client that we want to spin a thread by default
     //MoveBaseClient ac("move_base", true);

@@ -38,6 +38,7 @@ private:
 
     std::string world_frame_;
     std::string base_frame_;
+    std::string vel_topic_;
 
     tf::TransformBroadcaster tf_broadcaster_;
     tf::StampedTransform transform_;
