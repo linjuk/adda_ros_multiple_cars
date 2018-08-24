@@ -14,6 +14,8 @@ ClassName::ClassName(ros::NodeHandle &nh, ros::NodeHandle &private_nh)
 //    //pub_=p_nh.advertise<blub_msgs::Blub>("topic_name", 1, false);
 //    //sub_=nh.subscribe("/topic_name",10,&ClassName::blaCallback,this);
 
+ // CAR 1 //
+
     simple_action_client_car1 = new  MoveBaseClient("/car1/move_base", true); // uncommented
 
 //    //wait for the action server to come up
@@ -26,8 +28,8 @@ ClassName::ClassName(ros::NodeHandle &nh, ros::NodeHandle &private_nh)
     goal.target_pose.header.frame_id = "/car1/map";
     goal.target_pose.header.stamp = ros::Time::now();
 
-    goal.target_pose.pose.position.x = 15.0;
-    goal.target_pose.pose.position.y = 5.0;
+    goal.target_pose.pose.position.x = 17.0;
+    goal.target_pose.pose.position.y = 8.0;
  //   goal.target_pose.pose.position.z = 10.0;
 
 //    goal.target_pose.pose.orientation.w = -1.0;
@@ -38,18 +40,49 @@ ClassName::ClassName(ros::NodeHandle &nh, ros::NodeHandle &private_nh)
     ROS_INFO("Sending goal");
     simple_action_client_car1->sendGoal(goal);
 
-    simple_action_client_car1->waitForResult();
-
-    if(simple_action_client_car1->getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
-        ROS_INFO("Yay, the base moved 1 meter forward");
-    else
-        ROS_INFO("The base failed to move forward 1 meter for some reason");
 
 
+//  CAR 2 //
+
+   simple_action_client_car2 = new  MoveBaseClient("/car2/move_base", true); // added for car2
+
+    //wait for the action server to come up
+       while(!simple_action_client_car2->waitForServer(ros::Duration(5.0))){
+       ROS_INFO("Waiting for the move_base action server to come up");
+       }
+
+       move_base_msgs::MoveBaseGoal goal2;
+       //we'll send a goal to the robot to move 1 meter forward
+       goal.target_pose.header.frame_id = "/car2/map";
+       goal.target_pose.header.stamp = ros::Time::now();
+
+       goal.target_pose.pose.position.x = 15.0;
+       goal.target_pose.pose.position.y = 4.0;
+       goal.target_pose.pose.orientation.z = 1.0;
+
+       ROS_INFO("Sending goal");
+       simple_action_client_car2->sendGoal(goal);
 
 
 
- //   simple_action_client_car2 = new  MoveBaseClient("move_base", true); // added for car2
+      // Wait for results
+
+       simple_action_client_car2->waitForResult();
+
+       if(simple_action_client_car2->getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
+           ROS_INFO("Car2 arrived to the goal point");
+       else
+           ROS_INFO("Car2 failed to reach the goal for some reason");
+
+
+       simple_action_client_car1->waitForResult();
+
+       if(simple_action_client_car1->getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
+           ROS_INFO("Car1 arrived to the goal point");
+       else
+           ROS_INFO("Car1 failed to reach the goal for some reason");
+
+
 
 }
 
