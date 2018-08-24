@@ -9,21 +9,37 @@ CarControl::CarControl(ros::NodeHandle& nh, ros::NodeHandle& private_nh) : nh(nh
 
     odom_pub_    = nh.advertise<nav_msgs::Odometry>("/odom", 100);
 
-    nh.getParam("car_start_x", odom_.pose.pose.position.x);
+    nh.getParam("car_start_x", odom_.pose.pose.position.x);   
     nh.getParam("car_start_y", odom_.pose.pose.position.y);
     nh.getParam("car_start_orientation", th_);
     nh.getParam("world_frame", world_frame_);
 
     std::cout << "world frame: " << world_frame_ << std::endl;
+
+    nh.getParam("base_frame", base_frame_);
+    std::cout << "base_frame:  " <<  base_frame_ << std::endl;
+
+    std::cout << "car_start_x:  " <<  odom_.pose.pose.position.x << std::endl;
+    std::cout << "car_start_y:  " <<  odom_.pose.pose.position.y << std::endl;
+    std::cout << "car_start_orientation:  " <<  th_ << std::endl;
 }
 
 void CarControl::setup()
 {
     // Setup frames from the world frame (map) to the car (base_link)
     odom_.header.frame_id      = world_frame_;
-    odom_.child_frame_id       = "base_link";
+    odom_.child_frame_id       = base_frame_;
     transform_.frame_id_       = world_frame_;
-    transform_.child_frame_id_ = "base_link";
+    transform_.child_frame_id_ = base_frame_;
+
+
+    // NOT SURE Setup frames from the BASE frame (map) to the car (base_link)
+   //  odom_.header.frame_id      = world_frame_;
+   //  odom_.child_frame_id       = "base_link";
+   //  transform_.frame_id_       = world_frame_;
+   //  transform_.child_frame_id_ = "base_link";
+
+
 
     last_time_ = ros::Time::now();
 }

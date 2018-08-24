@@ -37,6 +37,7 @@ private:
     geometry_msgs::Twist twist_;
 
     std::string world_frame_;
+    std::string base_frame_;
 
     tf::TransformBroadcaster tf_broadcaster_;
     tf::StampedTransform transform_;

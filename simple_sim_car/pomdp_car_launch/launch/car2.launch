@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Map Server including rViz -->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find pomdp_car_launch)/maps/testmap.yaml"/>
+    <node pkg="rviz" type="rviz" name="map" args="-d $(find pomdp_car_control)/config/sim_car2.rviz" />
+
+    <!-- URDF Car Model -->
+    <arg name="gui" default="true" />
+    
+
+<group ns="car1">
+    <param name="tf_prefix" value="car1" />
+    <param name="robot_description" textfile="$(find pomdp_car_description)/robots/pomdp_car.urdf.xacro" />
+    <param name="use_gui" value="$(arg gui)"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+    <!-- POMDP Car Controller Interface -->
+  <include file="$(find pomdp_car_control)/launch/pomdp_car_control.launch" >
+    <arg name="world_frame_" value="map" />
+    <arg name="base_frame_" value="car1/base_link" />
+    <arg name="car_start_x_" value="10.0" />
+    <arg name="car_start_y_" value="17.0" />
+    <arg name="car_start_orientation_" value="3.141592654" />
+
+    <arg name="pomdp_car"  value="car1" />
+
+  </include>
+</group>
+
+
+<group ns="car2">
+    <param name="tf_prefix" value="car2" />
+    <param name="robot_description" textfile="$(find pomdp_car_description)/robots/pomdp_car.urdf.xacro" />
+    <param name="use_gui" value="$(arg gui)"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+    <!-- POMDP Car Controller Interface -->
+  <include file="$(find pomdp_car_control)/launch/pomdp_car_control.launch" >
+    <arg name="world_frame_" value="map" />
+    <arg name="base_frame_" value="car2/base_link" />
+    <arg name="car_start_x_" value="5.0" />
+    <arg name="car_start_y_" value="3.0" />
+    <arg name="car_start_orientation_" value="3.141592654" />
+
+    <arg name="pomdp_car"  value="car2" />
+
+  </include>
+</group>
+
+
+
+</launch>
