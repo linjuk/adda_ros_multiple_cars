@@ -28,14 +28,14 @@ ClassName::ClassName(ros::NodeHandle &nh, ros::NodeHandle &private_nh)
     goal.target_pose.header.frame_id = "/car1/map";
     goal.target_pose.header.stamp = ros::Time::now();
 
-    goal.target_pose.pose.position.x = 17.0;
-    goal.target_pose.pose.position.y = 8.0;
+    goal.target_pose.pose.position.x = 45.0;
+    goal.target_pose.pose.position.y = 17.0;
  //   goal.target_pose.pose.position.z = 10.0;
 
 //    goal.target_pose.pose.orientation.w = -1.0;
 //    goal.target_pose.pose.orientation.x = 1.0; // doesnt work for now
 //    goal.target_pose.pose.orientation.y = 1.0; // doesnt work for now
-    goal.target_pose.pose.orientation.z = 1.0;
+    goal.target_pose.pose.orientation.z = 3.141592654;
 
     ROS_INFO("Sending goal");
     simple_action_client_car1->sendGoal(goal);
@@ -56,9 +56,9 @@ ClassName::ClassName(ros::NodeHandle &nh, ros::NodeHandle &private_nh)
        goal.target_pose.header.frame_id = "/car2/map";
        goal.target_pose.header.stamp = ros::Time::now();
 
-       goal.target_pose.pose.position.x = 15.0;
-       goal.target_pose.pose.position.y = 4.0;
-       goal.target_pose.pose.orientation.z = 1.0;
+       goal.target_pose.pose.position.x = 33.0;
+       goal.target_pose.pose.position.y = 45.0;
+       goal.target_pose.pose.orientation.z = 29.841592654;
 
        ROS_INFO("Sending goal");
        simple_action_client_car2->sendGoal(goal);

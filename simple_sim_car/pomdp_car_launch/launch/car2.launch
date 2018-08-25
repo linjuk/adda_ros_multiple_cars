@@ -26,7 +26,7 @@
   <include file="$(find pomdp_car_control)/launch/pomdp_car_control.launch" >
     <arg name="world_frame_" value="car1/map" />
     <arg name="base_frame_" value="car1/base_link" />
-    <arg name="car_start_x_" value="10.0" />
+    <arg name="car_start_x_" value="5.0" />
     <arg name="car_start_y_" value="17.0" />
     <arg name="car_start_orientation_" value="3.141592654" />
    
@@ -35,7 +35,7 @@
   </include>
 
 <!-- Move Base -->
-        <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
 
         <rosparam file="$(find pomdp_car_launch)/config/costmap.yaml" command="load"/>
         <rosparam file="$(find pomdp_car_launch)/params/global_costmap.yaml" command="load"/>
@@ -61,9 +61,9 @@
   <include file="$(find pomdp_car_control)/launch/pomdp_car_control.launch" >
     <arg name="world_frame_" value="car2/map" />
     <arg name="base_frame_" value="car2/base_link" />
-    <arg name="car_start_x_" value="5.0" />
-    <arg name="car_start_y_" value="3.0" />
-    <arg name="car_start_orientation_" value="3.141592654" />
+    <arg name="car_start_x_" value="33.0" />
+    <arg name="car_start_y_" value="5.0" />
+    <arg name="car_start_orientation_" value="29.841592654" />
     <arg name="vel_topic_" value="cmd_vel" />
 
   </include>
