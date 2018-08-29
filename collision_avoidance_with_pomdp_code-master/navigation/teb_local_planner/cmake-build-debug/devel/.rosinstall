@@ -1,2 +1,0 @@
-- setup-file:
-    local-name: /home/albert/ias_ros/src/navigation/teb_local_planner/cmake-build-debug/devel/setup.sh
