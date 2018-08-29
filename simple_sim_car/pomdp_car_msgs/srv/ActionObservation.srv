@@ -1,3 +1,4 @@
 uint32 action
 ---
 uint64 observation
+float64 current_velocity

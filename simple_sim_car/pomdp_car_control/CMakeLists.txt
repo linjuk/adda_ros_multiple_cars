@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
     roscpp
     std_msgs
     tf
+pomdp_car_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -110,7 +111,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 	INCLUDE_DIRS include
 	LIBRARIES pomdp_car_control
-	CATKIN_DEPENDS roscpp
+        CATKIN_DEPENDS roscpp tf pomdp_car_msgs
 #  DEPENDS system_lib
 )
 

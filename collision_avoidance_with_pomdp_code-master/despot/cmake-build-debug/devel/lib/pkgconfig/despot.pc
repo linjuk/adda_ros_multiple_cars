@@ -1,0 +1,8 @@
+prefix=/home/albert/ias_ros/src/despot/cmake-build-debug/devel
+
+Name: despot
+Description: Description of despot
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/albert/ias_ros/src/despot/cmake-build-debug/devel/lib 
+Requires: roscpp std_msgs message_runtime car_model

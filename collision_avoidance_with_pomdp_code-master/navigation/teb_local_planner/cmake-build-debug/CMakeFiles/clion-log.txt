@@ -1,0 +1,33 @@
+/opt/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/albert/ias_ros/src/navigation/teb_local_planner
+-- Using CATKIN_DEVEL_PREFIX: /home/albert/ias_ros/src/navigation/teb_local_planner/cmake-build-debug/devel
+-- Using CMAKE_PREFIX_PATH: /home/albert/ias_ros/devel;/opt/ros/kinetic
+-- This workspace overlays: /home/albert/ias_ros/devel;/opt/ros/kinetic
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/albert/ias_ros/src/navigation/teb_local_planner/cmake-build-debug/test_results
+-- Found gmock sources under '/usr/src/gmock': gmock will be built
+-- Found gtest sources under '/usr/src/gmock': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.11
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- System: Linux-4.13.0-36-generic
+-- /opt/ros/kinetic/share/cmake_modules/cmake/../../../share/cmake_modules/cmake/Modules;/home/albert/ias_ros/src/navigation/teb_local_planner/cmake_modules
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   thread
+--   graph
+--   chrono
+--   date_time
+--   atomic
+-- Found SuiteSparse
+-- Searching for g2o ...
+-- Found g2o headers in: /opt/ros/kinetic/include/g2o
+-- Found libg2o: /opt/ros/kinetic/lib/libg2o_csparse_extension.so;/opt/ros/kinetic/lib/libg2o_core.so;/opt/ros/kinetic/lib/libg2o_stuff.so;/opt/ros/kinetic/lib/libg2o_types_slam2d.so;/opt/ros/kinetic/lib/libg2o_types_slam3d.so;/opt/ros/kinetic/lib/libg2o_solver_cholmod.so;/opt/ros/kinetic/lib/libg2o_solver_pcg.so;/opt/ros/kinetic/lib/libg2o_solver_csparse.so;/opt/ros/kinetic/lib/libg2o_incremental.so
+-- teb_local_planner: 3 messages, 0 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/albert/ias_ros/src/navigation/teb_local_planner/cmake-build-debug

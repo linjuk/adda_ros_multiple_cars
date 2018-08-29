@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: despot
+Description: Description of despot
+Version: 1.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -ldespot
+Requires: roscpp std_msgs car_model message_runtime

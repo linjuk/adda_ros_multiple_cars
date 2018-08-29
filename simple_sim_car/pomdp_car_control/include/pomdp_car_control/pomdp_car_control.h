@@ -5,6 +5,7 @@
 #include <ros/ros.h>
 #include <tf/tf.h>
 #include <tf/transform_broadcaster.h>
+#include <pomdp_car_msgs/ActionObservation.h>
 
 namespace pomdp_car_control
 {
@@ -27,14 +28,20 @@ public:
 protected:
     void cmd_vel_callback(const geometry_msgs::Twist& msg);
 
+    bool pomdp_vel_callback(pomdp_car_msgs::ActionObservation::Request &req, pomdp_car_msgs::ActionObservation::Response &res);
+
+
     ros::NodeHandle& nh;
     ros::NodeHandle& p_nh;
 
 private:
     ros::Subscriber cmd_vel_sub_;
+    ros::Subscriber pomdp_cmd_vel_sub_;
     ros::Publisher odom_pub_;
     nav_msgs::Odometry odom_;
     geometry_msgs::Twist twist_;
+    ros::ServiceServer velocity_service_;
+
 
     std::string world_frame_;
     std::string base_frame_;
@@ -46,6 +53,12 @@ private:
     ros::Time last_time_;
 
     double th_ = 0.0;
+
+    float current_velocity_;
+    float change_velocity_;
+    float max_velocity_;
+    float min_velocity_;
 };
+
 
 } // namespace pomdp_car_control

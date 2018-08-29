@@ -1,0 +1,10 @@
+int32 action
+---
+#float64 car_x
+#float64 car_y
+#float64 ped_x
+#float64 ped_y
+float64 car_v
+#float64 theta
+geometry_msgs/Pose car_pose
+geometry_msgs/Pose pedestrian_position

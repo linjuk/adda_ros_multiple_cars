@@ -1,0 +1,29 @@
+# global_frame: map
+# robot_base_frame: base_link
+# update_frequency: 5.0
+# publish_frequency: 5.0
+
+# rolling_window: false
+# static_map: true
+
+# footprint: [[-0.5, -0.35], [-0.5, 0.35], [0.5, 0.35], [0.5, -0.35]]
+# inflation_radius: 3.0
+# cost_scaling_factor: 1.0
+
+global_costmap:
+  global_frame: map
+  robot_base_frame: base_link
+  update_frequency: 1.0
+  publish_frequency: 0.5
+  static_map: true
+  min_obstacle_height: -1
+ 
+  transform_tolerance: 0.5
+  # plugins:
+  #   - {name: static_layer,            type: "costmap_2d::StaticLayer"}
+    # - {name: obstacle_layer,          type: "costmap_2d::VoxelLayer"}
+    # - {name: inflation_layer,         type: "costmap_2d::InflationLayer"}
+
+
+
+

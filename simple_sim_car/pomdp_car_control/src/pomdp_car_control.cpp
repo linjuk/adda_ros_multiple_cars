@@ -10,6 +10,11 @@ CarControl::CarControl(ros::NodeHandle& nh, ros::NodeHandle& private_nh) : nh(nh
 
     odom_pub_    = nh.advertise<nav_msgs::Odometry>("/odom", 100);
 
+    current_velocity_ = 0.0;
+    change_velocity_ = 0.8;
+    max_velocity_ = 3.0;
+    min_velocity_ = 1.0;
+
     nh.getParam("car_start_x", odom_.pose.pose.position.x);   
     nh.getParam("car_start_y", odom_.pose.pose.position.y);
     nh.getParam("car_start_orientation", th_);
@@ -28,6 +33,9 @@ CarControl::CarControl(ros::NodeHandle& nh, ros::NodeHandle& private_nh) : nh(nh
 
     nh.getParam("vel_topic", vel_topic_);
     cmd_vel_sub_ = nh.subscribe(vel_topic_, 10, &CarControl::cmd_vel_callback, this);
+//    pomdp_cmd_vel_sub_ = nh.subscribe("pomdp_vel", 10, &CarControl::pomdp_vel_callback, this);
+
+    velocity_service_ = p_nh.advertiseService("pomdp_velocity", &CarControl::pomdp_vel_callback, this);
 
 }
 
@@ -52,11 +60,45 @@ void CarControl::setup()
 }
 
 
+bool CarControl::pomdp_vel_callback( pomdp_car_msgs::ActionObservation:: Request &req, pomdp_car_msgs::ActionObservation:: Response &res)
+{
+// decelerate
+    std::cout << "reqest action " <<  req.action << std::endl;
+
+    if (req.action == 1)
+    {
+        std::cout << "dec " <<  req.action << std::endl;
+
+        current_velocity_ = current_velocity_ - change_velocity_;
+    }
+// hold
+    if (req.action == 2)
+    {
+        std::cout << "hold" <<  req.action << std::endl;
+
+        current_velocity_ = current_velocity_;
+    }
+ // accelerate
+
+    if (req.action == 3)
+    {
+        std::cout << "acc" <<  req.action << std::endl;
+
+        current_velocity_ = current_velocity_ + change_velocity_ ;
+    }
+
+    twist_.linear.x = current_velocity_;
+
+    res.current_velocity = current_velocity_;
+    //twist_ = msg;
+}
+
+
 void CarControl::cmd_vel_callback(const geometry_msgs::Twist& msg)
 {
     // Only take orientation commands
-//    twist_.angular.z = msg.angular.z;
-    twist_ = msg;
+    twist_.angular.z = msg.angular.z;
+    //twist_ = msg;
 }
 
 void CarControl::compute_movement()

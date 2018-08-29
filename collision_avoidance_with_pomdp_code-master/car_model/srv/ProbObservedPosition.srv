@@ -1,0 +1,8 @@
+geometry_msgs/Pose last_observed_position
+geometry_msgs/Pose observed_position
+geometry_msgs/Point goal
+float64 velocity
+float64 dt
+bool trust
+---
+float64 probability

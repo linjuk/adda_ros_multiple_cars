@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node name="map_server" pkg="map_server" type="map_server" args="$(find map_server)/test/testmap.png 1.0f"/>
+	<node pkg="rviz" type="rviz" name="rviz"/>
+</launch>
