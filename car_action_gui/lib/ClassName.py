@@ -56,8 +56,10 @@ class ClassName(QObject):
         #set connections
         self._widget.Car1_acc_button.pressed.connect(self._on_car1_acc_button_pressed)
         self._widget.Car1_dec_button.pressed.connect(self._on_car1_dec_button_pressed)
+        self._widget.Car1_hold_button.pressed.connect(self._on_car1_hold_button_pressed)
         self._widget.Car2_acc_button.pressed.connect(self._on_car2_acc_button_pressed)
         self._widget.Car2_dec_button.pressed.connect(self._on_car2_dec_button_pressed)
+        self._widget.Car2_hold_button.pressed.connect(self._on_car2_hold_button_pressed)
         
         #getRobotJoints_button
 
@@ -113,20 +115,37 @@ class ClassName(QObject):
     def _on_car1_dec_button_pressed(self):
         req = ActionObservationRequest()
         req.action= 1
-        self.velocity_service1_.call(req)
+        res=self.velocity_service1_.call(req)
+        print res.current_velocity
  	print 'Button dec car1 msg'
+
+    def _on_car1_hold_button_pressed(self):
+        req = ActionObservationRequest()
+        req.action= 2
+        res=self.velocity_service1_.call(req)
+        print res.current_velocity
+ 	print 'Button hold car1 msg'
 
     def _on_car2_acc_button_pressed(self):
         req = ActionObservationRequest()
         req.action= 3
-        self.velocity_service2_.call(req)
+        res=self.velocity_service2_.call(req)
+        print res.current_velocity
  	print 'Button acc car2 msg'
 
     def _on_car2_dec_button_pressed(self):
         req = ActionObservationRequest()
         req.action= 1
-        self.velocity_service2_.call(req)
+        res=self.velocity_service2_.call(req)
+        print res.current_velocity
  	print 'Button dec car2 msg'
+
+    def _on_car2_hold_button_pressed(self):
+        req = ActionObservationRequest()
+        req.action= 2
+        res=self.velocity_service2_.call(req)
+        print res.current_velocity
+ 	print 'Button hold car1 msg'
 
        
         
