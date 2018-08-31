@@ -10,8 +10,8 @@ CarControl::CarControl(ros::NodeHandle& nh, ros::NodeHandle& private_nh) : nh(nh
 
     odom_pub_    = nh.advertise<nav_msgs::Odometry>("/odom", 100);
 
-    current_velocity_ = 0.0;
-    change_velocity_ = 0.8;
+    current_velocity_ = 1.0;
+    change_velocity_ = 0.4;
     max_velocity_ = 3.0;
     min_velocity_ = 1.0;
 
@@ -86,6 +86,15 @@ bool CarControl::pomdp_vel_callback( pomdp_car_msgs::ActionObservation:: Request
 
         current_velocity_ = current_velocity_ + change_velocity_ ;
     }
+
+    // stop
+
+       if (req.action == 4)
+       {
+           std::cout << "stop" <<  req.action << std::endl;
+
+           current_velocity_ = 0 ;
+       }
 
     twist_.linear.x = current_velocity_;
 

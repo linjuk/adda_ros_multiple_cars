@@ -28,7 +28,7 @@
     <arg name="base_frame_" value="car1/base_link" />
     <arg name="car_start_x_" value="5.0" />
     <arg name="car_start_y_" value="17.0" />
-    <arg name="car_start_orientation_" value="3.141592654" />
+    <arg name="car_start_orientation_" value="150.841592654" />
    
     <arg name="vel_topic_" value="cmd_vel" />
 
@@ -63,7 +63,7 @@
     <arg name="base_frame_" value="car2/base_link" />
     <arg name="car_start_x_" value="33.0" />
     <arg name="car_start_y_" value="5.0" />
-    <arg name="car_start_orientation_" value="29.841592654" />
+    <arg name="car_start_orientation_" value="20.441592654" />
     <arg name="vel_topic_" value="cmd_vel" />
 
   </include>

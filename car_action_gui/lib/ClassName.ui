@@ -69,6 +69,13 @@
         </widget>
        </item>
        <item>
+        <widget class="QPushButton" name="Car1_stop_button">
+         <property name="text">
+          <string>Car1 stop</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <spacer name="verticalSpacer">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -130,6 +137,13 @@
         <widget class="QPushButton" name="Car2_hold_button">
          <property name="text">
           <string>Car2 hold</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Car2_stop_button">
+         <property name="text">
+          <string>Car2 stop</string>
          </property>
         </widget>
        </item>
