@@ -1,6 +1,7 @@
 #include <simple_navigation_goals/simple_navigation_goals.h>
 #include <ros/ros.h>
 #include <actionlib/client/simple_action_client.h>
+
 namespace simple_navigation_goals{
 
 ClassName::ClassName(ros::NodeHandle &nh, ros::NodeHandle &private_nh)
@@ -8,6 +9,7 @@ ClassName::ClassName(ros::NodeHandle &nh, ros::NodeHandle &private_nh)
     , p_nh(private_nh)
 
 {
+
 // int main(int argc, char** argv){
 //    ros::init(argc, argv, "simple_navigation_goals");
 
@@ -35,7 +37,7 @@ ClassName::ClassName(ros::NodeHandle &nh, ros::NodeHandle &private_nh)
 //    goal.target_pose.pose.orientation.w = -1.0;
 //    goal.target_pose.pose.orientation.x = 1.0; // doesnt work for now
 //    goal.target_pose.pose.orientation.y = 1.0; // doesnt work for now
-    goal.target_pose.pose.orientation.z = 3.141592654;
+    goal.target_pose.pose.orientation.z = 150.841592654;
 
     ROS_INFO("Sending goal");
     simple_action_client_car1->sendGoal(goal);
@@ -58,7 +60,7 @@ ClassName::ClassName(ros::NodeHandle &nh, ros::NodeHandle &private_nh)
 
        goal.target_pose.pose.position.x = 33.0;
        goal.target_pose.pose.position.y = 45.0;
-       goal.target_pose.pose.orientation.z = 29.841592654;
+       goal.target_pose.pose.orientation.z = 20.441592654;
 
        ROS_INFO("Sending goal");
        simple_action_client_car2->sendGoal(goal);

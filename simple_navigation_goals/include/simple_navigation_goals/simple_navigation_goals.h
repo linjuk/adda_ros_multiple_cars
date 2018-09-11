@@ -6,6 +6,7 @@
 #include <move_base_msgs/MoveBaseAction.h>
 
 
+
 namespace simple_navigation_goals{
 
 //typedef actionlib::SimpleActionClient<bla_msgs::GoToAction> BlaActionClient;
@@ -18,6 +19,7 @@ public:
 	ClassName(ros::NodeHandle& nh, ros::NodeHandle& private_nh );
     virtual ~ClassName();
 
+
 protected:
 
 	//void blaCallback(const bla_msgs::Bla &bla_msg);
@@ -29,6 +31,7 @@ protected:
 
 	ros::NodeHandle& nh;
 	ros::NodeHandle& p_nh;
+
 	
 private:
 	//ros::Publisher pub_;

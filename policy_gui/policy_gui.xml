@@ -1,0 +1,12 @@
+<library path="lib">
+  <class name="ClassName" type="ClassName.ClassName" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A Python GUI plugin to do whatever
+    </description>
+    <qtgui>
+      <label>policy_gui Gui</label>
+      <icon type="theme">utilities-system-monitor</icon>
+      <statustip>     A Python GUI plugin to do whatever</statustip>
+    </qtgui>
+  </class>
+</library>

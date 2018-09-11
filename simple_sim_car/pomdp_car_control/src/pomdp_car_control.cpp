@@ -10,7 +10,8 @@ CarControl::CarControl(ros::NodeHandle& nh, ros::NodeHandle& private_nh) : nh(nh
 
     odom_pub_    = nh.advertise<nav_msgs::Odometry>("/odom", 100);
 
-    current_velocity_ = 1.0;
+    current_velocity_ = 0.0;
+    twist_.linear.x = current_velocity_;
     change_velocity_ = 0.4;
     max_velocity_ = 3.0;
     min_velocity_ = 1.0;
@@ -112,6 +113,8 @@ void CarControl::cmd_vel_callback(const geometry_msgs::Twist& msg)
 
 void CarControl::compute_movement()
 {
+
+
     ros::Time current_time  = ros::Time::now();
     odom_.header.stamp = current_time;
     transform_.stamp_  = current_time;
@@ -128,6 +131,9 @@ void CarControl::compute_movement()
     th_ += dh;
     odom_.pose.pose.orientation = tf::createQuaternionMsgFromYaw(th_);
     odom_.twist.twist           = twist_;
+
+      std::cout <<  "linear z " << twist_.linear.x<< std::endl;
+      std::cout <<  "angular  " << twist_.angular.z<< std::endl;
 
     // Apply TF
     transform_.setOrigin(tf::Vector3(odom_.pose.pose.position.x, odom_.pose.pose.position.y, 0.0));
