@@ -2,3 +2,7 @@ uint32 action
 ---
 uint64 observation
 float64 current_velocity
+float64 car1_x
+float64 car1_y
+float64 car2_x
+float64 car2_y

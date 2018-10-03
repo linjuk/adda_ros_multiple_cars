@@ -29,6 +29,8 @@ protected:
     void cmd_vel_callback(const geometry_msgs::Twist& msg);
 
     bool pomdp_vel_callback(pomdp_car_msgs::ActionObservation::Request &req, pomdp_car_msgs::ActionObservation::Response &res);
+    bool pomdp_pos_callback(pomdp_car_msgs::ActionObservation::Request &req, pomdp_car_msgs::ActionObservation::Response &res);
+
 
 
     ros::NodeHandle& nh;

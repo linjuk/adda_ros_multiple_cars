@@ -37,7 +37,7 @@ CarControl::CarControl(ros::NodeHandle& nh, ros::NodeHandle& private_nh) : nh(nh
 //    pomdp_cmd_vel_sub_ = nh.subscribe("pomdp_vel", 10, &CarControl::pomdp_vel_callback, this);
 
     velocity_service_ = p_nh.advertiseService("pomdp_velocity", &CarControl::pomdp_vel_callback, this);
-
+    position_service_ = p_nh.advertiseService("pomdp_position", &CarControl::pomdp_pos_callback, this);
 }
 
 void CarControl::setup()
