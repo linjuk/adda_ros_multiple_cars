@@ -29,7 +29,7 @@ protected:
     void cmd_vel_callback(const geometry_msgs::Twist& msg);
 
     bool pomdp_vel_callback(pomdp_car_msgs::ActionObservation::Request &req, pomdp_car_msgs::ActionObservation::Response &res);
-    bool pomdp_pos_callback(pomdp_car_msgs::ActionObservation::Request &req, pomdp_car_msgs::ActionObservation::Response &res);
+//    bool pomdp_pos_callback(pomdp_car_msgs::ActionObservation::Request &req, pomdp_car_msgs::ActionObservation::Response &res);
 
 
 
@@ -43,6 +43,7 @@ private:
     nav_msgs::Odometry odom_;
     geometry_msgs::Twist twist_;
     ros::ServiceServer velocity_service_;
+//    ros::ServiceServer position_service_;
 
 
     std::string world_frame_;

@@ -12,9 +12,9 @@ CarControl::CarControl(ros::NodeHandle& nh, ros::NodeHandle& private_nh) : nh(nh
 
     current_velocity_ = 0.0;
     twist_.linear.x = current_velocity_;
-    change_velocity_ = 0.4;
+    change_velocity_ = 0.2;
     max_velocity_ = 3.0;
-    min_velocity_ = 1.0;
+    min_velocity_ = 0.0;
 
     nh.getParam("car_start_x", odom_.pose.pose.position.x);   
     nh.getParam("car_start_y", odom_.pose.pose.position.y);
@@ -37,7 +37,7 @@ CarControl::CarControl(ros::NodeHandle& nh, ros::NodeHandle& private_nh) : nh(nh
 //    pomdp_cmd_vel_sub_ = nh.subscribe("pomdp_vel", 10, &CarControl::pomdp_vel_callback, this);
 
     velocity_service_ = p_nh.advertiseService("pomdp_velocity", &CarControl::pomdp_vel_callback, this);
-    position_service_ = p_nh.advertiseService("pomdp_position", &CarControl::pomdp_pos_callback, this);
+//    position_service_ = p_nh.advertiseService("pomdp_position", &CarControl::pomdp_pos_callback, this);
 }
 
 void CarControl::setup()
@@ -63,39 +63,55 @@ void CarControl::setup()
 
 bool CarControl::pomdp_vel_callback( pomdp_car_msgs::ActionObservation:: Request &req, pomdp_car_msgs::ActionObservation:: Response &res)
 {
-// decelerate
+
     std::cout << "reqest action " <<  req.action << std::endl;
+
+// accelerate
 
     if (req.action == 1)
     {
-        std::cout << "dec " <<  req.action << std::endl;
+        std::cout << "Accelerate: " <<  req.action << std::endl;
+        std::cout << "Velocity before change" << current_velocity_ << std::endl;
 
-        current_velocity_ = current_velocity_ - change_velocity_;
+        // ternary operation (conditon) ? true statement : false statement
+        // if(velocity > max){} else{}
+        current_velocity_ = current_velocity_ + change_velocity_ >= max_velocity_ ? max_velocity_ : current_velocity_ + change_velocity_ ;
+        current_velocity_ = current_velocity_ + change_velocity_ <= min_velocity_ ? min_velocity_ : current_velocity_ + change_velocity_ ;
+        std::cout << "Velocity after change" << current_velocity_ << std::endl;
+        std::cout << "\n" << std::endl;
     }
-// hold
+
+// decelerate
+
     if (req.action == 2)
     {
-        std::cout << "hold" <<  req.action << std::endl;
-
-        current_velocity_ = current_velocity_;
+        std::cout << "Decelerate: " <<  req.action << std::endl;
+        std::cout << "Velocity before change" << current_velocity_ << std::endl;
+        //current_velocity_ = current_velocity_ - change_velocity_ ;
+        current_velocity_ = current_velocity_ - change_velocity_ >= max_velocity_ ? max_velocity_ : current_velocity_ - change_velocity_ ;
+        current_velocity_ = current_velocity_ - change_velocity_ <= min_velocity_ ? min_velocity_ : current_velocity_ - change_velocity_ ;
+        std::cout << "Velocity after change" << current_velocity_ << std::endl;
+        std::cout << "\n" << std::endl;
     }
- // accelerate
 
+// hold
     if (req.action == 3)
     {
-        std::cout << "acc" <<  req.action << std::endl;
+        std::cout << "Hold: " <<  req.action << std::endl;
+        std::cout << "Velocity before change" << current_velocity_ << std::endl;
+        //current_velocity_ = current_velocity_;
+        current_velocity_ = current_velocity_ >= max_velocity_ ? max_velocity_ : current_velocity_ ;
+        current_velocity_ = current_velocity_ <= min_velocity_ ? min_velocity_ : current_velocity_ ;
+        std::cout << "Velocity after change" << current_velocity_ << std::endl;
+        std::cout << "\n" << std::endl;
 
-        current_velocity_ = current_velocity_ + change_velocity_ ;
     }
 
-    // stop
-
-       if (req.action == 4)
-       {
-           std::cout << "stop" <<  req.action << std::endl;
-
-           current_velocity_ = 0 ;
-       }
+// stop
+    if (req.action == 4)
+    {
+        current_velocity_ = 0;
+    }
 
     twist_.linear.x = current_velocity_;
 
@@ -132,8 +148,8 @@ void CarControl::compute_movement()
     odom_.pose.pose.orientation = tf::createQuaternionMsgFromYaw(th_);
     odom_.twist.twist           = twist_;
 
-      std::cout <<  "linear z " << twist_.linear.x<< std::endl;
-      std::cout <<  "angular  " << twist_.angular.z<< std::endl;
+//      std::cout <<  "linear z " << twist_.linear.x<< std::endl;
+//      std::cout <<  "angular  " << twist_.angular.z<< std::endl;
 
     // Apply TF
     transform_.setOrigin(tf::Vector3(odom_.pose.pose.position.x, odom_.pose.pose.position.y, 0.0));

@@ -20,6 +20,8 @@ try:
 except ImportError:
     from python_qt_binding.QtWidgets import QShortcut, QTableWidgetItem, QWidget, QLCDNumber, QItemDelegate, QAbstractItemView
 
+
+
 from std_msgs.msg import Bool
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 
@@ -70,22 +72,20 @@ class ClassName(QObject):
         self.car2_goal = [33., 45.]
 
         # setup publisher
+        # car 1
         self._examplePublisher = rospy.Publisher('/policy_gui/exampletopic', Bool,queue_size=10)
-
         self.goal_client1 = actionlib.SimpleActionClient('/car1/move_base', MoveBaseAction)
         self.goal_client1.wait_for_server()
-
         self.velocity_service1_ = rospy.ServiceProxy('/car1/car_control/pomdp_velocity', ActionObservation)
-        self.position_service1_ = rospy.ServiceProxy('/car1/car_control/pomdp_position', ActionObservation)
-
-        self.listener = tf.TransformListener()
+        #self.position_service1_ = rospy.ServiceProxy('/car1/car_control/pomdp_position', ActionObservation)
+        #self.listener = tf.TransformListener()
 
         # car 2
         self._examplePublisher = rospy.Publisher('/policy_gui/exampletopic', Bool,queue_size=10)
         self.goal_client2 = actionlib.SimpleActionClient('/car2/move_base', MoveBaseAction)
         self.goal_client2.wait_for_server()
         self.velocity_service2_ = rospy.ServiceProxy('/car2/car_control/pomdp_velocity', ActionObservation)
-        self.position_service2_ = rospy.ServiceProxy('/car2/car_control/pomdp_position', ActionObservation)
+        #self.position_service2_ = rospy.ServiceProxy('/car2/car_control/pomdp_position', ActionObservation)
         self.listener = tf.TransformListener()
 
 
@@ -161,7 +161,7 @@ class ClassName(QObject):
           #  arm_joints =['arm_joint_0', 'arm_joint_1', 'arm_joint_2', 'arm_joint_3', 'arm_joint_4']
 
     def random_action(self):
-        actions = [3] * 65 + [2] * 10 + [1] * 15
+        actions = [1] * 45 + [2] * 30 + [3] * 25
         return random.choice(actions)
 
 
@@ -220,8 +220,8 @@ class ClassName(QObject):
         req.action = action
         res = self.velocity_service1_.call(req)
 
-        # wait for 3 seconds
-        # time.sleep(3.0)
+       # wait for 3 seconds
+       # time.sleep(1.0)
 
         # get new state
         new_state = self.update_state()
@@ -256,8 +256,8 @@ class ClassName(QObject):
         dist_car = math.sqrt( (state[0] - state[5]) ** 2 + (state[1] - state[6]) ** 2)
         dist_goal = math.sqrt((state[0] - self.car1_goal[0]) ** 2 + (state[1] - self.car1_goal[1]) ** 2)
 
-        print("distance", dist_car)
-        print('goal distance ', dist_goal)
+        print("distance between cars", dist_car)
+        print('distance between goal and the car1', dist_goal)
         if dist_car >= 10:
             reward = 5
         elif 10 > dist_car >= 5:
@@ -285,26 +285,26 @@ class ClassName(QObject):
     def _on_setup_button_pressed(self):
         # should send two navigation goals
         print(' Setup Button pressed, publishing msg')
-        goal = MoveBaseGoal()
-        goal.target_pose.header.frame_id = "/car1/map"
-        goal.target_pose.header.stamp = rospy.Time.now()
+
+        # goal for first car
+        goal1 = MoveBaseGoal()
+        goal1.target_pose.header.frame_id = "/car1/map"
+        goal1.target_pose.header.stamp = rospy.Time.now()
+        goal1.target_pose.pose.position.x = self.car1_goal[0]
+        goal1.target_pose.pose.position.y = self.car1_goal[1]
+        goal1.target_pose.pose.orientation.z = 1.0
+        self.goal_client1.send_goal(goal1)
+
+        # goal for second car
+        goal2 = MoveBaseGoal()
+        goal2.target_pose.header.frame_id = "/car2/map"
+        goal2.target_pose.header.stamp = rospy.Time.now()
+        goal2.target_pose.pose.position.x = self.car2_goal[0]
+        goal2.target_pose.pose.position.y = self.car2_goal[1]
+        goal2.target_pose.pose.orientation.z = 1.0
+        self.goal_client2.send_goal(goal2)
 
 
-        goal.target_pose.pose.position.x = self.car1_goal[0]
-        goal.target_pose.pose.position.y = self.car1_goal[1]
-        goal.target_pose.pose.orientation.z = 150.841592654
-        self.goal_client1.send_goal(goal)
-
-        # moves only first stops
-
-        goal = MoveBaseGoal()
-        goal.target_pose.header.frame_id = "/car2/map"
-        goal.target_pose.header.stamp = rospy.Time.now()
-
-        goal.target_pose.pose.position.x = self.car2_goal[0]
-        goal.target_pose.pose.position.y = self.car2_goal[1]
-        goal.target_pose.pose.orientation.z = 20.441592654
-        self.goal_client2.send_goal(goal)
 
         time_now =rospy.Time(0)
         (trans1, rot1) = self.listener.lookupTransform('/car1/base_link', '/map',time_now )
@@ -318,6 +318,9 @@ class ClassName(QObject):
         print("car 2: ")
         print(self.pos_car2)
 
+
+
+
     def _on_start_button_pressed(self):
         # should call compute policy method and compute policy will give list of actions.
         # Should execute one action after another (kinda loop). Before or together send
@@ -328,15 +331,15 @@ class ClassName(QObject):
         self.t = 0
 
         req = ActionObservationRequest()
-        req.action = 3
+        req.action = 1
         res = self.velocity_service2_.call(req)
 
         print (' Start Button pressed, publishing msg')
 
 
     def policy_loop(self, event):
-        goal_x = 45.0
-        goal_y = 17.0
+        #goal_x = 45.0
+        #goal_y = 17.0
 
 
         if self.execute_policy:
@@ -349,13 +352,21 @@ class ClassName(QObject):
             iteration_reward = self.reward(state_next_transition, action, observation)
             print('Iteration reward total: ', iteration_reward)
             self.reward_total += iteration_reward
-            if  self.pos_car1[0] >= goal_x and self.pos_car1[1] >= goal_y:
+            # current_state = self.update_state()
+            # if self.pos_car1[0] >= goal_x and self.pos_car1[1] >= goal_y:
+            dist_goal = math.sqrt((self.pos_car1[0] - self.car1_goal[0]) ** 2 + (self.pos_car1[1] - self.car1_goal[1]) ** 2)
+
+            print('dist_goal: ', dist_goal)
+            if dist_goal < 2:
+                req = ActionObservationRequest()
+                req.action = 4
+                res = self.velocity_service1_.call(req)
                 self.execute_policy=False
 
     # def compute_policy(self):
 
         # random number generator with  3  for 50% of the times, 1 - 30%, 4 and 2 - both 10%
-        # 1 - dec.; 2 - hold; 3 - acc.; 4 - stop
+        # 1 - acc.; 2 - dec; 3 - hold.
 
 
         # while self.pos_car1[0] < goal_x and self.pos_car1[1] < goal_y:   # TODO: think about that + real time possition of cars + moving car2
