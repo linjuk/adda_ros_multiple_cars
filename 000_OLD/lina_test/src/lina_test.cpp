@@ -1,3 +1,5 @@
+
+
 #include <lina_test/lina_test.h>
 namespace lina_test{
 
@@ -18,14 +20,13 @@ ClassName::ClassName(ros::NodeHandle &nh, ros::NodeHandle &private_nh)
 
 
 // Trying #1: loop
-//        while (ros::ok())
-//        {
-//               sleep(2);
-//               std_msgs::Bool msg;
-//               msg.data=true;
-//               msg.data=false;
-//               pub_.publish(msg);
-//        }
+        while (ros::ok())
+        {
+               sleep(2);
+               std_msgs::Bool msg;
+               msg.data=true;
+               msg.data=false;
+               pub_.publish(msg);        }
 // End of Trying #1.
 
 }

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+
+<launch>
+<node name="belief_obs_node" pkg="belief_obs" type="belief_obs.py" respawn="true" output="screen" />
+</launch>

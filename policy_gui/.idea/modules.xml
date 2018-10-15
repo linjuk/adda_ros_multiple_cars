@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../car_action_gui/.idea/car_action_gui.iml" filepath="$PROJECT_DIR$/../car_action_gui/.idea/car_action_gui.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/policy_gui.iml" filepath="$PROJECT_DIR$/.idea/policy_gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../belief_obs/.idea/promp_robot_controller.iml" filepath="$PROJECT_DIR$/../belief_obs/.idea/promp_robot_controller.iml" />
     </modules>
   </component>
 </project>

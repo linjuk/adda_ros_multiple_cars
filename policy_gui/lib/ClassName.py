@@ -30,28 +30,6 @@ from geometry_msgs.msg import Pose
 
 import tf
 
-
-# class State:
-#     # Represents a state in the POMDP.
-#
-#     def __init__(self):
-#         self.car1_pose = Pose()
-#         self.car2_pose = Pose()
-#         self.car1_vel = 0.0
-#         self.car2_vel = 0.0
-#         self.car1_goal = Pose()
-#         self.car2_goal = Pose()
-#
-# class Observation:
-#     # Represents an Observation in the POMDP.
-#
-#     def __init__(self):
-#         self.car1_pose = Pose()
-#         self.car2_pose = Pose()
-#         self.car1_vel = 0.0
-#         self.car2_vel = 0.0
-#         self.distance_between_cars = 0.0
-
 class ClassName(QObject):
     _update_task_delegates = Signal()
     _update_endeffector_widget = Signal()
@@ -68,8 +46,9 @@ class ClassName(QObject):
         self.pos_car2 = []
 
 
-        self.car1_goal = [45., 17.]
-        self.car2_goal = [33., 45.]
+        self.car1_goal = [38., 3.]
+        #self.car2_goal = [38., 3.]
+        self.car2_goal = [30., 32.]
 
         # setup publisher
         # car 1
@@ -77,7 +56,6 @@ class ClassName(QObject):
         self.goal_client1 = actionlib.SimpleActionClient('/car1/move_base', MoveBaseAction)
         self.goal_client1.wait_for_server()
         self.velocity_service1_ = rospy.ServiceProxy('/car1/car_control/pomdp_velocity', ActionObservation)
-        #self.position_service1_ = rospy.ServiceProxy('/car1/car_control/pomdp_position', ActionObservation)
         #self.listener = tf.TransformListener()
 
         # car 2
@@ -85,7 +63,6 @@ class ClassName(QObject):
         self.goal_client2 = actionlib.SimpleActionClient('/car2/move_base', MoveBaseAction)
         self.goal_client2.wait_for_server()
         self.velocity_service2_ = rospy.ServiceProxy('/car2/car_control/pomdp_velocity', ActionObservation)
-        #self.position_service2_ = rospy.ServiceProxy('/car2/car_control/pomdp_position', ActionObservation)
         self.listener = tf.TransformListener()
 
 
@@ -160,11 +137,17 @@ class ClassName(QObject):
    # def _on_joint_states(self,message):
           #  arm_joints =['arm_joint_0', 'arm_joint_1', 'arm_joint_2', 'arm_joint_3', 'arm_joint_4']
 
+    ############################################################
+    # helper function to generate random choice based on wieghts
+    ############################################################
     def random_action(self):
         actions = [1] * 45 + [2] * 30 + [3] * 25
         return random.choice(actions)
 
 
+    ###############
+    # state mutator
+    ###############
     def update_state(self):
 
         # TODO: at the moment this function uses initial values but it needs to be replaced with realtime values using the new service
@@ -196,7 +179,9 @@ class ClassName(QObject):
 
 
 
-
+    ###########################################
+    # random action logic inside compute policy
+    ###########################################
     def compute_action(self, state):
 
         print('Compute action ...')
@@ -210,7 +195,9 @@ class ClassName(QObject):
         return state, action
 
 
-
+    ############################################
+    # logic for transition inside compute policy
+    ############################################
     def transition(self, state, action):
 
         print('Transition ...')
@@ -238,6 +225,9 @@ class ClassName(QObject):
 
         return new_state, observation
 
+    ############################
+    # function for reward logic
+    ############################
     def reward(self, state, action, observation):
 
         # Negative reward for the action that was made ( for all actions the same negative reward)
@@ -276,12 +266,9 @@ class ClassName(QObject):
         # return observation + next state
 
 
-
-
-
-
-
-
+    ########################
+    # logic for setup button
+    ########################
     def _on_setup_button_pressed(self):
         # should send two navigation goals
         print(' Setup Button pressed, publishing msg')
@@ -318,9 +305,9 @@ class ClassName(QObject):
         print("car 2: ")
         print(self.pos_car2)
 
-
-
-
+    #################################
+    # logic for compute policy button
+    #################################
     def _on_start_button_pressed(self):
         # should call compute policy method and compute policy will give list of actions.
         # Should execute one action after another (kinda loop). Before or together send
@@ -337,10 +324,12 @@ class ClassName(QObject):
         print (' Start Button pressed, publishing msg')
 
 
+    #############################################
+    # compute policy loop that computes action,
+    # makes the transition and gives reward until
+    # goal is achieved
+    #############################################
     def policy_loop(self, event):
-        #goal_x = 45.0
-        #goal_y = 17.0
-
 
         if self.execute_policy:
             self.t = self.t + 1
@@ -362,26 +351,3 @@ class ClassName(QObject):
                 req.action = 4
                 res = self.velocity_service1_.call(req)
                 self.execute_policy=False
-
-    # def compute_policy(self):
-
-        # random number generator with  3  for 50% of the times, 1 - 30%, 4 and 2 - both 10%
-        # 1 - acc.; 2 - dec; 3 - hold.
-
-
-        # while self.pos_car1[0] < goal_x and self.pos_car1[1] < goal_y:   # TODO: think about that + real time possition of cars + moving car2
-        #
-        #     current_state = self.update_state()
-        #     state_before_transition, action = self.compute_action(current_state)
-        #     state_next_transition, observation = self.transition(state_before_transition, action)
-        #     print('Reward total: ', reward_total)
-        #     iteration_reward = self.reward(state_next_transition, action, observation)
-        #     print('Iteration reward total: ', iteration_reward)
-        #     reward_total += iteration_reward
-        #
-        #     stop condition for the loop
-        #     if(x===y) break
-        #
-        # print ('Total reward:', reward_total)
-        # print ('Randomization is over')
-#

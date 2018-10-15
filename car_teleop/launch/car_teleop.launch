@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+
+<launch>
+<node name="car_teleop_node" pkg="car_teleop" type="car_teleop_node" respawn="true" output="screen" />
+</launch>

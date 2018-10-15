@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/lib/ClassName.py" line="385" mnemonic="7" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="83cdd8f7-4600-4612-913a-eb5e66d6fef6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../lina_test/src/lina_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lina_test/src/lina_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/policy_gui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/policy_gui.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ClassName.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ClassName.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_msgs/srv/ActionObservation.srv" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_msgs/srv/ActionObservation.srv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,29 +20,33 @@
     <session id="14538162">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="5614" />
+          <entry key="py" value="12579" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="5614" />
+          <entry key="Python" value="12579" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="7" />
+          <entry key="py" value="13" />
           <entry key="txt" value="2" />
           <entry key="xml" value="4" />
         </counts>
@@ -47,7 +54,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="7" />
+          <entry key="Python" value="13" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -58,40 +65,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/ClassName.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="333" column="22" selection-start-line="333" selection-start-column="22" selection-end-line="333" selection-end-column="22" />
+            <state relative-caret-position="210">
+              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1538581251945" expanded="true" signature="847:848" ph="..." />
-                <marker date="1538581251945" expanded="true" signature="1135:1136" ph="..." />
-                <marker date="1538581251945" expanded="true" signature="1135:1142" ph="..." />
-                <marker date="1538581251945" expanded="true" signature="5801:5810" ph="..." />
+                <marker date="1539544548243" expanded="true" signature="5321:5330" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/../belief_obs/scripts/belief_obs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1771" />
+            <state relative-caret-position="287">
+              <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+              <folding>
+                <element signature="e#25#37#0" expanded="true" />
+                <marker date="1539360154911" expanded="true" signature="932:941" ph="..." />
+                <marker date="1539360154911" expanded="true" signature="3692:3699" ph="..." />
+              </folding>
+            </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/policy_gui.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/ClassName_backup20180921.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
+            <state relative-caret-position="2790">
               <caret line="202" column="23" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="23" />
             </state>
           </provider>
@@ -101,11 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>simple</find>
-      <find>velocity_</find>
-      <find>actionObser</find>
-      <find>restore_settin</find>
-      <find>ActionObservationRequest()</find>
       <find>req</find>
       <find>actionObserva</find>
       <find>ActionObservation</find>
@@ -114,7 +110,6 @@
       <find>update</find>
       <find>sleep</find>
       <find>stop</find>
-      <find>goal</find>
       <find>publisher</find>
       <find>subscriber</find>
       <find>MoveBaseGoal</find>
@@ -122,12 +117,21 @@
       <find>actionobservationRequest</find>
       <find>velocity_ser</find>
       <find>vel</find>
-      <find>velocity</find>
       <find>distance</find>
       <find>state</find>
       <find>car2</find>
       <find>2</find>
       <find>goal.</find>
+      <find>pose</find>
+      <find>velocity</find>
+      <find>p</find>
+      <find>MoveBaseAction</find>
+      <find>pos_car1</find>
+      <find>goal</find>
+      <find>exp_pove</find>
+      <find>distan</find>
+      <find>miu</find>
+      <find>car</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,6 +140,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/lib/ObservationPublisher.py" />
+        <option value="$PROJECT_DIR$/lib/ObservationSubscriber.py" />
+        <option value="$PROJECT_DIR$/../observations/src/publisher.py" />
+        <option value="$PROJECT_DIR$/../observations/src/subscriber.py" />
+        <option value="$PROJECT_DIR$/../susi_test/scripts/susi_test.py" />
+        <option value="$PROJECT_DIR$/../belief_obs/scripts/belief_obs.py" />
         <option value="$PROJECT_DIR$/lib/ClassName.py" />
       </list>
     </option>
@@ -146,18 +156,50 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
-    <option name="y" value="-11" />
-    <option name="width" value="1537" />
-    <option name="height" value="912" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="857" />
+    <option name="y" value="87" />
+    <option name="width" value="1047" />
+    <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="policy_gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy_gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy_gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy_gui" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy_gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="belief_obs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy_gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="belief_obs" type="462c0819:PsiDirectoryNode" />
+              <item name="launch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy_gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="belief_obs" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -188,27 +230,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="policy_gui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="policy_gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="policy_gui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="policy_gui" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../car_action_gui" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../belief_obs" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -241,14 +267,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1537" height="912" extended-state="6" />
-    <editor active="true" />
+    <frame x="857" y="87" width="1047" height="1040" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29550034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.04295704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.0992268" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -287,28 +312,60 @@
     <entry file="file://$PROJECT_DIR$/policy_gui.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ObservationPublisher.py" />
+    <entry file="file://$PROJECT_DIR$/lib/ObservationSubscriber.py" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1771" />
+        <state relative-caret-position="-1591" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../observations/src/publisher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../observations/src/subscriber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../susi_test/scripts/susi_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ClassName_backup20180921.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
+        <state relative-caret-position="2790">
           <caret line="202" column="23" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../belief_obs/scripts/belief_obs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+          <folding>
+            <element signature="e#25#37#0" expanded="true" />
+            <marker date="1539360154911" expanded="true" signature="932:941" ph="..." />
+            <marker date="1539360154911" expanded="true" signature="3692:3699" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ClassName.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="333" column="22" selection-start-line="333" selection-start-column="22" selection-end-line="333" selection-end-column="22" />
+        <state relative-caret-position="210">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1538581251945" expanded="true" signature="847:848" ph="..." />
-            <marker date="1538581251945" expanded="true" signature="1135:1136" ph="..." />
-            <marker date="1538581251945" expanded="true" signature="1135:1142" ph="..." />
-            <marker date="1538581251945" expanded="true" signature="5801:5810" ph="..." />
+            <marker date="1539544548243" expanded="true" signature="5321:5330" ph="..." />
           </folding>
         </state>
       </provider>
