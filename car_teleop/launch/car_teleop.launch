@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 
 <launch>
+<param name="scale_linear" value="2.5" />
 <node name="car_teleop_node" pkg="car_teleop" type="car_teleop_node" respawn="true" output="screen" />
 </launch>

@@ -1,0 +1,8 @@
+prefix=/home/linjuk/adda_ros/src/code_lina/car_teleop/cmake-build-debug/devel
+
+Name: car_teleop
+Description: Description of car_teleop
+Version: 0.0.0
+Cflags: -I/home/linjuk/adda_ros/src/code_lina/car_teleop/include
+Libs: -L/home/linjuk/adda_ros/src/code_lina/car_teleop/cmake-build-debug/devel/lib -lcar_teleop
+Requires: roscpp

@@ -5,7 +5,7 @@ import rospy
 
 import math
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 from std_msgs.msg import Bool
 from scipy.stats import multivariate_normal
@@ -27,15 +27,15 @@ class BeliefObs:
         self.timer = rospy.Timer(rospy.Duration(0.1), self.my_callback)
 
         self.belief = []
-        self.belief.append([0.5]) # prob that goal is 1
-        self.belief.append([0.5]) # prob that goal is 2
+        self.belief.append(0.5) # prob that goal is 1
+        self.belief.append(0.5) # prob that goal is 2
+        #[0.5 , 0.5]
 
         self.goals = []
-        self.goals.append([45.0, 17.0, 1.0]) # random goal
-        self.goals.append([33.0, 45.0, 1.0]) # target goal
+        self.goals.append([38.0, 3.0, 1.0]) # random goal
+        self.goals.append([30.0, 32.0, 1.0]) # target goal
 
-
-    def observation_probability(self, x, mues, sigma):
+    def observation_probability(self, current_position, mues, sigma):
         # Gaussian Probability distribution
         # Dimentionality: n = 2 (x, y)
         # x => cuttent observation
@@ -50,22 +50,22 @@ class BeliefObs:
 
         for i in range(len(mues)):
             # mue=np.array(mue)
-            mue=mues[i]
-            #mue=np.array( mue)
-            #sigma=sigmas[i]
-            print mue
-            print (mue.shape)
-            print sigma
-            print (sigma.shape)
+            # mue=mues[i]
+            # mue=np.array( mue)
+            # sigma=sigmas[i]
+            # print mue
+            # print (mues[i].shape)
+            # print sigma
+            # print (sigma.shape)
 
-            # x = self.pos_car2
-            observation_probability = multivariate_normal.pdf(x, mue, sigma)
-            print ("step prob: ", observation_probability)
+            observation_probability.append(multivariate_normal.pdf(current_position, mues[i], sigma))
+
+            # print ("step prob: ", observation_probability)
 
 
         return observation_probability
 
-    def mue(self):
+    def mue(self, last_observed_pos):
         # mue - car2 movement function. Will calculate new position from:
         # last observed position (x,y) ; velocity (v) and goal (g) after delta_t
 
@@ -75,20 +75,17 @@ class BeliefObs:
             # (maybe calculate from distance speed = distance / time )
             delta_t = 0.2 # also need to calculate
 
-            last_observed_pos = self.pos_car2
             last_observed_pos = np.array(last_observed_pos, dtype='f')
             goals = np.array(goal, dtype='f')
 
-            normalized_unit_vector_counter = goal[0] - last_observed_pos  # (x, y, z)
-            normalized_unit_vector_denominator = math.sqrt((goal[0] - self.pos_car2[0]) ** 2 + (goal[1] - self.pos_car2[1]) ** 2 + (goal[2] - self.pos_car2[2]) ** 2)  # euclidean distance
+            normalized_unit_vector_counter = goals - last_observed_pos  # (x, y, z)
+            normalized_unit_vector_denominator = math.sqrt((goals[0] - self.pos_car2[0]) ** 2 + (goals[1] - self.pos_car2[1]) ** 2 + (goals[2] - self.pos_car2[2]) ** 2)  # euclidean distance
 
-            distance = vel_car2 * delta_t
-
-            mue = last_observed_pos + normalized_unit_vector_counter * (distance / normalized_unit_vector_denominator)  # should be (x, y, z)
+            mue = ((normalized_unit_vector_counter / normalized_unit_vector_denominator) * vel_car2 * delta_t) + last_observed_pos  # should be (x, y, z)
             mue_array.append(mue)
 
 
-        print mue_array
+      #  print("mue_array", mue_array)
 
         return mue_array
 
@@ -100,20 +97,32 @@ class BeliefObs:
         # With low noise, the likelihood will be close to the mean.
 
         identitymatrix = np.eye(3)
-
         factor = 0.1
-
         sigma = identitymatrix * factor
-
         return sigma
 
-
-    def belief_update(self, bservation_probability):
+    def belief_update(self, observation_probability):
         # Belief update for goals (for two goals together)
+        belief_array = []
+        numerator_array = []
+        denominator_array = []
 
-        belief = (self.observation_probability[0] * self.belief[0]) / (self.observation_probability[0] * self.belief[0] + self.observation_probability[1] * self.belief[1])
+        i = 0
+        for op in observation_probability:
+            numerator = op * self.belief[i]
+            numerator_array.append(numerator)
+            denominator_array.append(numerator)
 
-        return belief
+            #belief = (op * self.belief[i]) / (self.observation_probability[0] * self.belief[0] + self.observation_probability[1] * self.belief[1])
+            #belief_array.append(belief)
+            i = i + 1
+
+        for value in numerator_array:
+            sumassion = sum(denominator_array[0:len(denominator_array)])
+            belief = value / sumassion
+            belief_array.append(belief)
+
+        return belief_array
 
 
 
@@ -129,22 +138,37 @@ class BeliefObs:
         probability_history = []
         belief_history = []
 
+        step_observation = []
+
+
         while not rospy.is_shutdown():
             (trans2, rot2) = self.listener.lookupTransform('/map', '/car2/base_link', time_now)
             self.pos_car2 = trans2
+
+            if len(step_observation) == 0:
+                step_observation.append(self.pos_car2)
+
+
             print ("Current car2 possition: ", self.pos_car2)
             now = rospy.get_rostime()
             r.sleep()
 
-            print ("Delta_t: ", rospy.get_rostime() - now) # delta t
+            # print ("Delta_t: ", rospy.get_rostime() - now) # delta t
 
-            muetes = self.mue()
-            sigmatest = self.sigma()
+            muetes = self.mue(step_observation[0])
 
-            step_observation_probability = self.observation_probability(trans2, muetes, sigmatest)
-            print ("blabla", step_observation_probability)
+            # print("muetes", muetes)
 
-      #      step_belief = self.belief_update(step_observation_probability)
+            step_observation_probability = self.observation_probability(self.pos_car2, muetes, self.sigma())
+            # print ("step_observation_probability", step_observation_probability)
+
+            # store current observation for next step
+            step_observation[0] = self.pos_car2
+
+            step_belief = self.belief_update(step_observation_probability)
+            print("step belief", step_belief)
+            self.belief = step_belief
+            print ("")
             # probability_history.append(step_observation_probability)
             # step_belief = self.belief_update(step_observation_probability, probability_history)
             # belief_history.append(step_belief)

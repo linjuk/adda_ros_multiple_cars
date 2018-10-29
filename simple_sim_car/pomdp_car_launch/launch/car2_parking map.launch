@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<launch>
+
+<node pkg="tf" type="static_transform_publisher" name="map_car1_tf_broadcaster" args="0 0 0 0 0 0 map car1/map 100" />
+
+<node pkg="tf" type="static_transform_publisher" name="map_car2_tf_broadcaster" args="0 0 0 0 0 0 map car2/map 100" />
+
+    <!-- Map Server including rViz -->
+   <!-- <node name="map_server" pkg="map_server" type="map_server" args="$(find pomdp_car_launch)/maps/testmap.yaml"/>-->
+    <node pkg="rviz" type="rviz" name="map" args="-d $(find pomdp_car_control)/config/sim_car2.rviz" />
+
+    <!-- URDF Car Model -->
+    <arg name="gui" default="true" />
+    
+
+<group ns="car1">
+
+    <param name="tf_prefix" value="car1" />
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find pomdp_car_launch)/maps/testmap.yaml"/>
+  
+    <param name="robot_description" textfile="$(find pomdp_car_description)/robots/pomdp_car.urdf.xacro" />
+    <param name="use_gui" value="$(arg gui)"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+    <!-- POMDP Car Controller Interface -->
+  <include file="$(find pomdp_car_control)/launch/pomdp_car_control.launch" >
+    <arg name="world_frame_" value="car1/map" />
+    <arg name="base_frame_" value="car1/base_link" />
+    <arg name="car_start_x_" value="5.0" />
+    <arg name="car_start_y_" value="17.0" />
+    <arg name="car_start_orientation_" value="150.841592654" />
+   
+    <arg name="vel_topic_" value="cmd_vel" />
+
+  </include>
+
+<!-- Move Base -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+
+        <rosparam file="$(find pomdp_car_launch)/config/costmap.yaml" command="load"/>
+        <rosparam file="$(find pomdp_car_launch)/params/global_costmap.yaml" command="load"/>
+        <rosparam file="$(find pomdp_car_launch)/params/local_costmap.yaml" command="load"/>
+        <rosparam file="$(find pomdp_car_launch)/config/teb_local_planner.yaml" command="load" />
+            
+        <param name="base_global_planner" value="global_planner/GlobalPlanner"/> 
+        <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+    </node>
+</group>
+
+
+<group ns="car2">
+ <param name="tf_prefix" value="car2" />
+ <node name="map_server" pkg="map_server" type="map_server" args="$(find pomdp_car_launch)/maps/testmap.yaml"/>
+   
+   
+    <param name="robot_description" textfile="$(find pomdp_car_description)/robots/pomdp_car.urdf.xacro" />
+    <param name="use_gui" value="$(arg gui)"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+    <!-- POMDP Car Controller Interface -->
+  <include file="$(find pomdp_car_control)/launch/pomdp_car_control.launch" >
+    <arg name="world_frame_" value="car2/map" />
+    <arg name="base_frame_" value="car2/base_link" />
+    <arg name="car_start_x_" value="33.0" />
+    <arg name="car_start_y_" value="5.0" />
+    <arg name="car_start_orientation_" value="20.441592654" />
+    <arg name="vel_topic_" value="cmd_vel" />
+
+  </include>
+
+<!-- Move Base -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+
+        <rosparam file="$(find pomdp_car_launch)/config/costmap.yaml" command="load"/>
+        <rosparam file="$(find pomdp_car_launch)/params/global_costmap.yaml" command="load"/>
+        <rosparam file="$(find pomdp_car_launch)/params/local_costmap.yaml" command="load"/>
+        <rosparam file="$(find pomdp_car_launch)/config/teb_local_planner.yaml" command="load" />
+            
+        <param name="base_global_planner" value="global_planner/GlobalPlanner"/> 
+        <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+    </node>
+
+</group>
+
+
+
+
+
+ 
+    
+
+</launch>

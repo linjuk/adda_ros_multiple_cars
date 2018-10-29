@@ -20,6 +20,7 @@ CarControl::CarControl(ros::NodeHandle& nh, ros::NodeHandle& private_nh) : nh(nh
     nh.getParam("car_start_y", odom_.pose.pose.position.y);
     nh.getParam("car_start_orientation", th_);
     nh.getParam("world_frame", world_frame_);
+    nh.getParam("teleop", teleop);
 
     std::cout << "world frame: " << world_frame_ << std::endl;
 
@@ -113,6 +114,16 @@ bool CarControl::pomdp_vel_callback( pomdp_car_msgs::ActionObservation:: Request
         current_velocity_ = 0;
     }
 
+
+// velocity for car2
+    if (req.action == 5)
+    {
+        current_velocity_ = 0.85;
+
+    }
+
+
+
     twist_.linear.x = current_velocity_;
 
     res.current_velocity = current_velocity_;
@@ -124,6 +135,8 @@ void CarControl::cmd_vel_callback(const geometry_msgs::Twist& msg)
 {
     // Only take orientation commands
     twist_.angular.z = msg.angular.z;
+    if (teleop)
+        twist_.linear.x = msg.linear.x;
     //twist_ = msg;
 }
 

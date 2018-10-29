@@ -2,15 +2,18 @@
 #define car_teleop_H
 
 #include <ros/ros.h>
+#include <geometry_msgs/Twist.h>
+#include <sensor_msgs/Joy.h>
+
 //include <actionlib/client/simple_action_client.h>
 
 namespace car_teleop{
 //typedef actionlib::SimpleActionClient<bla_msgs::GoToAction> BlaActionClient;
-class ClassName {
+class TeleopCar {
 
 public:
-	ClassName(ros::NodeHandle& nh, ros::NodeHandle& private_nh );
-    virtual ~ClassName();
+    TeleopCar(ros::NodeHandle& nh, ros::NodeHandle& private_nh );
+    virtual ~TeleopCar();
 
 protected:
 
@@ -25,7 +28,15 @@ protected:
 	ros::NodeHandle& p_nh;
 	
 private:
-	//ros::Publisher pub_;
+
+    void joyCallback(const sensor_msgs::Joy::ConstPtr& joy);
+    ros::NodeHandle nh_;
+    int linear_, angular_;
+    double l_scale_, a_scale_;
+    ros::Publisher vel_pub_;
+    ros::Subscriber joy_sub_;
+
+    //ros::Publisher pub_;
         //ros::Subscriber sub_;
 	//BlaActionClient* bla_action_client;
 

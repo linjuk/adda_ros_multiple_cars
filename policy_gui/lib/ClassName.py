@@ -4,12 +4,15 @@ import rospkg
 import math
 import yaml
 import roslib
+import csv
 
 import numpy as np
 import time
 import actionlib
 import random
 import math
+import tf
+import pickle
 
 
 from qt_gui.plugin import Plugin
@@ -28,7 +31,7 @@ from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from pomdp_car_msgs.srv import ActionObservation, ActionObservationRequest, ActionObservationResponse
 from geometry_msgs.msg import Pose
 
-import tf
+
 
 class ClassName(QObject):
     _update_task_delegates = Signal()
@@ -40,10 +43,15 @@ class ClassName(QObject):
 
         self.reward_total = 0
         self.execute_policy = False
+        self.record_button = False
+        self.save_button = False
         self.t = 0
 
         self.pos_car1 = []
         self.pos_car2 = []
+        self.trajectory_collector = []
+
+        self.listener = tf.TransformListener()
 
 
         self.car1_goal = [38., 3.]
@@ -63,7 +71,7 @@ class ClassName(QObject):
         self.goal_client2 = actionlib.SimpleActionClient('/car2/move_base', MoveBaseAction)
         self.goal_client2.wait_for_server()
         self.velocity_service2_ = rospy.ServiceProxy('/car2/car_control/pomdp_velocity', ActionObservation)
-        self.listener = tf.TransformListener()
+        # self.listener = tf.TransformListener()
 
 
         # setup services
@@ -91,6 +99,8 @@ class ClassName(QObject):
         #set connections
         self._widget.start_button.pressed.connect(self._on_start_button_pressed)
         self._widget.setup_button.pressed.connect(self._on_setup_button_pressed)
+        self._widget.record_button.pressed.connect(self._on_record_button_pressed)
+        self._widget.save_button.pressed.connect(self._on_save_button_pressed)
 
         #getRobotJoints_button
 
@@ -318,7 +328,7 @@ class ClassName(QObject):
         self.t = 0
 
         req = ActionObservationRequest()
-        req.action = 1
+        req.action = 5
         res = self.velocity_service2_.call(req)
 
         print (' Start Button pressed, publishing msg')
@@ -343,11 +353,103 @@ class ClassName(QObject):
             self.reward_total += iteration_reward
             # current_state = self.update_state()
             # if self.pos_car1[0] >= goal_x and self.pos_car1[1] >= goal_y:
-            dist_goal = math.sqrt((self.pos_car1[0] - self.car1_goal[0]) ** 2 + (self.pos_car1[1] - self.car1_goal[1]) ** 2)
+            dist_goal1 = math.sqrt((self.pos_car1[0] - self.car1_goal[0]) ** 2 + (self.pos_car1[1] - self.car1_goal[1]) ** 2)
+            dist_goal2 = math.sqrt((self.pos_car2[0] - self.car2_goal[0]) ** 2 + (self.pos_car2[1] - self.car2_goal[1]) ** 2)
 
-            print('dist_goal: ', dist_goal)
-            if dist_goal < 2:
+            print('dist_goal: ', dist_goal1)
+            if dist_goal1 < 2:
                 req = ActionObservationRequest()
                 req.action = 4
                 res = self.velocity_service1_.call(req)
                 self.execute_policy=False
+
+            print('dist_goa2: ', dist_goal2)
+            if dist_goal2 < 2:
+                req = ActionObservationRequest()
+                req.action = 4
+                res = self.velocity_service2_.call(req)
+                self.execute_policy = False
+
+    ########################
+    # Trajectory Recording
+    ########################
+
+    def _on_record_button_pressed(self):
+        # Should record trajectory
+        print ('Recording trajectory')
+        # position = []
+        self.record_button = True
+        self.save_button = False
+        self.trajectory_collector = []
+        self.timer_position = rospy.Timer(rospy.Duration(1.0/30.0), self.trajectory_recording)
+
+    def _on_save_button_pressed(self):
+        # Should record trajectory
+        self.record_button = False
+        self.save_button = True
+        print ('Saving data to the file...')
+
+        path = "/home/linjuk/adda_ros/src/code_lina/trajectories"
+        if not os.path.exists(path):
+            os.makedirs(path)
+
+        self.save_positions(path)
+        self.save_button = False
+        self.trajectory_collector = []
+
+        # self.seq = self.trajectory_collector
+        # self.file = open(os.path.join(path, "linaFile.txt"), "w")
+        # self.file.write(self.trajectory_collector)
+
+
+    def save_positions(self, path):
+        with open("{}/Trajectory_{}.csv".format(path, time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())), "w") as fp:
+            writer = csv.writer(fp, delimiter=",")
+            writer.writerow(["time", "x", "y", "z"])
+            for point in self.trajectory_collector:
+                writer.writerow([point[0], point[1][0], point[1][1], point[1][2]])
+                # [ 123123, [1, 2, 3] ]
+
+
+    def lookup_position(self):
+        try:
+            translation, rotation = self.listener.lookupTransform("/map", "/car2/base_link", rospy.Time(0))
+            self.pos_car2 = translation # [1, 2, 3]
+            self.trajectory_collector.append([time.time(), self.pos_car2])
+        except (tf.ExtrapolationException, tf.ConnectivityException, tf.LookupException):
+            pass
+
+    def trajectory_recording(self, event):
+        if self.record_button:
+            self.lookup_position()
+
+
+
+        # while not rospy.is_shutdown():
+        # # while not self.record_button == False:
+        #     time_now = rospy.Time(0)
+        #     (trans2, rot2) = self.listener.lookupTransform('/map', '/car2/base_link', time_now)
+        #     self.pos_car2 = trans2
+        #
+        #     print ("Current car2 possition: ", self.pos_car2)
+        #     # now = rospy.get_rostime()
+        #
+        #     self.trajectory_collector.append(self.pos_car2)
+        #     print('data: ', self.trajectory_collector)
+        #     time.sleep(1)
+
+
+
+
+
+        # time_now = rospy.Time(0)
+        # r = rospy.Rate(1)
+        ##       (trans1, rot1) = self.listener.lookupTransform('/map', '/car1/base_link', time_now)
+        # (trans2, rot2) = self.listener.lookupTransform('/map', '/car2/base_link', time_now)
+        ##       # self.pos_car1 = trans1
+        # self.pos_car2 = trans2
+        # self.trajectory_collector.append(self.pos_car2)
+        #
+        # print("car 2: ")
+        # print(self.pos_car2)
+        # print ('data: ', self.trajectory_collector)

@@ -61,6 +61,7 @@ private:
     float change_velocity_;
     float max_velocity_;
     float min_velocity_;
+    bool teleop;
 };
 
 

@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/linjuk/adda_ros/src/code_lina/car_teleop/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2214e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2214e.dir/build.make CMakeFiles/cmTC_2214e.dir/build
+make[1]: Entering directory '/home/linjuk/adda_ros/src/code_lina/car_teleop/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2214e.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2214e.dir/CheckSymbolExists.c.o   -c /home/linjuk/adda_ros/src/code_lina/car_teleop/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_2214e
+/snap/clion/44/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2214e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2214e.dir/CheckSymbolExists.c.o  -o cmTC_2214e 
+CMakeFiles/cmTC_2214e.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2214e.dir/build.make:86: recipe for target 'cmTC_2214e' failed
+make[1]: *** [cmTC_2214e] Error 1
+make[1]: Leaving directory '/home/linjuk/adda_ros/src/code_lina/car_teleop/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_2214e/fast' failed
+make: *** [cmTC_2214e/fast] Error 2
+
+File /home/linjuk/adda_ros/src/code_lina/car_teleop/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/linjuk/adda_ros/src/code_lina/car_teleop/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_23fce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_23fce.dir/build.make CMakeFiles/cmTC_23fce.dir/build
+make[1]: Entering directory '/home/linjuk/adda_ros/src/code_lina/car_teleop/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23fce.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_23fce.dir/CheckFunctionExists.c.o   -c /snap/clion/44/bin/cmake/linux/share/cmake-3.12/Modules/CheckFunctionExists.c
+Linking C executable cmTC_23fce
+/snap/clion/44/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23fce.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_23fce.dir/CheckFunctionExists.c.o  -o cmTC_23fce -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_23fce.dir/build.make:86: recipe for target 'cmTC_23fce' failed
+make[1]: *** [cmTC_23fce] Error 1
+make[1]: Leaving directory '/home/linjuk/adda_ros/src/code_lina/car_teleop/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_23fce/fast' failed
+make: *** [cmTC_23fce/fast] Error 2
+
+
