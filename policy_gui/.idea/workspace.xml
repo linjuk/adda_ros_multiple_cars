@@ -2,25 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83cdd8f7-4600-4612-913a-eb5e66d6fef6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../000_OLD/observations/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../000_OLD/observations/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../000_OLD/velocity_msg/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../000_OLD/velocity_msg/include/velocity_msg/velocity_msg.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../000_OLD/velocity_msg/launch/velocity_msg.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../000_OLD/velocity_msg/package.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../000_OLD/velocity_msg/src/velocity_msg.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../000_OLD/velocity_msg/src/velocity_msg_node.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../belief_obs/scripts/belief_obs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../belief_obs/scripts/belief_obs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../car_teleop/include/car_teleop/car_teleop.h" beforeDir="false" afterPath="$PROJECT_DIR$/../car_teleop/include/car_teleop/car_teleop.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../car_teleop/launch/car_teleop.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../car_teleop/launch/car_teleop.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../car_teleop/src/car_teleop.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../car_teleop/src/car_teleop.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../car_teleop/src/car_teleop_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../car_teleop/src/car_teleop_node.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/CATKIN_IGNORE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/another_test/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/another_test/include/another_test/another_test.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/another_test/launch/another_test.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/another_test/package.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/another_test/src/another_test.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/another_test/src/another_test_node.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/car_action_gui/.idea/car_action_gui.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/car_action_gui/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/car_action_gui/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/car_action_gui/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/car_action_gui/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/car_action_gui/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/car_action_gui/car_action_gui.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/car_action_gui/lib/ClassName.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/car_action_gui/lib/ClassName.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/car_action_gui/package.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/lina_test/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/lina_test/include/lina_test/lina_test.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/lina_test/launch/lina_test.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/lina_test/package.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/lina_test/src/lina_test.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/lina_test/src/lina_test_node.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/observations/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/observations/include/PKGNAME/PKGNAME.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/observations/include/observations/observations.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/observations/launch/observations.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/observations/msg/observation.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/observations/package.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/observations/src/observations.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/observations/src/observations_node.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/observations/src/publisher.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/observations/src/subscriber.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/simple_navigation_goals/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/simple_navigation_goals/include/simple_navigation_goals/simple_navigation_goals.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/simple_navigation_goals/launch/simple_navigation_goals.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/simple_navigation_goals/package.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/simple_navigation_goals/src/simple_navigation_goals.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/simple_navigation_goals/src/simple_navigation_goals_node.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/.idea/promp_robot_controller.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/config/CONFIG_STUFF_GOES_HERE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/launch/susi_test.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/package.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/scripts/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/scripts/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/scripts/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/scripts/.idea/scripts.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/scripts/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../000_OLD/susi_test/scripts/susi_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/policy_gui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/policy_gui.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ClassName.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ClassName.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ClassName.ui" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ClassName.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/include/pomdp_car_control/pomdp_car_control.h" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/include/pomdp_car_control/pomdp_car_control.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/launch/pomdp_car_control.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/launch/pomdp_car_control.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/src/pomdp_car_control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/src/pomdp_car_control.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/config/teb_local_planner.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/config/teb_local_planner.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,72 +85,57 @@
     <session id="14538162">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="1" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.10" value="4" />
+          <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.14" value="2" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.8" value="4" />
-          <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.open.time.9" value="6" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="94" />
-          <entry key="py" value="15679" />
+          <entry key="py" value="20448" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="15773" />
+          <entry key="Python" value="20542" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="18" />
-          <entry key="txt" value="2" />
-          <entry key="xml" value="4" />
+          <entry key="py" value="20" />
+          <entry key="txt" value="4" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="18" />
-          <entry key="XML" value="4" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="20" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/ClassName.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="410" column="38" selection-start-line="410" selection-start-column="28" selection-end-line="410" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1540487657442" expanded="true" signature="13756:13764" ph="..." />
-                <marker date="1540487657442" expanded="true" signature="14095:14104" ph="..." />
-                <marker date="1540487657442" expanded="true" signature="15090:15097" ph="..." />
-                <marker date="1540487657442" expanded="true" signature="15123:15484" ph="..." />
-                <marker date="1540487657442" expanded="true" signature="15522:15523" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../belief_obs/scripts/belief_obs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="177" selection-start-line="177" selection-end-line="177" />
+            <state relative-caret-position="410">
+              <caret line="184" selection-start-line="184" selection-end-line="187" selection-end-column="16" />
               <folding>
                 <element signature="e#25#37#0" expanded="true" />
                 <marker date="1539819296534" expanded="true" signature="893:899" ph="..." />
@@ -122,19 +146,36 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/ClassName.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="383" column="143" selection-start-line="383" selection-start-column="137" selection-end-line="383" selection-end-column="163" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <marker date="1543495131108" expanded="true" signature="13506:13515" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../plotting/scripts/plotting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <marker date="1543497201853" expanded="true" signature="222:14295" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>MoveBaseAction</find>
-      <find>pos_car1</find>
-      <find>goal</find>
-      <find>exp_pove</find>
-      <find>distan</find>
-      <find>miu</find>
-      <find>car</find>
-      <find>pressed</find>
-      <find>muetes</find>
       <find>record_tra</find>
       <find>conne</find>
       <find>start_button</find>
@@ -148,14 +189,23 @@
       <find>listener</find>
       <find>while</find>
       <find>record_button</find>
-      <find>trajectory_collector</find>
       <find>trajectory_recording</find>
       <find>timer</find>
       <find>save_button</find>
       <find>pickle</find>
-      <find>path</find>
       <find>_on_record_button_pressed</find>
       <find>60</find>
+      <find>delimiter</find>
+      <find>del</find>
+      <find>genfromtx</find>
+      <find>plt</find>
+      <find>file</find>
+      <find>calculate_time_step_average</find>
+      <find>sav</find>
+      <find>path</find>
+      <find>save</find>
+      <find>BeliefOb</find>
+      <find>ClassName</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,6 +221,8 @@
         <option value="$PROJECT_DIR$/../susi_test/scripts/susi_test.py" />
         <option value="$PROJECT_DIR$/../belief_obs/scripts/belief_obs.py" />
         <option value="$PROJECT_DIR$/lib/ClassName.py" />
+        <option value="$PROJECT_DIR$/../plotting/scripts/plotting.py" />
+        <option value="$PROJECT_DIR$/../plotting/package.xml" />
       </list>
     </option>
   </component>
@@ -180,16 +232,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="y" value="-28" />
-    <option name="width" value="1600" />
-    <option name="height" value="928" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="399" />
+    <option name="y" value="177" />
+    <option name="width" value="1400" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -202,22 +255,7 @@
             </path>
             <path>
               <item name="policy_gui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="policy_gui" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="policy_gui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="belief_obs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="policy_gui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="belief_obs" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="policy_gui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="belief_obs" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="plotting" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -271,7 +309,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../plotting" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -304,11 +343,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1535" height="904" extended-state="7" />
+    <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.1685695" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.23102753" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.0992268" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -321,12 +360,12 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.3298969" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.2113402" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" side_tool="true" visible="true" weight="0.018804567" />
+      <window_info anchor="right" id="Database" order="4" side_tool="true" visible="true" weight="0.022834117" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26393554" />
@@ -368,11 +407,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ObservationPublisher.py" />
     <entry file="file://$PROJECT_DIR$/lib/ObservationSubscriber.py" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1591" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../observations/src/publisher.py" />
     <entry file="file://$PROJECT_DIR$/../observations/src/subscriber.py" />
     <entry file="file://$PROJECT_DIR$/../susi_test/scripts/susi_test.py" />
@@ -390,10 +424,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ClassName_today.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/../belief_obs/scripts/belief_obs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="177" selection-start-line="177" selection-end-line="177" />
+        <state relative-caret-position="410">
+          <caret line="184" selection-start-line="184" selection-end-line="187" selection-end-column="16" />
           <folding>
             <element signature="e#25#37#0" expanded="true" />
             <marker date="1539819296534" expanded="true" signature="893:899" ph="..." />
@@ -405,15 +442,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ClassName.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="410" column="38" selection-start-line="410" selection-start-column="28" selection-end-line="410" selection-end-column="38" />
+        <state relative-caret-position="350">
+          <caret line="383" column="143" selection-start-line="383" selection-start-column="137" selection-end-line="383" selection-end-column="163" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1540487657442" expanded="true" signature="13756:13764" ph="..." />
-            <marker date="1540487657442" expanded="true" signature="14095:14104" ph="..." />
-            <marker date="1540487657442" expanded="true" signature="15090:15097" ph="..." />
-            <marker date="1540487657442" expanded="true" signature="15123:15484" ph="..." />
-            <marker date="1540487657442" expanded="true" signature="15522:15523" ph="..." />
+            <marker date="1543495131108" expanded="true" signature="13506:13515" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../plotting/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../plotting/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../plotting/scripts/plotting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1543497201853" expanded="true" signature="222:14295" ph="..." />
           </folding>
         </state>
       </provider>

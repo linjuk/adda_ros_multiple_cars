@@ -6,6 +6,11 @@ import yaml
 import roslib
 import csv
 
+import matplotlib.pyplot as plt
+plt.style.use("seaborn")
+from numpy import genfromtxt
+
+import pandas as pd
 import numpy as np
 import time
 import actionlib
@@ -32,7 +37,7 @@ from pomdp_car_msgs.srv import ActionObservation, ActionObservationRequest, Acti
 from geometry_msgs.msg import Pose
 
 
-
+# noinspection PyInterpreter
 class ClassName(QObject):
     _update_task_delegates = Signal()
     _update_endeffector_widget = Signal()
@@ -45,6 +50,7 @@ class ClassName(QObject):
         self.execute_policy = False
         self.record_button = False
         self.save_button = False
+        self.plot_button = False
         self.t = 0
 
         self.pos_car1 = []
@@ -101,6 +107,7 @@ class ClassName(QObject):
         self._widget.setup_button.pressed.connect(self._on_setup_button_pressed)
         self._widget.record_button.pressed.connect(self._on_record_button_pressed)
         self._widget.save_button.pressed.connect(self._on_save_button_pressed)
+        self._widget.plot_button.pressed.connect(self._on_plot_button_pressed)
 
         #getRobotJoints_button
 
@@ -146,6 +153,125 @@ class ClassName(QObject):
 
    # def _on_joint_states(self,message):
           #  arm_joints =['arm_joint_0', 'arm_joint_1', 'arm_joint_2', 'arm_joint_3', 'arm_joint_4']
+
+    ############################################################
+    ######################### BUTTONS ##########################
+    ############################################################
+
+    ###################################
+    # Setup button (Set Goal to Cars) #
+    ###################################
+
+    def _on_setup_button_pressed(self):
+        # should send two navigation goals
+        print(' Setup Button pressed, publishing msg')
+
+        # goal for first car
+        goal1 = MoveBaseGoal()
+        goal1.target_pose.header.frame_id = "/car1/map"
+        goal1.target_pose.header.stamp = rospy.Time.now()
+        goal1.target_pose.pose.position.x = self.car1_goal[0]
+        goal1.target_pose.pose.position.y = self.car1_goal[1]
+        goal1.target_pose.pose.orientation.z = 1.0
+        self.goal_client1.send_goal(goal1)
+
+        # goal for second car
+        goal2 = MoveBaseGoal()
+        goal2.target_pose.header.frame_id = "/car2/map"
+        goal2.target_pose.header.stamp = rospy.Time.now()
+        goal2.target_pose.pose.position.x = self.car2_goal[0]
+        goal2.target_pose.pose.position.y = self.car2_goal[1]
+        goal2.target_pose.pose.orientation.z = 1.0
+        self.goal_client2.send_goal(goal2)
+
+        time_now = rospy.Time(0)
+        (trans1, rot1) = self.listener.lookupTransform('/car1/base_link', '/map', time_now)
+        (trans2, rot2) = self.listener.lookupTransform('/car2/base_link', '/map', time_now)
+
+        self.pos_car1 = trans1
+        self.pos_car2 = trans2
+
+        print("car 1: ")
+        print(self.pos_car1)
+        print("car 2: ")
+        print(self.pos_car2)
+
+        #####################################################
+        # Compute policy button (action/observarion/reward) #
+        #####################################################
+
+    def _on_start_button_pressed(self):
+        # should call compute policy method and compute policy will give list of actions.
+        # Should execute one action after another (kinda loop). Before or together send
+        #  velocity to another car
+        # self.compute_policy()
+        self.execute_policy = True
+        self.reward_total = 0
+        self.t = 0
+
+        req = ActionObservationRequest()
+        req.action = 5
+        res = self.velocity_service2_.call(req)
+
+        #print(' Start Button pressed, publishing msg')
+
+    ########################
+    # Trajectory Recording #
+    ########################
+
+    def _on_record_button_pressed(self):
+        # Should record trajectory
+        print('Recording trajectory')
+        # position = []
+        self.record_button = True
+        self.save_button = False
+        self.trajectory_collector = []
+        self.timer_position = rospy.Timer(rospy.Duration(1.0 / 30.0), self.trajectory_recording)
+
+    #################################
+    # Trajectory Saving to the File #
+    #################################
+
+    def _on_save_button_pressed(self):
+        # Should record trajectory
+        self.record_button = False
+        self.save_button = True
+        print('Saving data to the file...')
+
+        path = "/home/linjuk/adda_ros/src/code_lina/trajectories"
+        if not os.path.exists(path):
+            os.makedirs(path)
+
+        self.save_positions(path)
+        self.save_button = False
+        self.trajectory_collector = []
+
+        # self.seq = self.trajectory_collector
+        # self.file = open(os.path.join(path, "linaFile.txt"), "w")
+        # self.file.write(self.trajectory_collector)
+
+    #######################
+    # Plotting Trajectory #
+    #######################
+
+    def _on_plot_button_pressed(self):
+        # Should plot trajectories
+
+        self.plot_button = True
+        print('Plotting Trajectories...')
+
+
+    ############################################################
+    ###################### END OF BUTTONS ######################
+    ############################################################
+
+
+
+
+
+
+
+
 
     ############################################################
     # helper function to generate random choice based on wieghts
@@ -276,62 +402,6 @@ class ClassName(QObject):
         # return observation + next state
 
 
-    ########################
-    # logic for setup button
-    ########################
-    def _on_setup_button_pressed(self):
-        # should send two navigation goals
-        print(' Setup Button pressed, publishing msg')
-
-        # goal for first car
-        goal1 = MoveBaseGoal()
-        goal1.target_pose.header.frame_id = "/car1/map"
-        goal1.target_pose.header.stamp = rospy.Time.now()
-        goal1.target_pose.pose.position.x = self.car1_goal[0]
-        goal1.target_pose.pose.position.y = self.car1_goal[1]
-        goal1.target_pose.pose.orientation.z = 1.0
-        self.goal_client1.send_goal(goal1)
-
-        # goal for second car
-        goal2 = MoveBaseGoal()
-        goal2.target_pose.header.frame_id = "/car2/map"
-        goal2.target_pose.header.stamp = rospy.Time.now()
-        goal2.target_pose.pose.position.x = self.car2_goal[0]
-        goal2.target_pose.pose.position.y = self.car2_goal[1]
-        goal2.target_pose.pose.orientation.z = 1.0
-        self.goal_client2.send_goal(goal2)
-
-
-
-        time_now =rospy.Time(0)
-        (trans1, rot1) = self.listener.lookupTransform('/car1/base_link', '/map',time_now )
-        (trans2, rot2) = self.listener.lookupTransform('/car2/base_link', '/map', time_now)
-
-        self.pos_car1 = trans1
-        self.pos_car2 = trans2
-
-        print( "car 1: " )
-        print (self.pos_car1)
-        print("car 2: ")
-        print(self.pos_car2)
-
-    #################################
-    # logic for compute policy button
-    #################################
-    def _on_start_button_pressed(self):
-        # should call compute policy method and compute policy will give list of actions.
-        # Should execute one action after another (kinda loop). Before or together send
-        #  velocity to another car
-        #self.compute_policy()
-        self.execute_policy = True
-        self.reward_total = 0
-        self.t = 0
-
-        req = ActionObservationRequest()
-        req.action = 5
-        res = self.velocity_service2_.call(req)
-
-        print (' Start Button pressed, publishing msg')
 
 
     #############################################
@@ -370,36 +440,6 @@ class ClassName(QObject):
                 res = self.velocity_service2_.call(req)
                 self.execute_policy = False
 
-    ########################
-    # Trajectory Recording
-    ########################
-
-    def _on_record_button_pressed(self):
-        # Should record trajectory
-        print ('Recording trajectory')
-        # position = []
-        self.record_button = True
-        self.save_button = False
-        self.trajectory_collector = []
-        self.timer_position = rospy.Timer(rospy.Duration(1.0/30.0), self.trajectory_recording)
-
-    def _on_save_button_pressed(self):
-        # Should record trajectory
-        self.record_button = False
-        self.save_button = True
-        print ('Saving data to the file...')
-
-        path = "/home/linjuk/adda_ros/src/code_lina/trajectories"
-        if not os.path.exists(path):
-            os.makedirs(path)
-
-        self.save_positions(path)
-        self.save_button = False
-        self.trajectory_collector = []
-
-        # self.seq = self.trajectory_collector
-        # self.file = open(os.path.join(path, "linaFile.txt"), "w")
-        # self.file.write(self.trajectory_collector)
 
 
     def save_positions(self, path):

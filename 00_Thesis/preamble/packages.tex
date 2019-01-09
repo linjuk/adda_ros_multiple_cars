@@ -1,0 +1,56 @@
+%% Responsible for every package import with its respective desired options
+%%
+%% (c) Thomas Hesse
+%%
+%% folder: ./preamble/
+
+%%--------------------
+% DEFAULT PACKAGES
+\usepackage[
+  english,%                             % primary language
+  ngerman%                              % secondary language
+]{babel}                                % language options (primary: english, secondary: german)
+\usepackage[utf8]{inputenc}             % utf8 input encoding
+\usepackage[%
+  english,%
+  hidelinks%                            % make active links
+]{hyperref}                             % link toc items, etc.
+\usepackage{float}                      % fix figures (float environment)
+\usepackage{tikz}                       % tikz graphics
+\usepackage{amsmath}                    % mathematical formulars
+\usepackage{amsthm}                     % definition of custom theorems and definitions
+\usepackage[%
+  xindy,%                               % use xindy for makeglossaries
+  section = section,%                   % use sections for all glossary lists 
+  nonumberlist,%                        % no page references in lists
+  sanitize={symbol=false},%             % do not dissect symbols
+  shortcuts,%                           % make use of shorthand notation
+  acronym,%                             % acronym glossary
+  %nopostdot,%                           % remove the point at the end
+  %nogroupskip,%                         % don't skip any groups
+  nomain,%                              % do not generate main glossary
+  nowarn%                               % suppress warnings
+]{glossaries}                           % glossary (abbreviations and symbols)
+\usepackage{tabularx}                   % table environment used for IAS glossary style
+\usepackage{longtable}                  % table environment used for IAS glossary style
+\usepackage{enumitem}                   % less space between vertical items in enumerate
+\usepackage{listings}                   % listings, e.g. for matlab code in the appendix
+\usepackage{xcolor}                     % coloring of listings
+\usepackage{caption}                    % enumerated captions in figures, etc.
+\usepackage{subcaption}                 % subcaptions for subfigures
+\usepackage{epstopdf}                   % include eps graphics
+% \usepackage{psfrag}                     % modify eps graphics (does not work with matlab eps files)
+\usepackage{wrapfig}                    % wraps text around figures
+\usepackage[%
+  vlined,%                              % design of code blocks
+  boxed%                                % layout of the algorithm
+]{algorithm2e}                          % algorithm environment
+
+%%--------------------
+% DEBUG PACKAGES
+\usepackage{comment}
+\usepackage{todonotes}
+
+%%--------------------
+% USE CUSTOM IAS STYLE
+\usepackage{IAS}

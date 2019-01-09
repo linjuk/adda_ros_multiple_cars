@@ -1,0 +1,123 @@
+%% Main TeX file to compile
+%%
+%% (c) Thomas Hesse
+%%
+%% folder: ./
+
+\documentclass[%
+  type=msc,%
+  colorback,%
+  bibliography=totoc,%
+  bigchapter,%
+  twoside,%
+  openleft,%
+  accentcolor=tud1c%
+]{tudthesis}
+
+%% publish this thesis at tuprints
+% publish at tu-prints – uncomment if not wanted
+%\tuprints{12345}{id/eprint/1234}    
+%% new tuprints commands, they work only with the adaption of the tu-package
+%% if they not work, use the command above for standard
+%\tuprints{38321}{id/eprint/3832}{1}{de} % German, BY-NC-ND
+%\tuprints{38321}{id/eprint/3832}{2}{de} % German BY
+%\tuprints{38321}{id/eprint/3832}{1}{en} % English BY-NC-ND Germany 2.0
+%\tuprints{38321}{id/eprint/3832}{2}{en} % English BY International 4.0
+\tuprints{38321}{id/eprint/3832}{3}{en} % English BY-NC-ND International 4.0
+
+
+%%{{{ VARIABLES – fill in your informations
+
+  %% add your chapters here
+  \newcommand{\content}{%
+    \input{content/0-introduction}%
+    \input{content/1-motivation}%
+    \input{content/2-foundations}%
+    \input{content/3-experiments}%
+    \input{content/4-results}%
+    \input{content/5-discussion}%
+    \input{content/6-outlook}%
+  }
+
+  %% student specific information
+  \newcommand{\StudentName}{Lina Jukonyte}
+  \newcommand{\StudentBirthplace}{Utena, Litauen}
+  \newcommand{\StudentDepartment}{Department of Computer~Science}
+
+  %% thesis specific information
+  \newcommand{\TitleEnglish}{English~Title}
+  \newcommand{\TitleGerman}{Deutscher~Titel}
+  \newcommand{\FirstReferee}{Prof. Jan Peters, Ph.D.}
+  \newcommand{\SecondReferee}{Dr. Joni Pajarinen}
+  \newcommand{\ThirdReferee}{Dorothea Koert, M.Sc.} % optional (leave empty if not needed)
+
+
+  % Your dedication
+  % \dedication{For Thomas Hesse and Kevin Luck}
+  
+%%}}}
+
+%%{{{ PACKAGE DEFINITIONS
+  \input{preamble/packages}
+%%}}}
+
+%%{{{ GLOSSARY ENTRIES
+  \input{preamble/glossary}
+%%}}}
+
+%%{{{ LaTeX TIKZ GRAPHS
+  \input{preamble/tikzGraphs}
+%%}}}
+
+%%{{{ TUDTHESIS OPTIONS – nothing to do here
+
+  \setinstitutionlogo{img/iasLogo}
+  \thesistitle{\TitleEnglish}{\TitleGerman}
+  \author{\StudentName}
+  \referee{\FirstReferee}{\SecondReferee}[\ThirdReferee]
+  \department{\StudentDepartment}
+  \group{Intelligent~Autonomous~Systems}
+  \birthplace{\StudentBirthplace}
+
+%%}}}
+
+\begin{document}
+%
+  \pagenumbering{gobble}                    % suppress page numbering
+  \makethesistitle                          % generate thesis title
+  \affidavit{\StudentName}                  % generate declaration to sign (at this position)
+%
+  \pagenumbering{roman}                     % start counting pages from now on with roman letters
+  \selectlanguage{english}                  % use the english language from now on
+%
+  \input{meta/abstract}                     % insert abstract (at this position)
+%
+  \input{meta/acknowledgements}             % insert acknowledgements (at this position)
+%
+  \tableofcontents
+%
+  \chapter*{Figures~and~Tables}
+  \begingroup                               % LOF and LOT on the same page
+    \let\clearpage\relax
+    \listoffigures\listoftables
+  \endgroup
+%
+  \chapter*{Abbreviations,~Symbols and Operators}
+  
+  \glsaddall
+  \printglossary[type=acronym,title=List of Abbreviations,style=iasThesisGeneral]
+  \printglossary[type=symbol,style=iasThesisGeneral]
+  \printglossary[type=operator,style=iasThesisOperators]
+%
+  \pagenumbering{arabic}                    % start normal page numbering
+%
+  \content                                  % insert the main content
+%
+  \cleardoublepage
+  \bibliography{literature/lit}             % references (for options see usepackage section)
+  \nocite{*}                                % display everything, even if not cited (should be commented in the end!)
+%
+  \cleardoublepage
+  \appendix\input{meta/appendix}            % insert appendix here if needed
+%
+\end{document}

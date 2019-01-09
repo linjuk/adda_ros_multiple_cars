@@ -1,0 +1,100 @@
+%% Style definitions, newcommands, renewcommands, etc.
+%%
+%% (c) Thomas Hesse
+%%
+%% folder: ./
+
+\makeatletter
+  % make LOF a section
+  \renewcommand\listoffigures{%
+    \section*{\listfigurename}%
+    \@mkboth{\MakeUppercase\listfigurename}{\MakeUppercase\listfigurename}%
+    \@starttoc{lof}%
+  }
+  % make LOT a section
+  \renewcommand\listoftables{%
+    \section*{\listtablename}%
+    \@mkboth{\MakeUppercase\listtablename}{\MakeUppercase\listtablename}%
+    \@starttoc{lot}%
+  }
+\makeatother%-
+
+
+%%{{{ STYLE DEFINITIONS
+
+  %% shortcuts
+  \newcommand{\mc}  [1]{\mathcal{#1}}     % shortcut for caligraphic math font
+  \newcommand{\ul}  [1]{\underline{#1}}   % shortcut for underline
+  \newcommand{\bs}     {\textbackslash}   % shortcut for printing a backslash
+  \renewcommand{\bf}[1]{\textbf{#1}}      % shortcut for bold font
+  \renewcommand{\it}[1]{\textit{#1}}      % shortcut for italic font
+
+  %% notation
+  \newcommand{\cvec}[1]{\boldsymbol{\mathrm{#1}}}
+  \newcommand{\cmat}[1]{\boldsymbol{\mathrm{#1}}}
+
+  %% tabular options
+  \renewcommand{\arraystretch}{1.5}       % global padding for tabulars
+  
+  %% paragraph options
+  \parindent0pt                           % do not indent paragraphs
+
+  %% TOC options
+  % 0 → chapter, 1 → section, 2 → subsection, 3 → subsubsection
+  \setcounter{tocdepth}{1}                % hide subsections and lower from TOC
+  
+  %% bibtex options
+  \renewcommand{\bibname}{References}     % rename 'Bibliography' to 'References'
+  \bibliographystyle{ieeetr}              % IEEE standard style; http://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_bibliographystyle
+
+  %% tikz style defintions
+  %TODO add your own if needed
+  
+  %% custom colors
+  \definecolor{matlabgreen}{rgb}{.035,.6,.251} 
+  \definecolor{matlabviolett}{rgb}{.643,.259,.804}
+
+  %% matlab listing style
+  \lstdefinestyle{mlab}{%
+    language=Matlab,%
+    numbers=left,%
+    numberstyle=\tiny,%
+    basicstyle={\ttfamily},%
+    keywordstyle={\color{blue}},%
+    commentstyle=\color{matlabgreen},%
+    stringstyle=\color{matlabviolett},%
+    breaklines=true%
+  }%
+
+  %
+  % General notice: You should _not_ include matlab code in your thesis. That is no good style. Nevertheless, it is no bad idea to have the listings here.
+  %
+
+%%}}}
+
+
+%% GLOSSARY STYLES
+%%{{{
+
+  % sources:  http://texdoc.net/texmf-dist/doc/latex/glossaries/glossaries-user.html#x1-4700015
+  \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+  \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+  \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+  \newglossarystyle{iasThesisGeneral}{
+    \glossarystyle{super3colheader}%
+    \renewenvironment{theglossary}%
+      {\begin{longtable}{L{0.15\textwidth}L{0.8\textwidth}R{0\textwidth}}}%
+      {\end{longtable}}%
+    \renewcommand*{\glossaryheader}{\bf{\entryname} & \bf{\descriptionname} & \\} % table header
+    \renewcommand*{\glossaryentryfield}[5]{\glsentryitem{##1}\glstarget{##1}{##2} & ##3 \\} % table body
+  }
+  \newglossarystyle{iasThesisOperators}{
+    \glossarystyle{super3colheader}%
+    \renewenvironment{theglossary}%
+      {\begin{longtable}{L{0.15\textwidth}L{0.55\textwidth}L{0.25\textwidth}}}%
+      {\end{longtable}}%
+    \renewcommand*{\glossaryheader}{\bf{\entryname} & \bf{\descriptionname} & \bf{Operator} \\} % table header
+    \renewcommand*{\glossaryentryfield}[5]{\glsentryitem{##1}\glstarget{##1}{##2} & ##3 & ##4 \\} % table body
+  }
+
+%%}}}
