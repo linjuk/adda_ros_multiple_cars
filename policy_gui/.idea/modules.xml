@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/policy_gui.iml" filepath="$PROJECT_DIR$/.idea/policy_gui.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../belief_obs/.idea/promp_robot_controller.iml" filepath="$PROJECT_DIR$/../belief_obs/.idea/promp_robot_controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../movement_prediction/.idea/movement_prediction.iml" filepath="$PROJECT_DIR$/../movement_prediction/.idea/movement_prediction.iml" />
     </modules>
   </component>
 </project>

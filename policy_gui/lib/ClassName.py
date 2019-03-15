@@ -443,7 +443,7 @@ class ClassName(QObject):
 
 
     def save_positions(self, path):
-        with open("{}/Trajectory_{}.csv".format(path, time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())), "w") as fp:
+        with open("{}/right_{}.csv".format(path, time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())), "w") as fp:
             writer = csv.writer(fp, delimiter=",")
             writer.writerow(["time", "x", "y", "z"])
             for point in self.trajectory_collector:

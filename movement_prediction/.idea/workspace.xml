@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6cf623fc-05f0-48b1-92ac-7f0584ad0d78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/0-introduction.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/1-motivation.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/2-foundations.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/6-outlook.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.acn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.bbl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.blg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.lof" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.lot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.opo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.synctex.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.syo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../plotting/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../plotting/.idea/plotting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../plotting/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../plotting/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../policy_gui/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../policy_gui/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/ClassName.py" beforeDir="false" afterPath="$PROJECT_DIR$/../policy_gui/lib/ClassName.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/ClassName_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/ClassName_backup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/ClassName_backup20180921.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/trajectory_graph.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/trajectory_graph2_backup_1218.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/trajectory_graph_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../policy_gui/lib/trajectory_graph_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/trajectory_graph_2backup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/config/sim_car2.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/config/sim_car2.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/launch/car2.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/launch/car2.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap_1st.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap_2nd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap_3rd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap_4th.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/left_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/left_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../trajectories/left_10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/left_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/left_3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/left_4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/left_5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/left_6.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/left_7.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/left_8.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/left_9.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/right_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/right_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../trajectories/right_10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/right_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/right_3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/right_4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/right_5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/right_6.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/right_7.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/right_8.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/right_9.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/straight_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/straight_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../trajectories/straight_10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/straight_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/straight_3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/straight_4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/straight_5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/straight_6.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/straight_7.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/straight_8.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories/straight_9.csv" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/movement_prediction$Right.coverage" NAME="Right Coverage Results" MODIFIED="1552640060076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$Straight.coverage" NAME="Straight Coverage Results" MODIFIED="1552599250506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$RunConfigurationWithRandomTrajectory.coverage" NAME="Random Coverage Results" MODIFIED="1552599233899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$Left.coverage" NAME="Left Coverage Results" MODIFIED="1552599262879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1785179788">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="1" />
+          <entry key="py" value="2" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gitignore" value="9" />
+          <entry key="py" value="1525" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Python" value="1525" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="473" column="121" lean-forward="true" selection-start-line="473" selection-start-column="121" selection-end-line="473" selection-end-column="121" />
+              <folding>
+                <element signature="e#20#31#0" expanded="true" />
+                <element signature="e#442#485#0" />
+                <element signature="e#515#2385#0" />
+                <element signature="e#2410#2565#0" />
+                <element signature="e#2609#2987#0" />
+                <element signature="e#3275#3808#0" />
+                <element signature="e#3660#4575#0" />
+                <element signature="e#4799#4878#0" />
+                <element signature="e#5695#5903#0" />
+                <element signature="e#5983#7390#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>0.3</find>
+      <find>denominator</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/main.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2088" />
+    <option name="y" value="92" />
+    <option name="width" value="1533" />
+    <option name="height" value="896" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="movement_prediction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movement_prediction" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Right">
+    <list>
+      <item itemvalue="Python.Random" />
+      <item itemvalue="Python.Straight" />
+      <item itemvalue="Python.Left" />
+      <item itemvalue="Python.Right" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cf623fc-05f0-48b1-92ac-7f0584ad0d78" name="Default Changelist" comment="" />
+      <created>1552597928847</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552597928847</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1985" y="-4" width="1535" height="904" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983211" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32860824" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.54768044" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39948454" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" auto_hide="true" x="587" y="185" width="491" height="520" id="SciView" show_stripe_button="false" type="FLOATING" weight="0.32975152" />
+      <window_info anchor="right" id="Database" weight="0.32975152" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>489</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="289" selection-start-line="289" selection-end-line="289" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="473" column="121" lean-forward="true" selection-start-line="473" selection-start-column="121" selection-end-line="473" selection-end-column="121" />
+          <folding>
+            <element signature="e#20#31#0" expanded="true" />
+            <element signature="e#442#485#0" />
+            <element signature="e#515#2385#0" />
+            <element signature="e#2410#2565#0" />
+            <element signature="e#2609#2987#0" />
+            <element signature="e#3275#3808#0" />
+            <element signature="e#3660#4575#0" />
+            <element signature="e#4799#4878#0" />
+            <element signature="e#5695#5903#0" />
+            <element signature="e#5983#7390#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

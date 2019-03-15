@@ -17,6 +17,8 @@ Panels:
         - /Pose4
         - /Path3
         - /Path4
+        - /Marker1
+        - /Marker1/Status1
       Splitter Ratio: 0.5
     Tree Height: 551
   - Class: rviz/Selection
@@ -444,6 +446,14 @@ Visualization Manager:
       Topic: /car2/move_base/TebLocalPlannerROS/global_plan
       Unreliable: false
       Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /visualization_marker
+      Name: Marker
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -469,7 +479,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 18.2080917
+      Distance: 49.8601532
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -505,5 +515,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1200
-  X: 231
-  Y: 26
+  X: 2273
+  Y: 102
