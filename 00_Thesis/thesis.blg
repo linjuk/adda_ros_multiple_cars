@@ -1,0 +1,129 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: ieeetr.bst
+Database file #1: literature/lit.bib
+Warning--entry type for "americanDriving" isn't style-file defined
+--line 1 of file literature/lit.bib
+Warning--entry type for "WHOstatistics" isn't style-file defined
+--line 8 of file literature/lit.bib
+Warning--entry type for "aDDa" isn't style-file defined
+--line 30 of file literature/lit.bib
+Warning--entry type for "def" isn't style-file defined
+--line 125 of file literature/lit.bib
+Warning--entry type for "pic2" isn't style-file defined
+--line 401 of file literature/lit.bib
+Warning--empty journal in pic
+Warning--empty journal in SuperComputer
+Warning--empty journal in ARKInvest
+Warning--empty journal in BN1
+Warning--empty journal in BN2
+Warning--empty journal in Markov1
+Warning--empty journal in Markov2
+Warning--empty journal in Markov3
+Warning--empty journal in Markov4
+Warning--empty journal in Mind
+Warning--empty journal in Fuzz
+Warning--empty journal in VectMash
+Warning--empty journal in BOOK
+Warning--empty journal in belief
+Warning--empty journal in ClassificationII
+Warning--empty journal in dynamic
+Warning--empty journal in kinematicI
+Too many commas in name 1 of "Aris Polychronopoulos, Manolis Tsogas, Angelos J. Amditis, Luisa Andreone" for entry kinematicII
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in kinematicII
+Warning--empty journal in GaussianNoiseI
+Warning--empty journal in GaussianNoiseII
+Warning--empty journal in GaussianNoiseIII
+Warning--empty journal in SKFI
+Name 1 in "Adrian Broadhurst, Simon Baker, and Takeo Kanade" has a comma at the end for entry MonteCarlo
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in MonteCarlo
+Warning--empty journal in MonteCarloI
+Warning--empty journal in beh1
+Warning--empty journal in beh2
+Too many commas in name 1 of "Georges S. Aoude, Vishnu R. Desaraju, Lauren H. Stephens, Jonathan P. How" for entry beh3
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in beh3
+Warning--empty journal in DataDrivenIV
+Too many commas in name 1 of "J. Schlechtriemen, F. Wirthmueller, A. Wedel, G. Breuel and K.-D. Kuhnert" for entry DataDrivenV
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in DataDrivenV
+Warning--empty year in DataDrivenV
+Name 1 in "J. Schlechtriemen, A. Wedel, G. Breuel, and K.-D. Kuhnert" has a comma at the end for entry DataDrivenVI
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in DataDrivenVI
+Too many commas in name 1 of "Adam Houenou, Philippe Bonnifait, Véronique Cherfaoui, Yao Wen" for entry mab1
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in mab1
+Too many commas in name 1 of "Georges S. Aoude, Brandon D. Luders, Kenneth K. H. Lee, Daniel S. Levine, Jonathan P. How" for entry mab2
+while executing---line 969 of file ieeetr.bst
+Too many commas in name 1 of "Georges S. Aoude, Brandon D. Luders, Kenneth K. H. Lee, Daniel S. Levine, Jonathan P. How" for entry mab2
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in mab2
+Warning--empty journal in mab3
+Warning--empty journal in mab4
+Warning--empty journal in mab5
+Warning--empty journal in mab6
+Warning--empty journal in mab7
+Name 1 in "E. Kfer, C. Hermes, C. Whler, H. Ritter, and F. Kummert" has a comma at the end for entry InterAwareI
+while executing---line 969 of file ieeetr.bst
+Too many commas in name 1 of "E. Kfer, C. Hermes, C. Whler, H. Ritter, and F. Kummert" for entry InterAwareI
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in InterAwareI
+Too many commas in name 1 of "A. Lawitzky, D. Althoff, C. F. Passenberg, G. Tanzmeister, D. Wollherr and M. Buss" for entry InterAwareII
+while executing---line 969 of file ieeetr.bst
+Too many commas in name 1 of "A. Lawitzky, D. Althoff, C. F. Passenberg, G. Tanzmeister, D. Wollherr and M. Buss" for entry InterAwareII
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in InterAwareII
+Warning--empty journal in DataDrivenI
+Warning--empty journal in DataDrivenII
+Warning--empty journal in DataDrivenIII
+Warning--empty journal in DataDrivenVII
+Too many commas in name 1 of "Georges S. Aoude, Joshua Joseph, Nicholas Roy, Jonathan P. How" for entry RRT
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in RRT
+Warning--empty journal in TimeRep
+You've used 51 entries,
+            1876 wiz_defined-function locations,
+            745 strings with 11581 characters,
+and the built_in function-call counts, 14593 in all, are:
+= -- 1631
+> -- 260
+< -- 0
++ -- 116
+- -- 65
+* -- 462
+:= -- 1583
+add.period$ -- 46
+call.type$ -- 51
+change.case$ -- 51
+chr.to.int$ -- 0
+cite$ -- 97
+duplicate$ -- 1140
+empty$ -- 1284
+format.name$ -- 65
+if$ -- 3932
+int.to.chr$ -- 0
+int.to.str$ -- 51
+missing$ -- 46
+newline$ -- 156
+num.names$ -- 51
+pop$ -- 298
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1160
+stack$ -- 0
+substring$ -- 758
+swap$ -- 707
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 46
+while$ -- 91
+width$ -- 53
+write$ -- 392
+(There were 13 error messages)

@@ -2,82 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf623fc-05f0-48b1-92ac-7f0584ad0d78" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/0-introduction.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/1-motivation.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/2-foundations.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/6-outlook.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.acn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.aux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.bbl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.blg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.lof" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.lot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.opo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.synctex.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.syo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plotting/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plotting/.idea/plotting.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plotting/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plotting/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../policy_gui/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../policy_gui/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../policy_gui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../policy_gui/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/ClassName.py" beforeDir="false" afterPath="$PROJECT_DIR$/../policy_gui/lib/ClassName.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/ClassName_1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/ClassName_backup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/ClassName_backup20180921.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/trajectory_graph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/trajectory_graph2_backup_1218.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/trajectory_graph_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../policy_gui/lib/trajectory_graph_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/trajectory_graph_2backup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/config/sim_car2.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/config/sim_car2.rviz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/launch/car2.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/launch/car2.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap_1st.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap_2nd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap_3rd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap_4th.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/left_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/left_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../trajectories/left_10.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/left_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/left_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/left_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/left_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/left_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/left_7.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/left_8.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/left_9.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/right_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/right_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../trajectories/right_10.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/right_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/right_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/right_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/right_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/right_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/right_7.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/right_8.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/right_9.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/straight_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/straight_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../trajectories/straight_10.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/straight_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/straight_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/straight_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/straight_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/straight_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/straight_7.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/straight_8.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/straight_9.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,10 +13,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/movement_prediction$Right.coverage" NAME="Right Coverage Results" MODIFIED="1552640060076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/movement_prediction$Straight.coverage" NAME="Straight Coverage Results" MODIFIED="1552599250506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$Right.coverage" NAME="Right Coverage Results" MODIFIED="1554376444783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$scaling_Joni_s_method.coverage" NAME="scaling_Joni's method Coverage Results" MODIFIED="1554324780163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$scaling2.coverage" NAME="scaling2 Coverage Results" MODIFIED="1554382488651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$Right__1_.coverage" NAME="Right (1) Coverage Results" MODIFIED="1552655739176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$Random.coverage" NAME="Random Coverage Results" MODIFIED="1553639480269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$scaling.coverage" NAME="scaling Coverage Results" MODIFIED="1554372379594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$Straight.coverage" NAME="Straight Coverage Results" MODIFIED="1552647021334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$RunConfigurationWithRandomTrajectory.coverage" NAME="Random Coverage Results" MODIFIED="1552599233899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$Left.coverage" NAME="Left Coverage Results" MODIFIED="1552599262879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$Testing.coverage" NAME="Testing Coverage Results" MODIFIED="1554329222184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -109,56 +42,108 @@
     <session id="1785179788">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="py" value="2" />
+          <entry key="pstat" value="1" />
+          <entry key="py" value="10" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="2" />
+          <entry key="Profiler Session" value="1" />
+          <entry key="Python" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="25" />
           <entry key="gitignore" value="9" />
-          <entry key="py" value="1525" />
+          <entry key="py" value="18204" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="1525" />
+          <entry key="PLAIN_TEXT" value="34" />
+          <entry key="Python" value="18204" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scaling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="113" column="31" lean-forward="true" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#155#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="108" column="40" lean-forward="true" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1554376534408" expanded="true" signature="4226:4288" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="473" column="121" lean-forward="true" selection-start-line="473" selection-start-column="121" selection-end-line="473" selection-end-column="121" />
+            <state relative-caret-position="30">
+              <caret line="2" column="65" lean-forward="true" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
               <folding>
-                <element signature="e#20#31#0" expanded="true" />
-                <element signature="e#442#485#0" />
-                <element signature="e#515#2385#0" />
-                <element signature="e#2410#2565#0" />
-                <element signature="e#2609#2987#0" />
-                <element signature="e#3275#3808#0" />
-                <element signature="e#3660#4575#0" />
-                <element signature="e#4799#4878#0" />
-                <element signature="e#5695#5903#0" />
-                <element signature="e#5983#7390#0" />
+                <element signature="e#19#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scaling2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-851">
+              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#155#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,10 +151,45 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>0.3</find>
       <find>denominator</find>
+      <find>numb</find>
+      <find>NUmber_points</find>
+      <find>:</find>
+      <find>if</find>
+      <find>trajectory_beliefs</find>
+      <find>pow</find>
+      <find>0.1</find>
+      <find>0.09</find>
+      <find>probability_with_power(</find>
+      <find>mean_of_all_classes</find>
+      <find>mean</find>
+      <find>number of steps</find>
+      <find>format</find>
+      <find>cor</find>
+      <find>probabi</find>
+      <find>covariance</find>
+      <find>proba</find>
+      <find>distance</find>
+      <find>pdf</find>
+      <find>float</find>
+      <find>all_pr</find>
+      <find>b100</find>
+      <find>power</find>
+      <find>prob</find>
+      <find>probability</find>
+      <find>0.09488081</find>
+      <find>0.02649068</find>
+      <find>app</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,7 +199,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/scaling_Joni's method.py" />
+        <option value="$PROJECT_DIR$/scaling.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/testing.py" />
+        <option value="$PROJECT_DIR$/functions.py" />
+        <option value="$PROJECT_DIR$/scaling2.py" />
       </list>
     </option>
   </component>
@@ -190,10 +215,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2088" />
-    <option name="y" value="92" />
-    <option name="width" value="1533" />
-    <option name="height" value="896" />
+    <option name="x" value="384" />
+    <option name="y" value="-4" />
+    <option name="width" value="880" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -203,7 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,18 +235,29 @@
               <item name="movement_prediction" type="b2602c69:ProjectViewProjectNode" />
               <item name="movement_prediction" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="movement_prediction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scaling.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/scaling.py" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -236,13 +271,111 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Right">
+  <component name="RunManager" selected="Python.scaling2">
+    <configuration name="Testing" type="PythonConfigurationType" factoryName="Python">
+      <module name="movement_prediction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scaling" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="movement_prediction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scaling.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scaling2" type="PythonConfigurationType" factoryName="Python">
+      <module name="movement_prediction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scaling2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scaling_Joni's method" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="movement_prediction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scaling_Joni's method.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Random" />
       <item itemvalue="Python.Straight" />
       <item itemvalue="Python.Left" />
       <item itemvalue="Python.Right" />
+      <item itemvalue="Python.Testing" />
+      <item itemvalue="Python.scaling2" />
+      <item itemvalue="Python.scaling" />
+      <item itemvalue="Python.scaling_Joni's method" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scaling" />
+        <item itemvalue="Python.scaling_Joni's method" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -258,47 +391,62 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1985" y="-4" width="1535" height="904" extended-state="6" />
+    <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983211" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15849563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32860824" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.54768044" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39948454" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3079897" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36469072" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39561856" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" auto_hide="true" x="587" y="185" width="491" height="520" id="SciView" show_stripe_button="false" type="FLOATING" weight="0.32975152" />
-      <window_info anchor="right" id="Database" weight="0.32975152" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3298969" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32860824" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32860824" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" auto_hide="true" x="587" y="185" width="491" height="520" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.32975152" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32975152" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15849563" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3079897" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36469072" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39561856" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3298969" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32860824" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32860824" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" auto_hide="true" x="587" y="185" width="491" height="520" id="SciView" order="4" show_stripe_button="false" type="FLOATING" weight="0.32975152" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32975152" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>489</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -315,28 +463,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements2.txt">
+    <entry file="file://$PROJECT_DIR$/requirements2.txt" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="146">
+          <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scaling_Joni's method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="122" column="58" selection-start-line="122" selection-start-column="58" selection-end-line="122" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scaling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="113" column="31" lean-forward="true" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#155#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="473" column="121" lean-forward="true" selection-start-line="473" selection-start-column="121" selection-end-line="473" selection-end-column="121" />
+        <state relative-caret-position="30">
+          <caret line="2" column="65" lean-forward="true" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
           <folding>
-            <element signature="e#20#31#0" expanded="true" />
-            <element signature="e#442#485#0" />
-            <element signature="e#515#2385#0" />
-            <element signature="e#2410#2565#0" />
-            <element signature="e#2609#2987#0" />
-            <element signature="e#3275#3808#0" />
-            <element signature="e#3660#4575#0" />
-            <element signature="e#4799#4878#0" />
-            <element signature="e#5695#5903#0" />
-            <element signature="e#5983#7390#0" />
+            <element signature="e#19#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="108" column="40" lean-forward="true" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1554376534408" expanded="true" signature="4226:4288" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scaling2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-851">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#155#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,216 @@
+\begin{thebibliography}{10}
+
+\bibitem{pic}
+W.~Z. Yeping~Hu and M.~Tomizuka, ``{Probabilistic Prediction of Vehicle
+  Semantic Intention and Motion},'' 2018.
+
+\bibitem{pic2}
+A.~Singh, ``{PREDICTION in Autonomous Vehicle - All You Need To Know}.''
+
+\bibitem{ClassificationI}
+C.~L. Stéphanie~Lefèvre, Dizan~Vasquez, ``{A survey on motion prediction and
+  risk assessment for intelligent vehicles},'' {\em ROBOMECH Journal}, 2014.
+
+\bibitem{americanDriving}
+A.~F. for Traffic~Safety., ``{American Driving Survey, 2015 – 2016}.''
+
+\bibitem{WHOstatistics}
+WHO, ``{Global Status Report On Road Safety 2018}.''
+
+\bibitem{SuperComputer}
+S.~R. Kaiming~He, Xiangyu~Zhang and J.~Sun, ``{Delving Deep into Rectifiers:
+  Surpassing Human-Level Performance on ImageNet Classification},'' 2015.
+
+\bibitem{ARKInvest}
+T.~Keeney, ``{Mobility-As-A-Servive: Why Self-Driving Cars Could Change
+  Everything},'' 2017.
+
+\bibitem{aDDa}
+TuD, ``{aDDa for Students}.''
+
+\bibitem{BN1}
+G.~B. Ismail~Dagli, Michael~Brost, ``{Action recognition and prediction for
+  driver assistance systems using dynamic belief networks},'' p.~179–194,
+  2002.
+
+\bibitem{BN2}
+K.~T. Shigeki~Tezuka, Hitoshi~Soma, ``{A study of driver behavior inference
+  model at time of lane change using bayesian networks},'' p.~2308–2313,
+  2006.
+
+\bibitem{Markov1}
+A.~P. Andrew~Liu, ``{Towards real-time recognition of driver intentions},''
+  p.~236–241, 1997.
+
+\bibitem{Markov2}
+A.~P. Andrew~Liu, ``{Modeling and prediction of human behavior},''
+  p.~229–242, 1999.
+
+\bibitem{Markov3}
+A.~P. Nuria~Oliver, ``{Driver behavior recognition and prediction in a
+  smartcar,},'' p.~280–290, 2000.
+
+\bibitem{Markov4}
+A.~P. Nuria~Oliver, ``{Graphical models for driver behavior recognition in a
+  smartcar},'' p.~7–12, 2000.
+
+\bibitem{Mind}
+D.~D. Salvucci, ``{Inferring driver intent: A case study in lane-change
+  detection},'' p.~2228–2231, 2004.
+
+\bibitem{Fuzz}
+C.~S. Yi~Hou, Praveen~Edara, ``{A genetic fuzzy system for modeling mandatory
+  lane changing},'' 2012.
+
+\bibitem{VectMash}
+D.~D.~S. Hiren M.~Mandalia, ``{Using support vector machines for lane change
+  detection},'' 2005.
+
+\bibitem{BOOK}
+M.~J. Kochenderfer, ``{Decision Making Under Uncertainty: Theory and
+  Application},'' p.~11–57, 2015.
+
+\bibitem{belief}
+A.~R.~C. Leslie Pack~Kaelbling, Michael L.~Littman, ``{Planning and acting in
+  partially observable stochastic domains},'' p.~99–134, 1998.
+
+\bibitem{ClassificationII}
+A.~R. Nachiket~Deo and M.~M. Trived, ``{How Would Surround Vehicles Move? A
+  Unified Framework for Maneuver Classification and Motion Prediction},'' 2018.
+
+\bibitem{dynamic}
+J.~S. Mattias~Brannstrom, Erik~Coelingh, ``{Model-Based Threat Assessment for
+  Avoiding Arbitrary Vehicle Collisions},'' p.~658–669, 2010.
+
+\bibitem{kinematicI}
+K.~K. Jrg~Hillenbrand, Andreas M.~Spieker, ``{A multilevel collision mitigation
+  approach: situation assessment, decision making, and performance
+  tradeoffs},'' p.~528–540, 2006.
+
+\bibitem{kinematicII}
+A.~J. A. L.~A. Aris~Polychronopoulos, Manolis~Tsogas, ``{Sensor fusion for
+  predicting vehicles’ path for collision avoidance systems},'' p.~549–562,
+  2007.
+
+\bibitem{GaussianNoiseI}
+F.~N. Samer~Ammoun, ``{Real time trajectory prediction for collision risk
+  estimation between vehicles },'' p.~417–422, 2009.
+
+\bibitem{GaussianNoiseII}
+M.~S. Nico~Kaempchen, Kilian~Weiß, ``{IMM object tracking for high dynamic
+  driving maneuvers},'' p.~825–830, 2004.
+
+\bibitem{GaussianNoiseIII}
+J.~B. Thomas~Batz, Kym~Watson, ``{Recognition of dangerous situations within a
+  cooperative group of vehicles},'' p.~907–912, 2009.
+
+\bibitem{SKFI}
+K.~P. Murphy, ``{Dynamic Bayesian networks: representation, inference and
+  learning},'' 2009.
+
+\bibitem{MonteCarlo}
+S.~B. Adrian~Broadhurst and T.~Kanade, ``{Monte Carlo road safety reasoning},''
+  p.~319–324, 2005.
+
+\bibitem{MonteCarloI}
+A.~M. Matthias~Althoff, ``{Comparison of Markov chain abstraction and Monte
+  Carlo simulation for the safety assessment of autonomous cars.},''
+  p.~1237–1247, 2011.
+
+\bibitem{def}
+D.~from Wordreference, ``{Definition of maneuver}.''
+
+\bibitem{beh1}
+S.~B. Tobias~Gindele and R.~Dillmann, ``{A probabilistic model for estimating
+  driver behaviors and vehicle trajectories in traffic environments },''
+  p.~1625–1631, 2010.
+
+\bibitem{beh2}
+D.~R. Ismail~Dagli, ``{Motivation-based approach to behavior prediction},''
+  p.~227–233, 2002.
+
+\bibitem{beh3}
+L.~H. S. J. P.~H. Georges S.~Aoude, Vishnu R.~Desaraju, ``{Driver behavior
+  classification at intersections and validation on large naturalistic
+  dataset},'' p.~724–736, 2012.
+
+\bibitem{DataDrivenIV}
+C.~Laugier {\em et~al.}, ``{Probabilistic analysis of dynamic scenes and
+  collision risks assessment to improve driving safety},'' p.~4–19, 2011.
+
+\bibitem{DataDrivenV}
+A.~W. G.~B. J.~Schlechtriemen, F.~Wirthmueller and K.-D. Kuhnert, ``{When will
+  it change the lane? A probabilistic regression approach for rarely occurring
+  events},'' p.~1373–1379.
+
+\bibitem{DataDrivenVI}
+G.~B. J.~Schlechtriemen, A.~Wedel and K.-D. Kuhnert, ``{A probabilistic long
+  term prediction approach for highway scenarios},'' p.~732–738, 2014.
+
+\bibitem{mab1}
+V.~C. Y.~W. Adam~Houenou, Philippe~Bonnifait, ``{Vehicle Trajectory Prediction
+  based on Motion Model and Maneuver Recognition},'' p.~4363–4369, 2013.
+
+\bibitem{mab2}
+K.~K. H. L. D. S. L. J. P.~H. Georges S.~Aoude, Brandon D.~Luders, ``{Threat
+  assessment design for driver assistance system at intersections},''
+  p.~1855–1862, 2010.
+
+\bibitem{mab3}
+M.~M.~T. Brendan Tran~Morris, ``{Trajectory learning for activity
+  understanding: Unsupervised, multilevel, and long-term adaptive approach},''
+  p.~2287–2301, 2011.
+
+\bibitem{mab4}
+K.~D. Holger~Berndt, Jorg~Emmert, ``{Continuous driver intention recognition
+  with hidden Markov models},'' p.~1189–1194, 2008.
+
+\bibitem{mab5}
+M.~M.~T. Aida~Khosroshahi, Eshed Ohn~Bar, ``{Surround vehicles trajectory
+  analysis with recurrent neural networks},'' p.~2267–2272, 2016.
+
+\bibitem{mab6}
+J.~A. Matthias~Schreier, Volker~Willert, ``{Bayesian, maneuver-based, longterm
+  trajectory prediction and criticality assessment for driver assistance
+  systems},'' p.~334–341, 2014.
+
+\bibitem{mab7}
+J.~F. Quan~Tran, ``{Online maneuver recognition and multimodal trajectory
+  prediction for intersection assistance using non-parametric regression},''
+  p.~918–923, 2014.
+
+\bibitem{InterAwareI}
+C.~W. H.~R. E.~Kfer, C.~Hermes and F.~Kummert, ``{Recognition of situation
+  classes at road intersections},'' pp.~3960--3965, 2010.
+
+\bibitem{InterAwareII}
+C.~F. P. G. T. D.~W. A.~Lawitzky, D.~Althoff and M.~Buss, ``{Interactive scene
+  prediction for automotive applications},'' pp.~1028--1033, 2013.
+
+\bibitem{DataDrivenI}
+K.~S. C.~Hermes, C.~Wohler and F.~Kummert, ``{Long-term vehicle motion
+  prediction},'' p.~652–657, 2009.
+
+\bibitem{DataDrivenII}
+D.~Vasquez and T.~Fraichard, ``{Motion prediction for moving objects: a
+  statistical approach},'' p.~3931–3936, 2004.
+
+\bibitem{DataDrivenIII}
+F.~D.-V. J.~M.~Joseph and N.~Roy, ``{A Bayesian nonparametric approach to
+  modeling mobility patterns},'' p.~1587–1593, 2010.
+
+\bibitem{DataDrivenVII}
+U.~K. J.~Wiest, M.~Hffken and K.~Dietmayer, ``{Probabilistic trajectory
+  prediction with Gaussian mixture models},'' p.~141–146, 2012.
+
+\bibitem{RRT}
+N.~R. J. P.~H. Georges S.~Aoude, Joshua~Joseph, ``{Mobile agent trajectory
+  prediction using Bayesian nonparametric reachability trees},''
+  p.~1587–1593, 2011.
+
+\bibitem{TimeRep}
+A.~M. Matthias~Althoff, ``{Comparison of Markov chain abstraction and Monte
+  Carlo simulation for the safety assessment of autonomous cars},''
+  p.~1237–1247, 2011.
+
+\end{thebibliography}
