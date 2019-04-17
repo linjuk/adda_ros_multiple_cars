@@ -11,6 +11,10 @@ A.~Singh, ``{PREDICTION in Autonomous Vehicle - All You Need To Know}.''
 C.~L. Stéphanie~Lefèvre, Dizan~Vasquez, ``{A survey on motion prediction and
   risk assessment for intelligent vehicles},'' {\em ROBOMECH Journal}, 2014.
 
+\bibitem{sec}
+V.~L. Thing and J.~Wu, ``{Autonomous Vehicle Security: A Taxonomy of Attacks
+  and Defences},'' 2016.
+
 \bibitem{americanDriving}
 A.~F. for Traffic~Safety., ``{American Driving Survey, 2015 – 2016}.''
 
@@ -207,6 +211,21 @@ U.~K. J.~Wiest, M.~Hffken and K.~Dietmayer, ``{Probabilistic trajectory
 N.~R. J. P.~H. Georges S.~Aoude, Joshua~Joseph, ``{Mobile agent trajectory
   prediction using Bayesian nonparametric reachability trees},''
   p.~1587–1593, 2011.
+
+\bibitem{carspeak}
+N.~A. S. G. D.~K. Swarun~Kumar, Lixin~Shi and D.~Rus, ``{CarSpeak: A
+  Content-Centric Network for Autonomous Driving},'' 2012.
+
+\bibitem{secanalysis}
+F.~R. S.~P. Karl~Koscher, Alexei~Czeskis and T.~Kohno, ``{Experimental Security
+  Analysis of a Modern Automobile},'' 2010.
+
+\bibitem{pla}
+D.~Lagutin, ``{Packet Level Authentication Overview},'' 2010.
+
+\bibitem{attacTax1}
+K.-T. Cho and K.~G. Shin, ``{Fingerprinting electronic control units for
+  vehicle intrusion detection},'' 2016.
 
 \bibitem{TimeRep}
 A.~M. Matthias~Althoff, ``{Comparison of Markov chain abstraction and Monte

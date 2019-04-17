@@ -109,15 +109,15 @@ Pobs = np.array(Pobs)
 b100 = np.array([0.3, 0.3, 0.3])
 b10 = np.array([0.3, 0.3, 0.3])
 
-for i in range (1, 101):
+for i in range (1, 100):
 
-    P = np.power(Pobs[0, :], 0.1)
+    P = np.power(Pobs[i-1, :], 0.1)
     b100 = b100 * P
     b100 = b100 / np.sum(b100)
     # print("For 100: timestep {},  P for 100 {}, belief input for b100 {}".format(i, P, b100))
 
     if i % 10 == 0:
-        P = Pobs[0, :]
+        P = Pobs[i-1, :]
         # print("For 10: timestep {}, P for 10 {}, belief input for b10 {}".format(i, P, b10))
         b10 = b10 * P
         b10 = b10 / np.sum(b10)

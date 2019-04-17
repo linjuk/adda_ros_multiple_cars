@@ -14,6 +14,7 @@ Warning--entry type for "def" isn't style-file defined
 Warning--entry type for "pic2" isn't style-file defined
 --line 401 of file literature/lit.bib
 Warning--empty journal in pic
+Warning--empty journal in sec
 Warning--empty journal in SuperComputer
 Warning--empty journal in ARKInvest
 Warning--empty journal in BN1
@@ -84,37 +85,47 @@ Warning--empty journal in DataDrivenVII
 Too many commas in name 1 of "Georges S. Aoude, Joshua Joseph, Nicholas Roy, Jonathan P. How" for entry RRT
 while executing---line 969 of file ieeetr.bst
 Warning--empty journal in RRT
+Too many commas in name 1 of "Swarun Kumar, Lixin Shi, Nabeel Ahmed, Stephanie Gil, Dina Katabi and Daniela Rus" for entry carspeak
+while executing---line 969 of file ieeetr.bst
+Too many commas in name 1 of "Swarun Kumar, Lixin Shi, Nabeel Ahmed, Stephanie Gil, Dina Katabi and Daniela Rus" for entry carspeak
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in carspeak
+Too many commas in name 1 of "Karl Koscher, Alexei Czeskis, Franziska Roesner, Shwetak Patel and Tadayoshi Kohno" for entry secanalysis
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in secanalysis
+Warning--empty journal in pla
+Warning--empty journal in attacTax1
 Warning--empty journal in TimeRep
-You've used 51 entries,
+You've used 56 entries,
             1876 wiz_defined-function locations,
-            745 strings with 11581 characters,
-and the built_in function-call counts, 14593 in all, are:
-= -- 1631
-> -- 260
+            766 strings with 12502 characters,
+and the built_in function-call counts, 15315 in all, are:
+= -- 1685
+> -- 296
 < -- 0
-+ -- 116
-- -- 65
-* -- 462
-:= -- 1583
-add.period$ -- 46
-call.type$ -- 51
-change.case$ -- 51
++ -- 130
+- -- 74
+* -- 505
+:= -- 1700
+add.period$ -- 51
+call.type$ -- 56
+change.case$ -- 56
 chr.to.int$ -- 0
-cite$ -- 97
-duplicate$ -- 1140
-empty$ -- 1284
-format.name$ -- 65
-if$ -- 3932
+cite$ -- 107
+duplicate$ -- 1185
+empty$ -- 1369
+format.name$ -- 74
+if$ -- 4098
 int.to.chr$ -- 0
-int.to.str$ -- 51
-missing$ -- 46
-newline$ -- 156
-num.names$ -- 51
-pop$ -- 298
+int.to.str$ -- 56
+missing$ -- 51
+newline$ -- 171
+num.names$ -- 56
+pop$ -- 328
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1160
+skip$ -- 1169
 stack$ -- 0
 substring$ -- 758
 swap$ -- 707
@@ -122,8 +133,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 46
-while$ -- 91
-width$ -- 53
-write$ -- 392
-(There were 13 error messages)
+warning$ -- 51
+while$ -- 96
+width$ -- 58
+write$ -- 427
+(There were 16 error messages)
