@@ -1,98 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f927b2e8-1f96-4323-b57d-1f4e571808bf" name="Default" comment="" />
+    <list default="true" id="f927b2e8-1f96-4323-b57d-1f4e571808bf" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../movement_prediction/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movement_prediction/belief_evolution_comparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.acn" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.acn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.out" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/.idea/promp_robot_controller.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/config/CONFIG_STUFF_GOES_HERE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/launch/trajectory_viz.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/package.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/.idea/scripts.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/means_viz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/Left.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/_Left__main_old.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/Random.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/_Random__main_old.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/Right.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/_Right__main_old.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/Straight.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/_Straight__main_old.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/maps/testmap6_0_.png" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/maps/testmap6_0_.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/scaling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/scaling2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/trajectory_interpolation_plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../startup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectories.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/promp_robot_controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/promp_robot_controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/trajectory_viz.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/trajectory_viz.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/trajectory_viz$trajectory_viz.coverage" NAME="trajectory_viz Coverage Results" MODIFIED="1556725380853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1708296219">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="748" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="748" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="csv" value="1" />
+          <entry key="py" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="promp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/promp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="promp_controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/promp_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="62" column="23" selection-end-line="225" />
-              <folding>
-                <element signature="e#24#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="online_phase_adaptation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/online_phase_adaptation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="32" lean-forward="true" selection-end-line="164" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="experiment_ral.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/experiment_ral.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-              <folding>
-                <element signature="e#24#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ilqr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/ilqr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrompControl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../promp_control_gui/lib/PrompControl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-615">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+            <state relative-caret-position="45">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+            <state relative-caret-position="345">
+              <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+              <folding>
+                <element signature="e#24#36#0" expanded="true" />
+                <marker date="1556734814526" expanded="true" signature="752:753" ph="..." />
+                <marker date="1556734814526" expanded="true" signature="2502:3083" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,7 +130,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>start</find>
+      <find>marker</find>
+      <find>file</find>
+      <find>comb</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -121,6 +148,9 @@
         <option value="$PROJECT_DIR$/online_phase_adaptation.py" />
         <option value="$PROJECT_DIR$/scripts/online_phase_adaptation.py" />
         <option value="$PROJECT_DIR$/scripts/experiment_ral.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
+        <option value="$PROJECT_DIR$/scripts/functions.py" />
+        <option value="$PROJECT_DIR$/scripts/trajectory_viz.py" />
       </list>
     </option>
   </component>
@@ -130,15 +160,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="292" />
     <option name="y" value="52" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -149,22 +177,18 @@
         <subPane>
           <expand>
             <path>
-              <item name="promp_robot_controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="promp_robot_controller" type="462c0819:PsiDirectoryNode" />
+              <item name="trajectory_viz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trajectory_viz" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="promp_robot_controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="promp_robot_controller" type="462c0819:PsiDirectoryNode" />
+              <item name="trajectory_viz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trajectory_viz" type="462c0819:PsiDirectoryNode" />
+              <item name="launch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trajectory_viz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trajectory_viz" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="promp_robot_controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="promp_control_gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="promp_robot_controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="promp_control_gui" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -174,11 +198,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../promp_control_gui" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../movement_prediction" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/scripts" />
     </key>
@@ -195,6 +226,62 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Python.trajectory_viz">
+    <configuration name="scratch_2" type="PythonConfigurationType" factoryName="Python" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="promp_control_gui" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="trajectory_viz" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="promp_robot_controller" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/trajectory_viz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.scratch_2" />
+      <item itemvalue="Python.trajectory_viz" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.trajectory_viz" />
+        <item itemvalue="Python.scratch_2" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -205,34 +292,39 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538467772869</updated>
+      <workItem from="1556556188639" duration="4380000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4380000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="-4" width="1535" height="904" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2498618" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26326394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49966422" weight="0.32860824" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003358" side_tool="true" visible="true" weight="0.32860824" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="JuliaSciView" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,102 +333,64 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/trajectory_viz$scratch_2.coverage" NAME="scratch_2 Coverage Results" MODIFIED="1556560603965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/trajectory_viz$trajectory_viz.coverage" NAME="trajectory_viz Coverage Results" MODIFIED="1556560601031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../pomdp_test_gui/lib/promp.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/promp.py" />
+    <entry file="file://$PROJECT_DIR$/../pomdp_test_gui/lib/helper_functions.py" />
+    <entry file="file://$PROJECT_DIR$/../pomdp_test_gui/lib/ClassName.py" />
+    <entry file="file://$PROJECT_DIR$/../promp_control_gui/lib/PrompControl.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/promp_controller.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/ilqr.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/online_phase_adaptation.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/experiment_ral.py" />
+    <entry file="file://$PROJECT_DIR$/launch/trajectory_viz.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
+    <entry file="file://$USER_HOME$/ias_ros/src/pomdp_collision/belief_tracker/include/belief_tracker/belief_tracker_class.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/trajectories/test.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
+        <state relative-caret-position="274">
           <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/scripts/functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pomdp_test_gui/lib/promp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="326">
+          <caret line="661" column="63" lean-forward="true" selection-start-line="661" selection-start-column="27" selection-end-line="661" selection-end-column="63" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/promp.py">
+    <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="345">
+          <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pomdp_test_gui/lib/helper_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="21" selection-start-line="9" selection-end-line="36" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pomdp_test_gui/lib/ClassName.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="128" column="69" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../promp_control_gui/lib/PrompControl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-615">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/promp_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="62" column="23" selection-end-line="225" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ilqr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/online_phase_adaptation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" lean-forward="true" selection-end-line="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/experiment_ral.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
+            <element signature="e#24#36#0" expanded="true" />
+            <marker date="1556734814526" expanded="true" signature="752:753" ph="..." />
+            <marker date="1556734814526" expanded="true" signature="2502:3083" ph="..." />
           </folding>
         </state>
       </provider>

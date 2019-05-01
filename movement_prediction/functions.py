@@ -9,9 +9,13 @@ import math
 import random
 import sys
 from matplotlib.collections import PatchCollection
+import os
 
 # Sets plot style to given theme
 plt.style.use("seaborn")
+
+### ORDER OF DIRECTIONS
+### RIGHT, STRAIGHT, LEFT => applies to new functions only
 
 def replace_zeros_in_list(list):
     """
@@ -33,9 +37,9 @@ def read_csv_fast(file):
 
 def recognize_map(map_file):
     """
-    Given a type of map file, try to recognize using geometric operations which
-    type of map it is.
-    """
+       Given a type of map file, try to recognize using geometric operations which
+       type of map it is.
+       """
 
     img1 = cv2.imread('maps/testmap5.png')
     img2 = cv2.imread('maps/testmap6_0_.png')
@@ -91,9 +95,13 @@ def recognize_map(map_file):
 
     if x == 8:
         print("This Image is X-intersection")
+        return 'x-intersection'
 
     elif x == 4:
         print("This Image is T-intersection")
+        return 't-intersection'
+    else:
+        return 'unknown'
 
 def clear_plot():
     """
@@ -217,8 +225,6 @@ def simple_belief_update(belief_input, observation_probability):
 
     return belief_local_copy
 
-
-
 # calculated using the 1) quation on the formulas paper
 def belief_update(belief_input, observation_probability, number_points):
     """
@@ -234,7 +240,7 @@ def belief_update(belief_input, observation_probability, number_points):
 
     belief_array = []
     # comment if you only want seeding beleif to be 0.3, 0.3, 0.3 not the updated for step 0
-    # belief_array.append(list(belief_local_copy))
+    belief_array.append(list(belief_local_copy))
 
     for points in range(0, number_points):
 
@@ -309,7 +315,7 @@ def all_prediction_processing(number_point, apply_power=False, power=0):
     Step 2: Recognize type of the map
     """
     # to be able to run the program without testmap, uncomment following line
-    recognize_map('maps/testmap.png')
+    map_type = recognize_map('maps/testmap.png')
     # recognize_map('/home/linjuk/adda_ros/src/code_lina/simple_sim_car/pomdp_car_launch/maps/testmap.png')
 
     """
@@ -639,3 +645,328 @@ def all_prediction_processing(number_point, apply_power=False, power=0):
 
 def distance_formula(p1, p2):
     return math.sqrt( ((p1[0]-p2[0])**2)+((p1[1]-p2[1])**2))
+
+def comb_dataset(Number_Of_Points):
+    """
+    Go through all trajectory files of dataset, interpolate each and return accumulated values
+    """
+    # Load and accumulate all files
+    trajectory_csv_data = {}  # container dictionary for ploting graphs
+    trajectory_csv_file_wise_data = {}  # container dictionary for averaging
+    all_points_from_files = []  # big array container for all points from all trajectories
+
+    # fill files directionary with file paths of all csv files
+    files_dictionary = {
+        'right': glob.glob(os.path.dirname(os.path.realpath(__file__))+'/trajectories/right*.csv'),  # return all files starting with right in the folder
+        'straight': glob.glob(os.path.dirname(os.path.realpath(__file__))+'/trajectories/straight_*.csv'),  # return all files starting with straight in the folder
+        'left': glob.glob(os.path.dirname(os.path.realpath(__file__)) + '/trajectories/left_*.csv') # return all files starting with left_ in the folder
+
+    }
+
+    # loop over trajectories i.e. left, right, straight
+    for key in files_dictionary:
+
+        trajectory_csv_file_wise_data[key] = {}
+
+        for index, file in enumerate(files_dictionary[key]):  # loop over files in each trajectory
+            file_raw_data = read_csv_fast(file)
+            all_points_from_files.append(file_raw_data)
+            trajectory_csv_data[key] = (file_raw_data)  # read file
+            trajectory_csv_file_wise_data[key][index] = []  # aggregate data in container for averaging
+            trajectory_csv_file_wise_data[key][index].append(trajectory_csv_data[key])
+
+    # Interpolate the accumulated trajectories
+    all_points_from_files = np.asarray(all_points_from_files)
+    count_right_files = len(files_dictionary['right'])
+    count_straight_files = len(files_dictionary['straight'])
+    count_left_files = len(files_dictionary['left'])
+
+    all_rights = []
+    for i in range(count_straight_files, count_straight_files + count_right_files):
+        [xn, yn] = interpolate_dist(all_points_from_files[i][:, 1], all_points_from_files[i][:, 2], Number_Of_Points)
+        points = np.vstack((xn, yn)).T
+        all_rights.append(points)
+
+    all_straight = []
+    for i in range(count_straight_files):
+        [xn, yn] = interpolate_dist(all_points_from_files[i][:, 1], all_points_from_files[i][:, 2], Number_Of_Points)
+        points = np.vstack((xn, yn)).T
+        all_straight.append(points)
+
+    all_lefts = []
+    for i in range(count_straight_files + count_right_files,
+                   count_straight_files + count_right_files + count_left_files):
+        [xn, yn] = interpolate_dist(all_points_from_files[i][:, 1], all_points_from_files[i][:, 2], Number_Of_Points)
+        points = np.vstack((xn, yn)).T
+        all_lefts.append(points)
+
+    all_rights = np.asarray(all_rights)
+    all_straight = np.asarray(all_straight)
+    all_lefts = np.asarray(all_lefts)
+
+
+    #Return interpolated values for all trajectory directions, files dictonary and number of points for later use
+    return all_rights, all_straight, all_lefts, files_dictionary, Number_Of_Points
+
+def calculate_mean(dataset):
+    """
+    Calculate mean using accumulated and interpolated values of all directions from dataset
+    """
+    # destructure input dataset
+    all_rights, all_straight, all_lefts, files_dictionary, Number_Of_Points = dataset
+
+    # calculate mean
+    means_right = np.mean(all_rights, axis=0)
+    means_straight = np.mean(all_straight, axis=0)
+    means_left = np.mean(all_lefts, axis=0)
+
+    # return calculated mean
+    return means_right, means_straight, means_left
+
+def calculate_covariance(dataset):
+    """
+    Based on interpolaed and accumulated dataset, calculate covariance for each direction
+    """
+    all_rights,  all_straight, all_lefts, files_dictionary, Number_Of_Points = dataset
+    covariance_right = calculate_covariance_for_class(all_rights, Number_Of_Points)
+    covariance_straight = calculate_covariance_for_class(all_straight, Number_Of_Points)
+    covariance_left = calculate_covariance_for_class(all_lefts, Number_Of_Points)
+    return covariance_right, covariance_straight, covariance_left
+
+def calculate_std(dataset):
+    """
+    Based on interpolaed and accumulated dataset, calculate covariance for each direction
+    """
+    all_rights, all_straight, all_lefts, files_dictionary, Number_Of_Points = dataset
+    std_right = np.std(all_rights, axis=0)
+    std_straight = np.std(all_straight, axis=0)
+    std_left = np.std(all_lefts, axis=0)
+    return std_right, std_straight, std_left
+
+def scaling_results_per_trajectory(map_type, input_trajectory, Number_Of_Points, files_dictionary, all_means, all_variance):
+    """
+
+    :param map_type:
+    :param input_trajectory:
+    :param Number_Of_Points:
+    :param files_dictionary:
+    :param all_means:
+    :param all_variance:
+    :return:
+    """
+
+    """
+    Step 1: Read input trajectory and interpolate it for further use
+    """
+
+    random_trajectory = read_csv_fast(input_trajectory)
+    random_trajectory = np.asarray(random_trajectory)
+    [xn, yn] = interpolate_dist(random_trajectory[:, 1], random_trajectory[:, 2], Number_Of_Points)
+    random_trajectory = np.vstack((xn, yn)).T
+
+    """
+    Step 2: Destructure input for means and variance
+    """
+    means_right, means_straight, means_left = all_means
+    covariance_right, covariance_straight, covariance_left  = all_variance
+
+    """
+    Step 3: Calculate likelihood of random test trajectory to belong to which class
+    """
+    Pobs = []
+    for i in range(1, Number_Of_Points):
+        Pobs.append([simple_probability(random_trajectory[i], means_right[i], covariance_right[i]),
+                     simple_probability(random_trajectory[i], means_straight[i], covariance_straight[i]),
+                     simple_probability(random_trajectory[i], means_left[i], covariance_left[i])])
+
+    Pobs = np.array(Pobs)
+
+    """
+    Step 4: Calculate prior belief 
+    """
+    if map_type == "t-intersection":
+        prior_left = len(files_dictionary['left']) / float(len(files_dictionary['left']) + len(files_dictionary['right']))
+        prior_right = len(files_dictionary['right']) / float(len(files_dictionary['left']) + len(files_dictionary['right']))
+        b100 = np.array([prior_right, 0.0, prior_left])
+        b10 = np.array([prior_right, 0.0, prior_left])
+    else:
+        b100 = np.array([0.3, 0.3, 0.3])
+        b10 = np.array([0.3, 0.3, 0.3])
+
+    """
+    Step 5: Do belief calculations based on prior belief (with scaling)
+    """
+    print("Belief calculations (with scaling)\n")
+    b100_all = []
+    b10_all = []
+    t = 10
+
+    for i in range (0, Number_Of_Points):
+
+        if i == 0:
+            print("10: ", b10, "100: ", b100)
+            b10_all.append(b10)
+            b100_all.append(b100)
+
+        else:
+            P = np.power(Pobs[i-1, :], 0.1)
+            b100 = b100 * P
+            b100 = b100 / np.sum(b100)
+            b100_all.append(b100)
+            # print("For 100: timestep {},  P for 100 {}, belief input for b100 {}".format(i, P, b100))
+
+            if i % t == 0:
+                P = Pobs[i-1, :]
+                # print("For 10: timestep {}, P for 10 {}, belief input for b10 {}".format(i, P, b10))
+                b10 = b10 * P
+                b10 = b10 / np.sum(b10)
+                b10_all.append(b10)
+                print("10: ", b10, "100: ", b100)
+
+    """
+    Step 6: Do belief calculations based on prior belief (Without Scaling)
+    """
+    print("\n\nBelief calculations (without scaling)\n")
+    Pobs = []
+    t = 10
+
+    for i in range(1, Number_Of_Points):
+        Pobs.append([ simple_probability(random_trajectory[i], means_right[i], covariance_right[i]),
+                      simple_probability(random_trajectory[i], means_straight[i], covariance_straight[i]),
+                      simple_probability(random_trajectory[i], means_left[i], covariance_left[i]) ])
+
+    Pobs = np.array(Pobs)
+
+    # initialize prior based on recognized map type
+    if map_type == "t-intersection":
+        prior_left = len(files_dictionary['left']) / float(len(files_dictionary['left']) + len(files_dictionary['right']))
+        prior_right = len(files_dictionary['right']) / float(len(files_dictionary['left']) + len(files_dictionary['right']))
+        b100 = np.array([prior_right, 0.0, prior_left])
+        b10 = np.array([prior_right, 0.0, prior_left])
+    else:
+        b100 = np.array([0.3, 0.3, 0.3])
+        b10 = np.array([0.3, 0.3, 0.3])
+
+    b100_all_ws = []
+    b10_all_ws = []
+
+
+    for i in range (0, Number_Of_Points):
+
+        if i == 0:
+            print("10: ", b10, "100: ", b100)
+            b10_all_ws.append(b10)
+            b100_all_ws.append(b100)
+
+        else:
+            P = Pobs[i-1, :]
+            b100 = b100 * P
+            b100 = b100 / np.sum(b100)
+            b100_all_ws.append(b100)
+            # print("For 100: timestep {},  P for 100 {}, belief input for b100 {}".format(i, P, b100))
+
+            if i % t == 0:
+                P = Pobs[i-1, :]
+                # print("For 10: timestep {}, P for 10 {}, belief input for b10 {}".format(i, P, b10))
+                b10 = b10 * P
+                b10 = b10 / np.sum(b10)
+                b10_all_ws.append(b10)
+                print("10: ", b10, "100: ", b100)
+
+    # return stuff
+    return b100_all, b10_all, b100_all_ws, b10_all_ws, Number_Of_Points, t
+
+def plot_scaling_results(all_results):
+    """
+
+    :param all_results:
+    :return:
+    """
+
+    # plot graph
+    fig, ax = plt.subplots()
+    plt.figure(1)
+    plt.title('Belief Updates over Time')
+    plt.xlabel('Time Steps')
+    plt.ylabel('Belief over Class')
+
+    labels = {
+        'left100': 'Belief for going left_100 steps',
+        'right100': 'Belief for going right_100 steps',
+        'straight100': 'Belief for going straight_100 steps',
+        'left10': 'Belief for going left_10 steps',
+        'right10': 'Belief for going right_10 steps',
+        'straight10': 'Belief for going straight_10 steps'
+    }
+
+    for rs in range(0, len(all_results)):
+        # destructure input for each trajectory
+        b100_all, b10_all, b100_all_ws, b10_all_ws, Number_Of_Points, t = all_results[rs]
+        b10_counter = 0
+        for i in range(0, Number_Of_Points):
+
+            plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['right100'], alpha=0.4)
+            plt.plot(i, b100_all[i][1], marker=".", color="blue", label=labels['straight100'], alpha=0.4)
+            plt.plot(i, b100_all[i][2], marker=".", color="magenta", label=labels['left100'], alpha=0.4)
+
+            if i % t == 0:
+                # plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
+                # plt.plot(i, b100_all[i][1], marker=".", color="blue", label=labels['right100'], alpha=0.4)
+                # plt.plot(i, b100_all[i][2], marker=".", color="magenta", label=labels['straight100'], alpha=0.4)
+
+                # plt.plot(i, b10_all[b10_counter][0], marker="D", color="green", label=labels['left10'], alpha=0.4)
+                # plt.plot(i, b10_all[b10_counter][1], marker="D", color="blue", label=labels['right10'], alpha=0.4)
+                # plt.plot(i, b10_all[b10_counter][2], marker="D", color="magenta", label=labels['straight10'], alpha=0.4)
+                b10_counter += 1
+
+            # ignore legend after first print
+            for key in labels:
+                labels[key] = "_nolegend_"
+
+        plt.legend(loc='center right')
+
+    # plt.show()
+
+    # """
+    # Step 2: Belief Comparison Plotting b100 vs b10 (without scaling)
+    # """
+    #
+    # # plt.legend(loc='lower right')
+    # # plot graph
+    # fig, ax = plt.subplots()
+    # plt.figure(2)
+    # plt.title('Belief Updates over Time (without scaling)')
+    # plt.xlabel('Time Steps')
+    # plt.ylabel('Belief over Class')
+    #
+    # labels_ws = {
+    #     'left100': 'Belief for going left_100 steps',
+    #     'right100': 'Belief for going right_100 steps',
+    #     'straight100': 'Belief for going straight_100 steps',
+    #     'left10': 'Belief for going left_10 steps',
+    #     'right10': 'Belief for going right_10 steps',
+    #     'straight10': 'Belief for going straight_10 steps'
+    # }
+    #
+    # for rs in range(0, len(all_results)):
+    #     b100_all, b10_all, b100_all_ws, b10_all_ws, Number_Of_Points, t = all_results[rs]
+    #
+    #     b10_counter = 0
+    #     for i in range(0, Number_Of_Points):
+    #
+    #         plt.plot(i, b100_all_ws[i][0], marker=".", color="green", label=labels_ws['left100'], alpha=0.4)
+    #         plt.plot(i, b100_all_ws[i][1], marker=".", color="blue", label=labels_ws['right100'], alpha=0.4)
+    #         plt.plot(i, b100_all_ws[i][2], marker=".", color="magenta", label=labels_ws['straight100'], alpha=0.4)
+    #
+    #         if i % t == 0:
+    #             plt.plot(i, b10_all_ws[b10_counter][0], marker="D", color="green", label=labels_ws['left10'], alpha=0.4)
+    #             plt.plot(i, b10_all_ws[b10_counter][1], marker="D", color="blue", label=labels_ws['right10'], alpha=0.4)
+    #             plt.plot(i, b10_all_ws[b10_counter][2], marker="D", color="magenta", label=labels_ws['straight10'],
+    #                      alpha=0.4)
+    #             b10_counter += 1
+    #
+    #         # ignore legend after first print
+    #         for key in labels_ws:
+    #             labels_ws[key] = "_nolegend_"
+    #
+    #     plt.legend(loc='center right')

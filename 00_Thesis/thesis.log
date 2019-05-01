@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.15)  17 APR 2019 22:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.15)  1 MAY 2019 13:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1823,15 +1823,15 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 \glo@acronym@file=\write6
 \openout6 = `thesis.acn'.
 
-Package glossaries Info: Writing glossary file thesis.acn on input line 71.
+Package glossaries Info: Writing glossary file thesis.acn on input line 73.
 \glo@operator@file=\write7
 \openout7 = `thesis.opo'.
 
-Package glossaries Info: Writing glossary file thesis.opo on input line 71.
+Package glossaries Info: Writing glossary file thesis.opo on input line 73.
 \glo@symbol@file=\write8
 \openout8 = `thesis.syo'.
 
-Package glossaries Info: Writing glossary file thesis.syo on input line 71.
+Package glossaries Info: Writing glossary file thesis.syo on input line 73.
 )
 (./preamble/tikzGraphs.tex)
 
@@ -2070,7 +2070,7 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 5.546pt on input line 88.
 \@TUD@titlelines=\count197
 
-<tud_logo.pdf, id=83, 157.58875pt x 63.23625pt>
+<tud_logo.pdf, id=87, 157.58875pt x 63.23625pt>
 File: tud_logo.pdf Graphic file (type pdf)
  <use tud_logo.pdf>
 Package pdftex.def Info: tud_logo.pdf used on input line 88.
@@ -2080,7 +2080,7 @@ File: tud_logo.pdf Graphic file (type pdf)
 <use tud_logo.pdf>
 Package pdftex.def Info: tud_logo.pdf used on input line 88.
 (pdftex.def)             Requested size: 134.92238pt x 62.59605pt.
- <img/iasLogo.jpeg, id=86, 642.4pt x 368.37625pt>
+ <img/iasLogo.jpeg, id=90, 642.4pt x 368.37625pt>
 File: img/iasLogo.jpeg Graphic file (type jpg)
 
 <use img/iasLogo.jpeg>
@@ -2111,7 +2111,7 @@ LaTeX Font Info:    Try loading font information for T1+5sf on input line 88.
 (/home/linjuk/texmf/tex/latex/tex-tudfonts/softmake/stafford/t15sf.fd
 File: t15sf.fd 2008/06/23 Fontinst v1.927 font definitions for T1/5sf.
 )
-<by-nc-nd.pdf, id=100, 121.45375pt x 43.16125pt>
+<by-nc-nd.pdf, id=104, 121.45375pt x 43.16125pt>
 File: by-nc-nd.pdf Graphic file (type pdf)
  <use by-nc-nd.pdf>
 Package pdftex.def Info: by-nc-nd.pdf used on input line 88.
@@ -2211,7 +2211,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-<img/4.jpg, id=199, 66.9702pt x 71.7882pt>
+<img/4.jpg, id=204, 66.9702pt x 71.7882pt>
 File: img/4.jpg Graphic file (type jpg)
  <use img/4.jpg>
 Package pdftex.def Info: img/4.jpg used on input line 20.
@@ -2240,7 +2240,7 @@ LaTeX Font Info:    Try loading font information for TS1+5ch on input line 41.
 (/home/linjuk/texmf/tex/latex/tex-tudfonts/softmake/charter/ts15ch.fd
 File: ts15ch.fd 2008/06/23 Fontinst v1.927 font definitions for TS1/5ch.
 )
-<img/3.jpg, id=221, 929.4725pt x 445.665pt>
+<img/3.jpg, id=226, 929.4725pt x 445.665pt>
 File: img/3.jpg Graphic file (type jpg)
  <use img/3.jpg>
 Package pdftex.def Info: img/3.jpg used on input line 53.
@@ -2382,13 +2382,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
-<img/2.jpg, id=331, 165.0165pt x 89.8557pt>
+<img/2.jpg, id=336, 165.0165pt x 89.8557pt>
 File: img/2.jpg Graphic file (type jpg)
  <use img/2.jpg>
 Package pdftex.def Info: img/2.jpg used on input line 145.
 (pdftex.def)             Requested size: 369.88582pt x 201.43167pt.
 
-<img/5.jpg, id=334, 257.5221pt x 153.6942pt>
+<img/5.jpg, id=339, 257.5221pt x 153.6942pt>
 File: img/5.jpg Graphic file (type jpg)
  <use img/5.jpg>
 Package pdftex.def Info: img/5.jpg used on input line 153.
@@ -2453,31 +2453,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
 [16
 
-] [17] <img/6.jpg, id=558, 260.172pt x 128.1588pt>
+] [17] [18] <img/6.jpg, id=596, 260.172pt x 128.1588pt>
 File: img/6.jpg Graphic file (type jpg)
  <use img/6.jpg>
-Package pdftex.def Info: img/6.jpg used on input line 65.
+Package pdftex.def Info: img/6.jpg used on input line 67.
 (pdftex.def)             Requested size: 426.79134pt x 210.2463pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-[18] [19 <./img/6.jpg>] <img/7.jpg, id=598, 228.3732pt x 94.1919pt>
+[19 <./img/6.jpg>] [20] <img/7.jpg, id=632, 228.3732pt x 94.1919pt>
 File: img/7.jpg Graphic file (type jpg)
 
 <use img/7.jpg>
-Package pdftex.def Info: img/7.jpg used on input line 118.
+Package pdftex.def Info: img/7.jpg used on input line 122.
 (pdftex.def)             Requested size: 426.79134pt x 176.05025pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./content/6-outlook.tex [20] [21 <./img/7.jpg>]
+) (./content/6-outlook.tex [21 <./img/7.jpg>]
 chapter 7.
 ) [22
 
@@ -2498,19 +2490,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4B5AC8A6F7500000967AFFB1DF5F4593;1119.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 51F98BD89923160D403099B779075CDD;1192
+(rerunfilecheck)             After:  E6AB871FF7A9D66B7AEDF3A9BA6A597A;1200.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 32316 strings out of 494901
- 563620 string characters out of 6178616
- 782277 words of memory out of 5000000
- 34636 multiletter control sequences out of 15000+600000
+ 32379 strings out of 494901
+ 564417 string characters out of 6178616
+ 782535 words of memory out of 5000000
+ 34697 multiletter control sequences out of 15000+600000
  138378 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  67i,17n,102p,2232b,1030s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2518,6 +2516,9 @@ pdfTeX warning (dest): name{glo:IDS} has been referenced but does not exist,
 replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:MAC} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:UAV} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{glo:GPS} has been referenced but does not exist, re
@@ -2623,10 +2624,10 @@ dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/share/texlive/texmf
 f-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/mathdesign/mdbch/md-chrma.pfb>
-Output written on thesis.pdf (34 pages, 1117310 bytes).
+Output written on thesis.pdf (34 pages, 1120741 bytes).
 PDF statistics:
- 748 PDF objects out of 1000 (max. 8388607)
- 671 compressed objects within 7 object streams
- 205 named destinations out of 1000 (max. 500000)
- 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 770 PDF objects out of 1000 (max. 8388607)
+ 693 compressed objects within 7 object streams
+ 207 named destinations out of 1000 (max. 500000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 

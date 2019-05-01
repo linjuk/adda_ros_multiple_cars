@@ -48,7 +48,9 @@ and attacks of autonomous vehicles can face. For categorization of attacks, we u
 		\end{enumerate}
 		\item \textbf{Remote Access}: since wireless connection to external sencors, such as cameras, \gls{LiDAR}, \gls{RaDAR}, \gls{GPS} are getting more and more popular, attackers can also use remote access as method to attack systems of autonomous vehicles. 
 		\begin{enumerate}
-			\item \textit{External Signal Spoofing}: 
+			\item \textit{External Signal Spoofing}: one example for this type of attack is \gls{GPS} spoofing. This attack is possible because \gls{GPS} using a wireless connection. During the attack \gls{GPS} receiver is deceived by sending the wrong signal to \gls{GPS} from another device. The incorrect signal may be similar to real \gls{GPS} signal or can be captured before and replayed at a certain time. An attacker can trick \gls{GPS} receiver to accept and recognize only fake signal by gradually increasing power strength of the wrong signal until it eventually replaces the original signal. As soon as the attacker gains control of \gls{GPS} device in an autonomous car, he can send false \gls{GPS} information and lead car in the wrong direction and destination. This attack was not tested on autonomous cars, but it was successfully tested on \gls{GPS} devices in \gls{UAV} and yachts [??, ??].
+			\gls{GPS} devices are not the only target in autonomous cars. Vehicles contain numerous sensors, which can be attacked with spoofing. One of these devices could be visual sensors like cameras, \glspl{LiDAR}. Similar to the previously described attack was made on \gls{LiDAR} sensor in [??]. Sending fake signals to the device in a range between 20 and 250 meters from a car (sensor) a lot of non-existing obstacles can be detected as well as existing obstacles on the road can be missed. 
+			The way to protect the system against spoofing attacks is to ensure more security, not to accept any signals and information without checking the authenticity and integrity of a signal sending device. To ensure that correct information is coming to \gls{LiDAR} additional information sources can be used and perform information checking between two different devices. If this cross-checks matches and succeeds information is more likely to be correct than in a case when information is not matching between different sources.
 			\item \textit{Jamming}: these attacks are against wireless or external sensors for vision and due to that, the authorized communication might be destroyed. The most sensitive devices for jamming attacks are \gls{LiDAR}, \gls{RaDAR}, various cameras. Jamming devices can block sensors for receiving correct data. Authors of [??] used jamming to blind cameras of autonomous vehicles to hide objects on the road and make map "cleaner" as it is. There are ways to protect sensors against this attack using removable near infrared-cut filter to the camera, however, this method is working only in the day time. Another measure is photo-chromic cameras' lenses, which can filter out specific types of light.
 		\end{enumerate}    
 	\end{enumerate}
@@ -66,6 +68,8 @@ Figure~\ref{fig:AttackTaxonomy} summaries attack taxonomy described earlier in t
 	\caption{Autonomous Vehicle Attack Taxonomy \cite{sec}}
 	\label{fig:AttackTaxonomy}    
 \end{figure}
+
+Another important problem which must to me mentioned while talking about safety and security issues on autonomous cars and is not mentioned in attack taxonomy yet is \textbf{privacy}. An attacker can arrange an attack where he follows car movement, times and makes a very detailed profile about car owner and with this information can do various things: from robbing the house of the victim while he is not at home, to selling this information to someone else, combine different attacks to do the biggest damage attacker want (or is able to) arrange.
 
 \section{Defense against Attacks Taxonomy}
 
@@ -119,3 +123,13 @@ Figure~\ref{fig:DefenseTaxonomy} summaries defense against attacks taxonomy desc
 	\caption{Autonomous Vehicle Defense Taxonomy \cite{sec}}
 	\label{fig:DefenseTaxonomy}    
 \end{figure}
+
+\section{The most important attacks}
+
+As mentioned before there are different types of attacks and various ways how to use them. Further in this section will be discussed the most common and dangerous security attacks while making movement prediction:
+\begin{itemize}
+	\item \textbf{Visual sensors attacks}. It is important to make sure that the map of car path is correct and there are no hidden or not real obstacles on the road. \textcolor{red}{(Thinking to write more about External Signal Spoofing on \gls{LiDAR} ???)}
+	Another serious attack on visual sensors can be used for a wrong understanding of traffic signs. How easy is to "confuse" STOP sign with Giving Way on Oncoming Traffic sign or to confuse 90km/h with 50km/h, etc.
+	\item \textbf{Privacy issue}. Privacy protection might look not important and not relevant while talking about autonomous cars, but it is. \textcolor{red}{(Want to give more insights on how attacks can be arranged and used ??? )}
+\end{itemize}
+
