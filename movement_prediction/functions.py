@@ -899,31 +899,48 @@ def plot_scaling_results(all_results):
         'straight10': 'Belief for going straight_10 steps'
     }
 
+
+
     for rs in range(0, len(all_results)):
         # destructure input for each trajectory
         b100_all, b10_all, b100_all_ws, b10_all_ws, Number_Of_Points, t = all_results[rs]
         b10_counter = 0
+
+        # print b100_all[:, 1]
+        # x_array = range(Number_Of_Points)
+        # plt.plot(x_array, b100_all[:,0], color="green", label=labels['right100'], alpha=0.4)
+        # plt.plot(x_array, b100_all[:,1], color="blue", label=labels['straight100'], alpha=0.4)
+        # plt.plot(x_array, b100_all[:,2], color="magenta", label=labels['left100'], alpha=0.4)
+
+
         for i in range(0, Number_Of_Points):
 
             plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['right100'], alpha=0.4)
             plt.plot(i, b100_all[i][1], marker=".", color="blue", label=labels['straight100'], alpha=0.4)
             plt.plot(i, b100_all[i][2], marker=".", color="magenta", label=labels['left100'], alpha=0.4)
+            #
+            # plt.plot(i, b100_all[i][0], color="green", label=labels['right100'], alpha=0.4)
+            # plt.plot(i, b100_all[i][1], color="blue", label=labels['straight100'], alpha=0.4)
+            # plt.plot(i, b100_all[i][2], color="magenta", label=labels['left100'], alpha=0.4)
 
             if i % t == 0:
-                # plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
-                # plt.plot(i, b100_all[i][1], marker=".", color="blue", label=labels['right100'], alpha=0.4)
-                # plt.plot(i, b100_all[i][2], marker=".", color="magenta", label=labels['straight100'], alpha=0.4)
+                # plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['right100'], alpha=0.4)
+                # plt.plot(i, b100_all[i][1], marker=".", color="blue", label=labels['straight100'], alpha=0.4)
+                # plt.plot(i, b100_all[i][2], marker=".", color="magenta", label=labels['left100'], alpha=0.4)
 
-                # plt.plot(i, b10_all[b10_counter][0], marker="D", color="green", label=labels['left10'], alpha=0.4)
-                # plt.plot(i, b10_all[b10_counter][1], marker="D", color="blue", label=labels['right10'], alpha=0.4)
-                # plt.plot(i, b10_all[b10_counter][2], marker="D", color="magenta", label=labels['straight10'], alpha=0.4)
+                # plt.plot(i, b10_all[b10_counter][0], marker="D", color="green", label=labels['right10'], alpha=0.4)
+                # plt.plot(i, b10_all[b10_counter][1], marker="D", color="blue", label=labels['straight10'], alpha=0.4)
+                # plt.plot(i, b10_all[b10_counter][2], marker="D", color="magenta", label=labels['left10'], alpha=0.4)
                 b10_counter += 1
 
             # ignore legend after first print
             for key in labels:
                 labels[key] = "_nolegend_"
 
+
         plt.legend(loc='center right')
+
+
 
     # plt.show()
 
@@ -954,14 +971,14 @@ def plot_scaling_results(all_results):
     #     b10_counter = 0
     #     for i in range(0, Number_Of_Points):
     #
-    #         plt.plot(i, b100_all_ws[i][0], marker=".", color="green", label=labels_ws['left100'], alpha=0.4)
-    #         plt.plot(i, b100_all_ws[i][1], marker=".", color="blue", label=labels_ws['right100'], alpha=0.4)
-    #         plt.plot(i, b100_all_ws[i][2], marker=".", color="magenta", label=labels_ws['straight100'], alpha=0.4)
+    #         plt.plot(i, b100_all_ws[i][0], marker=".", color="green", label=labels_ws['right100'], alpha=0.4)
+    #         plt.plot(i, b100_all_ws[i][1], marker=".", color="blue", label=labels_ws['straight100'], alpha=0.4)
+    #         plt.plot(i, b100_all_ws[i][2], marker=".", color="magenta", label=labels_ws['left100'], alpha=0.4)
     #
     #         if i % t == 0:
-    #             plt.plot(i, b10_all_ws[b10_counter][0], marker="D", color="green", label=labels_ws['left10'], alpha=0.4)
-    #             plt.plot(i, b10_all_ws[b10_counter][1], marker="D", color="blue", label=labels_ws['right10'], alpha=0.4)
-    #             plt.plot(i, b10_all_ws[b10_counter][2], marker="D", color="magenta", label=labels_ws['straight10'],
+    #             plt.plot(i, b10_all_ws[b10_counter][0], marker="D", color="green", label=labels_ws['right10'], alpha=0.4)
+    #             plt.plot(i, b10_all_ws[b10_counter][1], marker="D", color="blue", label=labels_ws['straight10'], alpha=0.4)
+    #             plt.plot(i, b10_all_ws[b10_counter][2], marker="D", color="magenta", label=labels_ws['left10'],
     #                      alpha=0.4)
     #             b10_counter += 1
     #

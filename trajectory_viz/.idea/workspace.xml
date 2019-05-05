@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f927b2e8-1f96-4323-b57d-1f4e571808bf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../movement_prediction/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../movement_prediction/belief_evolution_comparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/2-foundations.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/2-foundations.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.acn" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.acn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.bbl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.blg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.lof" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.lof" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.out" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" afterDir="false" />
@@ -16,36 +19,12 @@
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/.idea/promp_robot_controller.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/config/CONFIG_STUFF_GOES_HERE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/launch/trajectory_viz.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/package.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/.idea/scripts.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../means_viz/scripts/means_viz.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/Left.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/_Left__main_old.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/Random.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/_Random__main_old.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/Right.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/_Right__main_old.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/Straight.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/runConfigurations/_Straight__main_old.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/maps/testmap6_0_.png" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/maps/testmap6_0_.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/scaling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/scaling2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/trajectory_interpolation_plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../startup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/promp_robot_controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/promp_robot_controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/net_belief_evolution.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/net_belief_evolution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectory_interpolation_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/trajectory_interpolation_plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/config/sim_car2.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/config/sim_car2.rviz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/trajectory_viz.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/trajectory_viz.py" afterDir="false" />
     </list>
@@ -56,7 +35,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/trajectory_viz$trajectory_viz.coverage" NAME="trajectory_viz Coverage Results" MODIFIED="1556725380853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/trajectory_viz$trajectory_viz.coverage" NAME="trajectory_viz Coverage Results" MODIFIED="1556739396912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1708296219">
@@ -64,19 +43,21 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="748" />
+          <entry key="py" value="2014" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="748" />
+          <entry key="Python" value="2014" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -107,12 +88,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+            <state relative-caret-position="136">
+              <caret line="179" column="46" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
               <folding>
                 <element signature="e#24#36#0" expanded="true" />
-                <marker date="1556734814526" expanded="true" signature="752:753" ph="..." />
-                <marker date="1556734814526" expanded="true" signature="2502:3083" ph="..." />
+                <marker date="1556823993801" expanded="true" signature="810:811" ph="..." />
+                <marker date="1556823993801" expanded="true" signature="3051:3060" ph="..." />
+                <marker date="1556823993801" expanded="true" signature="3051:6981" ph="..." />
+                <marker date="1556823993801" expanded="true" signature="6977:6981" ph="..." />
               </folding>
             </state>
           </provider>
@@ -133,6 +116,7 @@
       <find>marker</find>
       <find>file</find>
       <find>comb</find>
+      <find>marker_pub</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,10 +145,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="292" />
-    <option name="y" value="52" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="y" value="-28" />
+    <option name="width" value="1600" />
+    <option name="height" value="928" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -300,15 +283,15 @@
     <option name="totallyTimeSpent" value="4380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1535" height="904" extended-state="7" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26326394" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2233278" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49966422" weight="0.32860824" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49899262" visible="true" weight="0.32860824" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -316,7 +299,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003358" side_tool="true" visible="true" weight="0.32860824" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010074" side_tool="true" visible="true" weight="0.2667364" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -356,16 +339,7 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
     <entry file="file://$USER_HOME$/ias_ros/src/pomdp_collision/belief_tracker/include/belief_tracker/belief_tracker_class.py" />
-    <entry file="file://$PROJECT_DIR$/scripts/trajectories/test.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/trajectories/test.csv" />
     <entry file="file://$PROJECT_DIR$/package.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -373,24 +347,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/functions.py">
+    <entry file="file://$PROJECT_DIR$/scripts/functions.py" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="661" column="63" lean-forward="true" selection-start-line="661" selection-start-column="27" selection-end-line="661" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+        <state relative-caret-position="136">
+          <caret line="179" column="46" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
           <folding>
             <element signature="e#24#36#0" expanded="true" />
-            <marker date="1556734814526" expanded="true" signature="752:753" ph="..." />
-            <marker date="1556734814526" expanded="true" signature="2502:3083" ph="..." />
+            <marker date="1556823993801" expanded="true" signature="810:811" ph="..." />
+            <marker date="1556823993801" expanded="true" signature="3051:3060" ph="..." />
+            <marker date="1556823993801" expanded="true" signature="3051:6981" ph="..." />
+            <marker date="1556823993801" expanded="true" signature="6977:6981" ph="..." />
           </folding>
         </state>
       </provider>
