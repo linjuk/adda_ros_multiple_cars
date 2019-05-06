@@ -288,6 +288,7 @@ for i in range (0, Number_Of_Points):
             b10_all_ws.append(b10)
             print("10: ", b10, "100: ", b100)
 
+
 """
 Step 11: Plot results of belief calculation on the graph for each timestep [without scaling]
 """

@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f927b2e8-1f96-4323-b57d-1f4e571808bf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/2-foundations.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/2-foundations.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.acn" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.acn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.bbl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.blg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.lof" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.lof" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.out" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/net_belief_evolution.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/net_belief_evolution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectory_interpolation_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/trajectory_interpolation_plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/config/sim_car2.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_control/config/sim_car2.rviz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/trajectory_viz.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/trajectory_viz.py" afterDir="false" />
     </list>
@@ -41,23 +21,26 @@
     <session id="-1708296219">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2014" />
+          <entry key="py" value="3639" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2014" />
+          <entry key="Python" value="3639" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -88,14 +71,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="179" column="46" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
+            <state relative-caret-position="1185">
+              <caret line="154" column="39" lean-forward="true" selection-start-line="154" selection-start-column="39" selection-end-line="154" selection-end-column="39" />
               <folding>
                 <element signature="e#24#36#0" expanded="true" />
-                <marker date="1556823993801" expanded="true" signature="810:811" ph="..." />
-                <marker date="1556823993801" expanded="true" signature="3051:3060" ph="..." />
-                <marker date="1556823993801" expanded="true" signature="3051:6981" ph="..." />
-                <marker date="1556823993801" expanded="true" signature="6977:6981" ph="..." />
+                <marker date="1557169611091" expanded="true" signature="834:835" ph="..." />
+                <marker date="1557169611091" expanded="true" signature="3430:3443" ph="..." />
+                <marker date="1557169611091" expanded="true" signature="6796:7471" ph="..." />
+                <marker date="1557169611091" expanded="true" signature="7495:9409" ph="..." />
               </folding>
             </state>
           </provider>
@@ -117,6 +100,9 @@
       <find>file</find>
       <find>comb</find>
       <find>marker_pub</find>
+      <find>.x</find>
+      <find>text</find>
+      <find>hello</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,10 +130,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="y" value="-28" />
-    <option name="width" value="1600" />
-    <option name="height" value="928" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -155,7 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,6 +162,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,10 +269,10 @@
     <option name="totallyTimeSpent" value="4380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2233278" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20176893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -299,7 +285,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010074" side_tool="true" visible="true" weight="0.2667364" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010074" side_tool="true" visible="true" weight="0.22803347" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -357,14 +343,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="179" column="46" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
+        <state relative-caret-position="1185">
+          <caret line="154" column="39" lean-forward="true" selection-start-line="154" selection-start-column="39" selection-end-line="154" selection-end-column="39" />
           <folding>
             <element signature="e#24#36#0" expanded="true" />
-            <marker date="1556823993801" expanded="true" signature="810:811" ph="..." />
-            <marker date="1556823993801" expanded="true" signature="3051:3060" ph="..." />
-            <marker date="1556823993801" expanded="true" signature="3051:6981" ph="..." />
-            <marker date="1556823993801" expanded="true" signature="6977:6981" ph="..." />
+            <marker date="1557169611091" expanded="true" signature="834:835" ph="..." />
+            <marker date="1557169611091" expanded="true" signature="3430:3443" ph="..." />
+            <marker date="1557169611091" expanded="true" signature="6796:7471" ph="..." />
+            <marker date="1557169611091" expanded="true" signature="7495:9409" ph="..." />
           </folding>
         </state>
       </provider>

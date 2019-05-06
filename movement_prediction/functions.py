@@ -987,3 +987,31 @@ def plot_scaling_results(all_results):
     #             labels_ws[key] = "_nolegend_"
     #
     #     plt.legend(loc='center right')
+
+def belief_update_for_rviz(input_cordinates, mean, covariance, belief_array):
+
+    mean =  np.array(mean)
+    covariance = np.array(covariance)
+
+    #  probability
+    Pobs = []
+    Pobs.append([simple_probability(input_cordinates, mean[0], covariance[0]),
+                 simple_probability(input_cordinates, mean[1], covariance[1]),
+                 simple_probability(input_cordinates, mean[2], covariance[2])])
+    Pobs = np.array(Pobs)
+
+    # prior
+    prior_belief = np.array([0.3, 0.3, 0.3])
+
+    # beleif without scaling
+    if len(belief_array) == 0:
+        return prior_belief
+
+    else:
+        P = Pobs[0, :]
+        # print("From function.py: P", P)
+        # print('from function.py: belief arrray', belief_array)
+        belief = belief_array[len(belief_array)-1] * P
+        return belief / np.sum(replace_zeros_in_list(belief))
+
+
