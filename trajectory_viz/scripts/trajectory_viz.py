@@ -182,6 +182,30 @@ class TrajectoryInteractiveMarkers:
         self.count += 1
         self.marker_publisher.publish(marker)
 
+############## DOES NOT WORK ##############
+    def show_std_right_in_rviz(self):
+        marker = Marker()
+        marker.header.frame_id = "map"
+        marker.header.stamp = rospy.Time.now()
+        marker.ns = "my_namespace"
+        marker.id = self.count
+        marker.type = Marker.SPHERE
+        marker.action = Marker.ADD
+
+        for i in range(10000):
+            point = Point()  # moved in to for loop
+            point.x = self.all_means[0][i][0]
+            point.y = self.all_means[0][i][1]
+            point.z = 2* self.all_std[0][i]
+            marker.points.append(point)
+
+        marker.pose.orientation = Quaternion(0, 0, 0, 1)
+        marker.scale = Vector3(0.1, 0.1, 0.1)
+        marker.color = ColorRGBA(0.0, 0.0, 0.5, 0.5)
+        self.count += 1
+        self.marker_publisher.publish(marker)
+
+###########################################
 
     def show_belief_right_in_rviz(self):
         for i in range(3):
