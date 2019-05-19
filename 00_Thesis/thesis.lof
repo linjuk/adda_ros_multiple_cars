@@ -1,0 +1,57 @@
+\select@language {ngerman}
+\select@language {english}
+\select@language {ngerman}
+\select@language {english}
+\select@language {ngerman}
+\select@language {english}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Insertion Areas (Colored Regions) Under Different Driving Scenarios \cite {pic}\relax }}{2}{figure.caption.22}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Scheme of Simple Model Based Approach \cite {pic2}\relax }}{3}{figure.caption.23}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Motion Modeling Overview \cite {ClassificationI}\relax }}{8}{figure.caption.25}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Examples of motion prediction with the different types of motion models \cite {ClassificationI}\relax }}{8}{figure.caption.26}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The \gls {RViz} environment that runs the simulation, having X-Intersection in mind\relax }}{13}{figure.caption.27}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Pseudo code for interpolation \leavevmode {\color {red}(need to rewrite it to make it pseudo)}\relax }}{14}{figure.caption.28}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Original and Interpolated Trajectories\relax }}{15}{figure.caption.29}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Pseudo Code for Updating belief\relax }}{16}{figure.caption.30}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Pseudo Code for Scaling Trajectory for Belief Update\relax }}{17}{figure.caption.31}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces X-intersection map\relax }}{18}{figure.caption.32}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Testing Trajectory (red) of going to the right\relax }}{18}{figure.caption.33}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Prediction making for trajectory which goes to the right. Trajectory has 10-time steps\relax }}{19}{figure.caption.34}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Belief changes over time. For trajectory with 10 steps on the left, for trajectory with 100 steps on the right. Trajectory direction is right\relax }}{19}{figure.caption.35}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Belief changes over time for different trajectories which belong to the same movement class. Trajectories have 100 time steps. Trajectory direction is right\relax }}{20}{figure.caption.36}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is right\relax }}{20}{figure.caption.37}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is right\relax }}{20}{figure.caption.38}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Testing Trajectory (red) of going straight\relax }}{21}{figure.caption.39}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Prediction making for trajectory which goes straight. Trajectory has 10-time steps\relax }}{21}{figure.caption.40}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Belief changes over time. For trajectory with 10 steps on the left, for trajectory with 100 steps on the right. Trajectory direction is straight\relax }}{22}{figure.caption.41}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Belief changes over time for different trajectories which belong to the same movement class. Trajectories have 100 time steps. Trajectory direction is straight\relax }}{22}{figure.caption.42}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is straight\relax }}{23}{figure.caption.43}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is straight\relax }}{23}{figure.caption.44}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is straight\relax }}{24}{figure.caption.45}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Testing Trajectory (red) of going to the left\relax }}{24}{figure.caption.46}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Prediction making for trajectory which goes left. Trajectory has 10-time steps\relax }}{24}{figure.caption.47}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Belief changes over time. For trajectory with 10 steps on the left, for trajectory with 100 steps on the right. Trajectory direction is left\relax }}{25}{figure.caption.48}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Belief changes over time for different trajectories which belong to the same movement class. Trajectories have 100 time steps. Trajectory direction is left\relax }}{25}{figure.caption.49}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is left\relax }}{26}{figure.caption.50}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is left\relax }}{26}{figure.caption.51}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces T-intersection map\relax }}{27}{figure.caption.52}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Testing Trajectory (red) of going to right\relax }}{27}{figure.caption.53}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Belief changes over time. For trajectory with 10 steps on the left, for trajectory with 100 steps on the right. Trajectory direction is right\relax }}{27}{figure.caption.54}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Belief changes over time for different trajectories which belong to the same movement class. Trajectories have 100 time steps. Trajectory direction is right\relax }}{28}{figure.caption.55}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Testing Trajectory (red) of going to the left\relax }}{28}{figure.caption.56}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Belief changes over time. For trajectory with 10 steps on the left, for trajectory with 100 steps on the right. Trajectory direction is left\relax }}{29}{figure.caption.57}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Belief changes over time for different trajectories which belong to the same movement class. Trajectories have 100 time steps. Trajectory direction is left\relax }}{29}{figure.caption.58}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Belief updates using scaling. Direction of the testing trajectory is right\relax }}{30}{figure.caption.59}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Belief updates using scaling. Direction of the testing trajectory is straight\relax }}{30}{figure.caption.60}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Belief updates using scaling. Direction of the testing trajectory is left\relax }}{30}{figure.caption.61}
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Belief updates using scaling. Direction of the testing trajectory is right\relax }}{31}{figure.caption.62}
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Belief updates using scaling. Direction of the testing trajectory is left\relax }}{31}{figure.caption.63}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Autonomous Vehicle Attack Taxonomy \cite {sec}\relax }}{35}{figure.caption.64}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Autonomous Vehicle Defense Taxonomy \cite {sec}\relax }}{37}{figure.caption.65}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

@@ -7,7 +7,7 @@ In this chapter experiments, made by using different simulation setups, are desc
 
 Every time we start belief update calculation we have to initialize the value of belief at the very first time step. When the testing map is X-intersection (Figure~\ref{fig:Xint}), from its' starting position, which is $x_0,y_0 = (14.5, 2.0)$ car can go to any direction it wants: right, straight or left. There are equal chances that car will go to any direction, so initial belief set to be equal for each direction $b_0 = (0.333, 0.333, 0.333)$
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=4cm]{img/X-int.jpg}
 	\caption{X-intersection map}
@@ -18,7 +18,7 @@ Every time we start belief update calculation we have to initialize the value of
 
 The testing trajectory of going to right looks as it is shown as a red line in Figure~\ref{fig:right}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=10cm]{img/right_org.jpg}
 	\caption{Testing Trajectory (red) of going to the right}
@@ -27,7 +27,7 @@ The testing trajectory of going to right looks as it is shown as a red line in F
 
 At first, the prediction making was checked for all trajectory, when it has 10-time steps. Results are in Figure~\ref{fig:rightPrediction}. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=18cm]{img/0_prediction_right.PNG}
 	\caption{Prediction making for trajectory which goes to the right. Trajectory has 10-time steps}
@@ -36,7 +36,7 @@ At first, the prediction making was checked for all trajectory, when it has 10-t
 
 From the series of plots, we can see that in the 7th step belief that direction is right equals to 1. In Figure~\ref{fig:CompareRight} is shown how beliefs are changing over time. Left graph of the Figure~\ref{fig:CompareRight} shows belief changes when trajectory has 10 points and for better visibility, there was added one more graph on the right, where is the same trajectory, just it was interpolated 100 times instead of 10.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/10_100_compared_right.jpg}
 	\caption{Belief changes over time. For trajectory with 10 steps on the left, for trajectory with 100 steps on the right. Trajectory direction is right}
@@ -45,7 +45,7 @@ From the series of plots, we can see that in the 7th step belief that direction 
 
 To be able to see how belief is changing over time withing different trajectories and compare if there are the same results at the same steps in the same movement class, we plotted 10 random trajectories going to the right. Results are shown in Figure~\ref{fig:10Rights}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=10cm]{img/10_rights.jpg}
 	\caption{Belief changes over time for different trajectories which belong to the same movement class. Trajectories have 100 time steps. Trajectory direction is right}
@@ -54,14 +54,14 @@ To be able to see how belief is changing over time withing different trajectorie
 
 From the Figure~\ref{fig:10Rights} it is possible to see that some trajectories have a better time for being sure to which direction car is moving and some of them have a worse time than others. Next two figures will show trajectories which have "the best" (Figure~\ref{fig:RightGood}) and "the worst" (Figure~\ref{fig:RightBad}) times in the movement prediction.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/bad_right_tr.jpg}
 	\caption{Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is right}
 	\label{fig:RightBad}    
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/good_right_tr.jpg}
 	\caption{Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is right}
@@ -75,7 +75,7 @@ By looking at Figure~\ref{fig:RightGood} and "good" results we can also make an 
 
 The testing trajectory of going straight looks as it is shown as a red line in Figure~\ref{fig:straight}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=10cm]{img/straight_org.jpg}
 	\caption{Testing Trajectory (red) of going straight}
@@ -84,7 +84,7 @@ The testing trajectory of going straight looks as it is shown as a red line in F
 
 At first, the prediction making was checked for all trajectory, when it has 10-time steps. Results are in Figure~\ref{fig:straightPrediction}. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=18cm]{img/0_prediction_straight.PNG}
 	\caption{Prediction making for trajectory which goes straight. Trajectory has 10-time steps}
@@ -93,7 +93,7 @@ At first, the prediction making was checked for all trajectory, when it has 10-t
 
 From the series of plots, we can see that in the 4th step belief that direction is straight is equal to $0.983$. In Figure~\ref{fig:CompareStraight} is shown how beliefs are changing over time. Left graph of the Figure~\ref{fig:CompareStraight} shows belief changes when trajectory has 10 points and for better visibility, there was added one more graph on the right, where is the same trajectory, just it was interpolated 100 times instead of 10.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/10_100_compared_straight.jpg}
 	\caption{Belief changes over time. For trajectory with 10 steps on the left, for trajectory with 100 steps on the right. Trajectory direction is straight}
@@ -102,7 +102,7 @@ From the series of plots, we can see that in the 4th step belief that direction 
 
 To be able to see how belief is changing over time withing different trajectories and compare if there are the same results at the same steps in the same movement class, we plotted 10 random trajectories going straight. Results are shown in Figure~\ref{fig:10Straight}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=10cm]{img/10_straights.jpg}
 	\caption{Belief changes over time for different trajectories which belong to the same movement class. Trajectories have 100 time steps. Trajectory direction is straight}
@@ -111,14 +111,14 @@ To be able to see how belief is changing over time withing different trajectorie
 
 From the Figure~\ref{fig:10Straight} it is possible to see that some trajectories have a better time for being sure to which direction car is moving and some of them have a worse time than others. Next two figures will show trajectories which have "the best" (Figure~\ref{fig:StraightGood}) and "the worst" (Figure~\ref{fig:StraightBad}) times in the movement prediction.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/bad_straight_tr.jpg}
 	\caption{Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is straight}
 	\label{fig:StraightBad}    
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/good_straight_tr.jpg}
 	\caption{Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is straight}
@@ -130,7 +130,7 @@ By looking at Figure~\ref{fig:StraightGood} and "good" results we can also make 
 
 By looking into separate results of class straight one more very interesting case was noticed. Here (Figure~\ref{fig:InterestingGood}) prediction is correct from the very first steps, but the changing of dynamics of prediction is interesting.  This dynamics might be explained by car movement trajectory (it is not moving exactly straight, it is making some turning, which can be the reason of this result).
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/interesting_straight_tr.jpg}
 	\caption{Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is straight}
@@ -141,7 +141,7 @@ By looking into separate results of class straight one more very interesting cas
 
 The testing trajectory of going to the left looks as it is shown as a red line in Figure~\ref{fig:left}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=10cm]{img/left_org.jpg}
 	\caption{Testing Trajectory (red) of going to the left}
@@ -150,7 +150,7 @@ The testing trajectory of going to the left looks as it is shown as a red line i
 
 At first, the prediction making was checked for all trajectory, when it has 10-time steps. Results are in Figure~\ref{fig:leftPrediction}. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=18cm]{img/0_prediction_left.PNG}
 	\caption{Prediction making for trajectory which goes left. Trajectory has 10-time steps}
@@ -159,7 +159,7 @@ At first, the prediction making was checked for all trajectory, when it has 10-t
 
 From the series of plots, we can see that in the 3rd step belief that direction is left is equal to $0.935$. In Figure~\ref{fig:CompareLeft} is shown how beliefs are changing over time. Left graph of the Figure~\ref{fig:CompareLeft} shows belief changes when trajectory has 10 points and for better visibility, there was added one more graph on the right, where is the same trajectory, just it was interpolated 100 times instead of 10.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/10_100_compared_left.jpg}
 	\caption{Belief changes over time. For trajectory with 10 steps on the left, for trajectory with 100 steps on the right. Trajectory direction is left}
@@ -168,7 +168,7 @@ From the series of plots, we can see that in the 3rd step belief that direction 
 
 To be able to see how belief is changing over time withing different trajectories and compare if there are the same results at the same steps in the same movement class, we plotted 10 random trajectories going straight. Results are shown in Figure~\ref{fig:10Left}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=10cm]{img/10_lefts.jpg}
 	\caption{Belief changes over time for different trajectories which belong to the same movement class. Trajectories have 100 time steps. Trajectory direction is left}
@@ -177,14 +177,14 @@ To be able to see how belief is changing over time withing different trajectorie
 
 From the Figure~\ref{fig:10Left} it is possible to see that some trajectories have a better time for being sure to which direction car is moving and some of them have a worse time than others. Next two figures will show trajectories which have "the best" (Figure~\ref{fig:LeftGood}) and "the worst" (Figure~\ref{fig:LeftBad}) times in the movement prediction.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/bad_left_tr.jpg}
 	\caption{Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is left}
 	\label{fig:LeftBad}    
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/good_left_tr.jpg}
 	\caption{Belief over time changing (left image) and image of testing trajectory (right image). Trajectories have 100 time steps. Trajectory direction is left}
@@ -198,7 +198,7 @@ From the Figure~\ref{fig:10Left} it is possible to see that some trajectories ha
 
 In this section results of simulation setup for T-Intersection (map looks like it is shown in Figure~\ref{fig:Tint}) will be described. As in the case of the map with X-Intersection, starting position of the car is $x_0,y_0 = (14.5, 2.0)$, but in this setup, the car can go only to the left or right, straight direction does not exist in this case. As in the previous case, at the very beginning, initial belief must be set. Since we already know that there is no way that car is going straight (there is no straight from car starting position), we have so-called some prior information. Initial belief for going right and left is calculated by formula $\frac{\# of trajectories going to the right in our database}{\# of trajectories going to the right in our database + \# of trajectories going to the left in our database}$ and $\frac{\# of trajectories going to the left in our database}{\# of trajectories going to the right in our database + \# of trajectories going to the left in our database}$ respectively. After calculation initial belief set to be $b_0 [left, right, straight]= (0.533, 0.467, 0.000)$
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=4cm]{img/T-int.jpg}
 	\caption{T-intersection map}
@@ -209,7 +209,7 @@ In this section results of simulation setup for T-Intersection (map looks like i
 
 The testing trajectory of going to right looks as it is shown as a red line in Figure~\ref{fig:right_T}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=10cm]{img/right_org_T.jpg}
 	\caption{Testing Trajectory (red) of going to right}
@@ -218,7 +218,7 @@ The testing trajectory of going to right looks as it is shown as a red line in F
 
 In Figure~\ref{fig:CompareRightT} is shown how beliefs are changing over time. Left graph of the Figure~\ref{fig:CompareRightT} shows belief changes when trajectory has 10 points and for better visibility, there was added one more graph on the right, where is the same trajectory, just it was interpolated 100 times instead of 10.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/10_100_compared_right_T.jpg}
 	\caption{Belief changes over time. For trajectory with 10 steps on the left, for trajectory with 100 steps on the right. Trajectory direction is right}
@@ -227,7 +227,7 @@ In Figure~\ref{fig:CompareRightT} is shown how beliefs are changing over time. L
 
 To be able to see how belief is changing over time withing different trajectories and compare if there are the same results at the same steps in the same movement class, we plotted 10 random trajectories going to the right. Results are shown in Figure~\ref{fig:10RightsT}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=10cm]{img/10Rights_T.jpg}
 	\caption{Belief changes over time for different trajectories which belong to the same movement class. Trajectories have 100 time steps. Trajectory direction is right}
@@ -240,7 +240,7 @@ From the Figure~\ref{fig:10RightsT} it is possible to see that correct predictio
 
 The testing trajectory of going to right looks as it is shown as a red line in Figure~\ref{fig:left_T}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=10cm]{img/left_org_T.jpg}
 	\caption{Testing Trajectory (red) of going to the left}
@@ -249,7 +249,7 @@ The testing trajectory of going to right looks as it is shown as a red line in F
 
 In Figure~\ref{fig:CompareLeftT} is shown how beliefs are changing over time. Left graph of the Figure~\ref{fig:CompareLeftT} shows belief changes when trajectory has 10 points and for better visibility, there was added one more graph on the right, where is the same trajectory, just it was interpolated 100 times instead of 10.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/10_100_compared_left_T.jpg}
 	\caption{Belief changes over time. For trajectory with 10 steps on the left, for trajectory with 100 steps on the right. Trajectory direction is left}
@@ -258,7 +258,7 @@ In Figure~\ref{fig:CompareLeftT} is shown how beliefs are changing over time. Le
 
 To be able to see how belief is changing over time withing different trajectories and compare if there are the same results at the same steps in the same movement class, we plotted 10 random trajectories going to the right. Results are shown in Figure~\ref{fig:10LeftsT}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=10cm]{img/10_Left_T.jpg}
 	\caption{Belief changes over time for different trajectories which belong to the same movement class. Trajectories have 100 time steps. Trajectory direction is left}
@@ -277,21 +277,21 @@ As we could see from the Figure~\ref{fig:10RightsT}, the same results we can see
 
 X-Intersection has three directions and scaling within all three of them will be shown.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/Scaling_Right_X.jpg}
 	\caption{Belief updates using scaling. Direction of the testing trajectory is right}
 	\label{fig:ScallingRightX}    
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/Scaling_Straight_X.jpg}
 	\caption{Belief updates using scaling. Direction of the testing trajectory is straight}
 	\label{fig:ScallingStraightX}    
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/Scaling_Left_X.jpg}
 	\caption{Belief updates using scaling. Direction of the testing trajectory is left}
@@ -303,14 +303,14 @@ X-Intersection has three directions and scaling within all three of them will be
 
 X-Intersection has two directions and scaling within right and left directions will be shown.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/Scaling_Right_T.jpg}
 	\caption{Belief updates using scaling. Direction of the testing trajectory is right}
 	\label{fig:ScallingRightT}    
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering  	
 	\includegraphics[width=15cm]{img/Scaling_Left_T.jpg}
 	\caption{Belief updates using scaling. Direction of the testing trajectory is left}

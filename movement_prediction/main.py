@@ -35,7 +35,7 @@ Step 2:
 """
 
 # set number of points
-Number_Of_Points=100
+Number_Of_Points=10
 
 # fill files directionary with file paths of all csv files
 files_dictionary = {
@@ -45,7 +45,7 @@ files_dictionary = {
     'straight': glob.glob('trajectories/straight_*.csv'), # return all files starting with straight in the folder
 }
 
-random_trajectory = read_csv_fast('trajectories/right_09.csv')
+random_trajectory = read_csv_fast('trajectories/test_right.csv')
 interpolated_random_trajectory = interpolate_dist(random_trajectory[:, 1], random_trajectory[:, 2], Number_Of_Points)
 
 random_trajectory = np.asarray(random_trajectory)
@@ -61,9 +61,9 @@ all_points_from_files = []          # big array container for all points from al
 
 # color map for graph
 color_map = {
-    'left': 'green',
     'right': 'blue',
-    'straight': 'magenta'
+    'straight': 'magenta',
+    'left': 'green'
 }
 
 # plot graph
@@ -74,9 +74,9 @@ plt.xlabel('x [m]')
 plt.ylabel('y [m]')
 
 # labels
-plt.plot(0, 0, color='green', label='Left-Side Parking', alpha=0.4)
 plt.plot(0, 0, color='blue', label='Right-Side Parking', alpha=0.4)
 plt.plot(0, 0, color='magenta', label='Straight-Side Parking', alpha=0.4)
+plt.plot(0, 0, color='green', label='Left-Side Parking', alpha=0.4)
 
 # loop over trajectories i.e. left, right, straight
 for key in files_dictionary:
@@ -168,10 +168,10 @@ for i in range(Number_Of_Points):
         circles_straight.append(circle_straight)
     circles_left.append(circle_left)
 
-p = PatchCollection(circles_right, alpha=0.3, color="red")
+p = PatchCollection(circles_right, alpha=0.3, color="blue")
 if map_type != "t-intersection":
-    p1 = PatchCollection(circles_straight, alpha=0.3, color="green")
-p2 = PatchCollection(circles_left, alpha=0.2, color="blue")
+    p1 = PatchCollection(circles_straight, alpha=0.3, color="magenta")
+p2 = PatchCollection(circles_left, alpha=0.2, color="green")
 
 ax.add_collection(p)
 if map_type != "t-intersection":
@@ -259,8 +259,8 @@ if map_type == "t-intersection":
     b100 = np.array([prior_left, prior_right, 0.0])
     b10 = np.array([prior_left, prior_right, 0.0])
 else:
-    b100 = np.array([0.3, 0.3, 0.3])
-    b10 = np.array([0.3, 0.3, 0.3])
+    b100 = np.array([0.333, 0.333, 0.333])
+    b10 = np.array([0.333, 0.333, 0.333])
 
 b100_all_ws = []
 b10_all_ws = []
@@ -303,7 +303,7 @@ for i in range(0, Number_Of_Points):
     plt.scatter(x=interpolated_random_trajectory[0][i], y=interpolated_random_trajectory[1][i], c="red", s=7, zorder=10)
 
     # commented for time being to avoid animation and get faster
-    # plt.pause(INTERVAL)
+    plt.pause(INTERVAL)
 
     # Now clear the plot
     clear_plot()
@@ -334,18 +334,18 @@ labels = {
 b10_counter = 0
 for i in range(0, Number_Of_Points):
 
-    plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
     plt.plot(i, b100_all[i][1], marker=".", color="blue", label=labels['right100'], alpha=0.4)
     plt.plot(i, b100_all[i][2], marker=".", color="magenta", label=labels['straight100'], alpha=0.4)
+    plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
 
     if i % t == 0:
-        # plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
         # plt.plot(i, b100_all[i][1], marker=".", color="blue", label=labels['right100'], alpha=0.4)
         # plt.plot(i, b100_all[i][2], marker=".", color="magenta", label=labels['straight100'], alpha=0.4)
+        # plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
 
-        plt.plot(i, b10_all[b10_counter][0], marker="D", color="green", label=labels['left10'], alpha=0.4)
         plt.plot(i, b10_all[b10_counter][1], marker="D", color="blue", label=labels['right10'], alpha=0.4)
         plt.plot(i, b10_all[b10_counter][2], marker="D", color="magenta", label=labels['straight10'], alpha=0.4)
+        plt.plot(i, b10_all[b10_counter][0], marker="D", color="green", label=labels['left10'], alpha=0.4)
         b10_counter+=1
 
     # ignore legend after first print
@@ -371,25 +371,26 @@ plt.xlabel('Time Steps')
 plt.ylabel('Belief over Class')
 
 labels_ws = {
-    'left100': 'Belief for going left_100 steps',
     'right100': 'Belief for going right_100 steps',
     'straight100': 'Belief for going straight_100 steps',
-    'left10': 'Belief for going left_10 steps',
+    'left100': 'Belief for going left_100 steps',
     'right10': 'Belief for going right_10 steps',
-    'straight10': 'Belief for going straight_10 steps'
+    'straight10': 'Belief for going straight_10 steps',
+    'left10': 'Belief for going left_10 steps'
 }
 
 b10_counter = 0
 for i in range(0, Number_Of_Points):
 
-    plt.plot(i, b100_all_ws[i][0], marker=".", color="green", label=labels_ws['left100'], alpha=0.4)
     plt.plot(i, b100_all_ws[i][1], marker=".", color="blue", label=labels_ws['right100'], alpha=0.4)
     plt.plot(i, b100_all_ws[i][2], marker=".", color="magenta", label=labels_ws['straight100'], alpha=0.4)
+    plt.plot(i, b100_all_ws[i][0], marker=".", color="green", label=labels_ws['left100'], alpha=0.4)
 
     if i % t == 0:
-        plt.plot(i, b10_all_ws[b10_counter][0], marker="D", color="green", label=labels_ws['left10'], alpha=0.4)
         plt.plot(i, b10_all_ws[b10_counter][1], marker="D", color="blue", label=labels_ws['right10'], alpha=0.4)
         plt.plot(i, b10_all_ws[b10_counter][2], marker="D", color="magenta", label=labels_ws['straight10'], alpha=0.4)
+        plt.plot(i, b10_all_ws[b10_counter][0], marker="D", color="green", label=labels_ws['left10'], alpha=0.4)
+
         b10_counter+=1
 
     # ignore legend after first print

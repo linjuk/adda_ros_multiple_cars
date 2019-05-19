@@ -226,7 +226,7 @@ class ClassName(QObject):
         self.record_button = True
         self.save_button = False
         self.trajectory_collector = []
-        self.timer_position = rospy.Timer(rospy.Duration(1.0 / 30.0), self.trajectory_recording)
+        self.timer_position = rospy.Timer(rospy.Duration(10.0 / 30.0), self.trajectory_recording)
 
     #################################
     # Trajectory Saving to the File #

@@ -9,20 +9,6 @@ from functions import \
 import matplotlib.pyplot as plt
 plt.style.use("seaborn")
 
-input_trajectories = [
-    # 'trajectories/test_left.csv',
-    'trajectories/left_01.csv',
-    'trajectories/left_02.csv',
-    'trajectories/left_03.csv',
-    'trajectories/left_04.csv',
-    'trajectories/left_05.csv',
-    'trajectories/left_06.csv',
-    'trajectories/left_07.csv',
-    'trajectories/left_08.csv',
-    'trajectories/left_09.csv',
-    'trajectories/left_10.csv'
-]
-
 # input_trajectories = [
     # 'trajectories/test_right.csv',
     # 'trajectories/right_01.csv',
@@ -50,6 +36,20 @@ input_trajectories = [
     # 'trajectories/straight_09.csv',
     # 'trajectories/straight_10.csv'
 # ]
+
+input_trajectories = [
+    # 'trajectories/test_left.csv',
+    'trajectories/left_01.csv',
+    'trajectories/left_02.csv',
+    'trajectories/left_03.csv',
+    'trajectories/left_04.csv',
+    'trajectories/left_05.csv',
+    'trajectories/left_06.csv',
+    'trajectories/left_07.csv',
+    'trajectories/left_08.csv',
+    'trajectories/left_09.csv',
+    'trajectories/left_10.csv'
+]
 
 all_results = []
 points = 100

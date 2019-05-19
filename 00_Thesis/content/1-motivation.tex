@@ -4,22 +4,14 @@
 \section{State of the Art}
 
 The most studies related to movement prediction on vehicles focus on lane change predictions. And there are various different methods are proposed to solve this task, the most popular are: \gls{DBN}, \gls{BN}, \gls{SVM}, \gls{HMM}, Mind-tracing and \gls{FL}. \\
-
 \gls{BN} could be considered as a graphical representation of probability distribution. In \cite{BN1, BN2} \gls{DBN} and \gls{BN} are used to recognize actions which driver is intend to perform. Lateral movement of a vehicle is expressed using \gls{BN}, having several various nodes for probability. The probability distribution for every node is determined by doing an analysis of driver behaviour in the past while driving. And ultimately, the final prediction is obtained by calculating the probability of a certain movement with respect to the possibility for every node. \\
-
 In \cite{Markov1, Markov2} process of driving is described as a set of various different states while driving. When some particular actions appear in particular defined sequence, it is possible to calculate the probability that the state will change to a particular state. In these works likelihood of states shifting is designed using \gls{HMM}. Authors of \cite{Markov3, Markov4} expanded their past work using even more realistic test case - they equipped a vehicle with sensors and used received graphical data to get more accurate results. Graphical models together with \glspl{HMM}  and its extensions were trained using the data from experimental driving,  seven different driver models were created: passing, changing lanes (to the right or to the left), turning right or left, starting and stopping. The result authors received and presented was "on average, the predictive power of our models is of 1 second before the maneuver starts taking place" \cite{Markov4}. \\
-
 Author of \cite{Mind} proposed new method for prediction making, which was named Mind-tracing. It is a computational framework which is able to predict possible drivers' intentions. This method is different from others because here different cognitive model versions which include a flood of a possible intention and action is used. Each action and possible intention are compared with a driver's behaviour at the same time. And the closet to the human behaviours is used for the further intentions expression. \\
-
 \cite{Fuzz} introduces \gls{FL} as an alternative method for modelling behaviour of the driver. The research paper is mainly focused on the process of decision making on lanes of a highway. For getting results a triangular membership function was used, fuzzy rules were defined by observing training procedure and learning from obtained results. The model was developed using actual traffic data. The used model combines the speed and speed difference of the vehicle, the lead and lag gap distances and the remaining distance to the end of the merge lane as input variables. The precision of prediction using the model was
 higher than using the binary Logit model. The high prediction accuracy received using this model results in prediction accuracy made using this model overall. \\
-
 \cite{VectMash} tested the validity and  accuracy of \gls{SVM} in movement prediction. After choosing proper hints for movement changing, data recorded by doing test were divided into different groups which were used for training classifier. Predictions were made using current information of the vehicle and classification hints at the current time. \\
-
 Even though all methods have the same purpose, it is very hard to compare them directly. Results received having measurements in different situations and in different time steps, e.g. one research paper gives prediction two seconds in advance before a lateral position of vehicle’s overlaps with the lane border, while other paper gives prediction only one second before crossing the lane. Furthermore, there is no exact definition of \textit{lane crossing} moment, usually, it is the moment when vehicle cross edge of a lane, but in some paper, it is not clear enough. \\
-
 Since it is not possible to make a clear comparison between methods due to essential differences in testing environments and different data sets, the Table \ref{table:DA} lists the best timing accuracy for each method. \\
-
 
 \begin{table}[h]
 	\caption{Different Methods Performance Comparison} 
@@ -46,9 +38,7 @@ Since it is not possible to make a clear comparison between methods due to essen
 		\label{table:DA}
 	\end{table}
 
-
 As it is possible from the results shown in the table the best methods for predicting movement changes is received by using \gls{BN} and \gls{SVM}. These two methods are able to predict quite accurate and with a relatively short period of time, what will lead in having more time in advance to decide which action to make. \\
-
 For further work, any Bayesian filter/classifier could be an acceptable method for examining behaviour of the driver for various reasons: 
 
 \begin{itemize}
@@ -60,27 +50,20 @@ For further work, any Bayesian filter/classifier could be an acceptable method f
 \section{Probabilistic Estimation Methods}
 
 Reasonable prediction and following decision-making process require considering uncertainty and objectives for the current situation. In this section, uncertainty will be represented as a probability distribution. \\
-
 Uncertainty can be a result of partial information about the state of the world. In a real world trying to fulfil any given task, it is possible to meet various reasons which do not allow to finish a task without any difficulties. What means, that with information we have at hand, it is hardly possible to make a task evaluation with being completely certain. \\
-
 Uncertainty can appear from practical and theoretical limitations while trying to predict future events, e.g., trying to exactly predict how a human would react in one situation or another, a decision support system would need to consider a model of the human brain. Even if the operation is known very well, it is still difficult to predict the end state and next actions which will be taken, due to spontaneous failures or other agent actions. \\
-
 A robust prediction (and later decision) making system need to take into account sources of uncertainty, which exist in the current state and consider it when computing the future outcomes for events. In order to describe uncertainty
 computationally, it needs to have a formal representation. 
 
 \subsection{Belief State and Probability}
 
 Solving tasks which involve uncertainty, it is very important to be able to compare the credibility of different statements. For example, if belief for action E is stronger than our belief for action T, then E $\succ$ T. If E and T have the same degree of belief, then E $\sim$ T. \\
-
 It is also beneficial to be able to compare beliefs about statements considering some given information, e.g., we can say that likelihood for action C may happen while E condition is happening is bigger than having T, then this expression would be written (E | C ) $\succ$ (T | C ). \\
-
 In order to make particular assumptions about the relationships of the operators $\succ$, $\prec$ and $\sim$. The assumption of \textit{universal comparability} and \textit{transitivity} assumptions requires to hold the same mathematical rules. Both assumptions allow representing degrees of belief by a real-valued function \cite{BOOK}, i.e. probability function P can be expressed like that:
 \[ P(A|C) > P(B|C) \iff (A|C) \succ (B|C) \]
 \[P(A|C) = P(B|C) \iff (A|C) \sim (B|C). \]
-
 If new assumptions about the probability P form, then P need to satisfy the main axioms of probability: 0 $\leqslant$ P (A | B ) $\leqslant$ 1. If we are sure that A action will happen when B action is given then P (A | B ) = 1. If A action will not happen when B action is given, then
 P (A | B ) = 0. \\
-
 Deep review about probability theory won't be provided in here, but this work relies on important probabilities properties. The first of them is a definition of \textit{contidion probability}:
 
 \begin{equation}
@@ -88,7 +71,6 @@ P(A|B)=\frac{P(A,B)}{P(B)},
 \end{equation}
 
 where P(A, B) shows the probability of A and B both being true. \\
-
 Another property which is important is the \textit{law of total probability}, which states that if $\beta$ is a set of "mutually exclusive and exhaustive propositions" \cite{BOOK}, then
 
 \begin{equation}
@@ -102,13 +84,9 @@ P(A|B)=\frac{P(B|A)P(A)}{P(B)}.
 \end{equation}
 
 This equation is known as \textbf{\textit{Bayes’ rule}}, and as mentioned earlier, it will be very important for the following work. \\
-
 But still, after this short introduction, question what exactly belied state is, still exists. One option to answer this would be the most believable next state for an examined object, considering experience in the past, which is given. This idea can be sound and save the basis for predictions in some cases, but in general, this idea is not sufficient. Being able to operate efficiently the degree of uncertainty must be taken into account, e.g. if the main agent is confused what future state could be, it could be proper to ask directions, take a look into the map, search for reference point, etc. \\
-
 Other options for belief computation would be using probability distributions over states of the world, which we have. In this case, distributions encode the subjective probability for the main agent and include information about the state of the world and give a basis for taking action under uncertainty we have.  Moreover, sufficient statistical information of action made in the past and initial belief state of the agent is comprised, i.e. computed belief state for the current agent’s state and additional information about its past observations and/or action made, would provide any further information about the current state of the world \cite{belief}. \\
-
 \textbf{Computing belief states}\cite{belief}: \\
-
 A belief \textit{b} is a probability distribution over state space $\mathscr{S}$, \textit{b(s)} is the probability set to world state \textit{s} by belief state \textit{b}. The axioms for belief state is the same as for probabilities: 0 $\leqslant$ b(s) $\leqslant$ 1, for all s $\epsilon$ $\mathscr{S}$ and $\sum_{s \epsilon \mathscr{S} } b(s) = 1.$ At every new step, new belief \textit{b'} must be  computed given old belief \textit{b}, an action \textit{a} and an observation \textit{o}. The new belief of an new state \textit{b'(s')} can be calculated using formula:
 
 \begin{equation}
@@ -121,15 +99,12 @@ b'(s') = & \displaystyle Pr(s'|o, a, b) \\
 \end{equation}
 
 The denominator of equation (2.4), Pr(o | a, b), can be interpreted as a normalizing factor, which is independent of next state s', which causes the sum of belief of all possible next states to 1. The state estimator function SE(b, a, o), which task is to update the belief state based on the \textit{a, o} and the previous \textit{b}, as its output gives new belief for new state \textit{b'}. \\
-
 Please note, that this subsection and the computation of belief states description is taken directly from \gls{POMDP} steps description. In later work, belief update will act an important role, but it will be computed using different components. Detail description of belief computation related to this work will be provided in next chapters. \\
-
 To have particular classifier is not enough for making accurate trajectory and movement predictions. Next chapter introduce with the most popular model for movement predictions.
 
 \section{Movement Prediction}
 
 Foresee future moments and trajectories for dynamical objects in traffic scenarios is vital in order to obviate risks which occur on the roads. Prediction despite of short or long term they are, must have sufficient time in advance to avoid traffic situations we, as traffic participants, don't want. In this section, relevant researches for trajectory and movement predictions are introduced. \\
-
 There is numerous research made on a trajectory and movement predictions with a vehicle as interest on traffic scenarios. \cite{ClassificationI} suggesting a one way of classifying methods for motion prediction. The main three categories with an increased rate of flexibility were defined: \textbf{\textit{physical-based, maneuver-based}} and \textbf{\textit{interaction aware}}.
 
 \begin{itemize}
@@ -146,7 +121,6 @@ Figure~\ref{fig:MotModOv} summarizes motion models defined in \cite{Classificati
 	\caption{Motion Modeling Overview \cite{ClassificationI}}
 	\label{fig:MotModOv}    
 \end{figure}
-
 
 \begin{figure}[h]
 	\centering  	
@@ -165,7 +139,6 @@ Together with above-mentioned categories, authors of \cite{ClassificationII} int
 \label{subsection:phb}
 
 Physics-based movement prediction models imply vehicles as a dynamic item, controlled by the physics' laws. Movements are predicted using dynamic and kinematic models with control inputs (e.g. acceleration, deceleration, steering), properties of the car (e.g. length, weight) and some external conditions (e.g. the friction coefficient of the road surface) to the process state of the vehicle (e.g. position, speed, direction). Great work has been done using \textit{physics-based} motion models and it still remains the most commonly used motion models for motion prediction in the context of road safety. The complexity of the models depends on a representation of the dynamics and kinematics of a vehicle, as well as, how uncertainties are handled, whether or not the road geometry is taken into account, etc. \\
-
 Dynamic and kinematic models can be used for movement prediction in a lot of different ways, the main difference is how uncertainties are handled. Three main approaches will be described as follow: \textbf{\textit{single trajectory simulation, Gaussian noise simulation}} and \textbf{\textit{Monte Carlo simulation}} \cite{ClassificationI}.
 
 \begin{itemize}
@@ -181,7 +154,6 @@ Dynamic and kinematic models can be used for movement prediction in a lot of dif
 \label{subsection:mb}
 
 \textit{Maneuver-based} motion models show vehicles as independent moving entities, i.e. it is assumed that the movement of a vehicle on the road match to a series of independently executed movements from the other vehicles on the same road. Oxford dictionary \cite{def} a movement/maneuver as “a physical movement or series of moves requiring skill and care”. Term behaviour in literature often is used meaning the same meaning, e.g. in \cite{beh1, beh2, beh3}, for the sake of simplicity word "movement" or "maneuver" will be used in this work with defined meaning. Movement and trajectory prediction using maneuver-based motion models work with in advance recognized movements which driver possibly intend to perform. If an algorithm can recognize intended movement, the algorithm can assume that future actions of the driver will match the recognized movement. Due to this a \textit{priori} information, trajectories received with this method are more relevant and reliable than the ones received using physics-based motion models.  Maneuver-based motion models rely on prototype trajectories or on movement intention estimation. \\
-
 Vehicle motion classification into maneuver/movement classes has been extremely widely applied not only in driver assistance systems but into natural driving studies \cite{DataDrivenIV, DataDrivenV, DataDrivenVI, mab1, mab2, mab3, mab4, mab5, mab6, mab7}. Authors of the majority of approaches are using heuristinc \cite{mab1} or training classifiers like \glspl{SVM} in \cite{mab2}, \glspl{HMM} \cite{DataDrivenIV, mab3, mab4}. \glspl{LSTM} in \cite{mab5}, Bayesian networks \cite{mab6}, etc., as movement-based features using speed, deceleration, acceleration, yaw rate, lane position, turn signals, distance from other vehicle and other road context information. Authors of \cite{mab1} classified vehicle's movement into class "keep lane" or "change lane" grounded on how far the closest car is and predicted future trajectory by applying quintic polynomial of the current car movement state and pre-defined ultimate movement state for each movement class, defined before.Authors of \cite{mab6} used six different movement classes, which were defined before and using \gls{DBN} based on multiple movements and context based features selected the potentially right future movement. Authors of \cite{mab7} defined an individual Gaussian process for three movement classes and established a multi-modal distribution for possible future trajectories using each model. However, in the study, only one case-based prediction has been introduced. Authors of \cite{DataDrivenIV} also determined separate Gaussian processes, this time for four different movement classes, which were classified using a hierarchical \gls{HMM}. This method was tested on real highway data. Authors of another study \cite{DataDrivenV} used a random forest classifier for movements classification into pre-defined movement classes: left or right lane changes or keep lane. Authors used a separate \gls{GMR} model for predicting lateral movement for vehicles using each class. Method was tested on real highway data. Similar method, but without predifined movements classes for prediction longitudinal motion for vehicles were used in \cite{DataDrivenVI}.
 
 \subsection{Movement Prediction Using Intention Aware Models}
@@ -189,16 +161,13 @@ Vehicle motion classification into maneuver/movement classes has been extremely 
 
 \textit{Interaction-aware} motion models introduce cars as
 manoeuvring items which co-operate with each other, i.e. a movement of a vehicle is considered to be affected by a movement of the other moving object in the traffic scene. Keeping into account the dependencies between the separate moving objects leads to a much better explanation of their movement compared with \textbf{maneuver-based} motion models described in the previous subsection.  As a result, it gives a better perception of the current situation. \\
-
 Despite this, a relatively small amount of researches is done considering inter-moving-objects interaction in movement prediction. Authors of \cite{InterAwareI} assigned two movement classes for vehicles approaching an intersection together, applying a polynomial classifier which "punishes" cases that potentially would lead to near-collisions situations. Authors of \cite{InterAwareII} worked with a much complex scenario and assigned movement classes to multiple together interacting vehicles in a highway scenario. However, foreseen movements, trajectories of a vehicle are assumed to be given in advance. Results reported using a simulated environment. \cite{ClassificationII} in their work considered multiple interacting vehicles together with the difficulty of estimating their future motion.  Authors of \cite{DataDrivenV} not directly used inter-moving-objects interaction by including comparative positions and velocities of vehicles close by as features for movement and trajectory prediction.
 
 \subsection{Movement Prediction Using Data-Driven Model}
 \label{subsection:ddr}
 
 As mentioned earlier \textit{data-driven} movement prediction can be generally classified into clustering-based and probabilistic approaches.  \textbf{Clustering-based} approaches group the training data in order to provide a set of possible prototype trajectories \cite{DataDrivenI, DataDrivenII}. Partially observed trajectories are checked and compared with a prototype trajectory using various distance measurements, as \gls{DTW}, \gls{LCSS}, Hausdorff distance, etc. and after matching movement trajectory with prototype trajectory, later one is used as a model for future movement. Clustering approach is quite easy, but the main disadvantage of this method is the deterministic nature of the predictions. \\
-
 \textbf{Probabilistic} approach contrary learn probability distribution of every movement trajectory class and gives the conditional distribution for future movements, given current trajectory. This lets us avoid some degree of natural uncertainty of predicting the future. \\
-
 Authors of \cite{DataDrivenIII, DataDrivenIV} for modelling trajectories and for motion prediction use Gaussian Processes which are the most popular approaches solving prediction problems so far. \cite{DataDrivenV} uses \gls{GMR} for prediction longitudinal movement of a vehicle, while \cite{DataDrivenVI} uses the same method for lateral movement prediction. \cite{DataDrivenVII} uses \glspl{VGMM} for conditional distribution within snippets of future having snippets of movement history models. The latest approach is much easier and computationally more effective when compared to Gaussian Process Regression.  Authors proved the efficiency of method predicting non-linear movements in turns at the intersection scenarios. 
 
 \subsection{Limitations of Methods for Movement Prediction}

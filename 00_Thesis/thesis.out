@@ -1,0 +1,28 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Background}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Purpose}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Thesis Outline}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Fundamentals and Related Work}{}% 5
+\BOOKMARK [1][-]{section.2.1}{State of the Art}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Probabilistic Estimation Methods}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Movement Prediction}{chapter.2}% 8
+\BOOKMARK [0][-]{chapter.3}{TBD}{}% 9
+\BOOKMARK [0][-]{chapter.4}{Setup and Implementation}{}% 10
+\BOOKMARK [1][-]{section.4.1}{Data Collection}{chapter.4}% 11
+\BOOKMARK [1][-]{section.4.2}{Brief Algorithm Explanation}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.3}{Modeling Belief for Prediction Making}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.4}{Trajectory Scaling}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.5}{Online Method for Prediction Making}{chapter.4}% 15
+\BOOKMARK [0][-]{chapter.5}{Experiments and Results}{}% 16
+\BOOKMARK [1][-]{section.5.1}{Vehicle is Moving Through X-Intersection}{chapter.5}% 17
+\BOOKMARK [1][-]{section.5.2}{Vehicle is Moving Through T-Intersection}{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.3}{Results Comparison Before and After Scaling}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.4}{Prediction Making in Online Method}{chapter.5}% 20
+\BOOKMARK [0][-]{chapter.6}{Security Aspects}{}% 21
+\BOOKMARK [1][-]{section.6.1}{Background}{chapter.6}% 22
+\BOOKMARK [1][-]{section.6.2}{Attack Taxonomy}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.3}{Defense against Attacks Taxonomy}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.4}{The most important attacks}{chapter.6}% 25
+\BOOKMARK [0][-]{chapter.7}{Conclusions and Future Works}{}% 26
+\BOOKMARK [0][-]{section*.68}{Bibliography}{}% 27
+\BOOKMARK [0][-]{appendix.A}{Some Appendix}{}% 28

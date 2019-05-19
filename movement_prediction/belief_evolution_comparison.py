@@ -13,8 +13,9 @@ plt.style.use("seaborn")
 Step 0:
 - Recognize map
 """
-map_type = recognize_map('maps/testmap6_0_.png')
-
+# map_type = recognize_map('maps/testmap6_0_.png')
+# map_type = 't-intersection'
+map_type = 'x-intersection'
 
 """
 Step 1:
@@ -29,12 +30,12 @@ Number_Of_Points=100
 # fill files directionary with file paths of all csv files
 files_dictionary = {
 
-    'left': glob.glob('trajectories/left_*.csv'),         # return all files starting with left_ in the folder
     'right': glob.glob('trajectories/right_*.csv'),       # return all files starting with right in the folder
     'straight': glob.glob('trajectories/straight_*.csv'), # return all files starting with straight in the folder
+    'left': glob.glob('trajectories/left_*.csv'),  # return all files starting with left_ in the folder
 }
 
-random_trajectory = read_csv_fast('trajectories/test_right.csv')
+random_trajectory = read_csv_fast('trajectories/test_straight.csv')
 interpolated_random_trajectory = interpolate_dist(random_trajectory[:, 1], random_trajectory[:, 2], Number_Of_Points)
 
 random_trajectory = np.asarray(random_trajectory)
@@ -65,21 +66,22 @@ for key in files_dictionary:
 Step 3: Interpolate the accumulated trajectories in the previous step to NUMBER_POINTS defined in STEP 1
 """
 all_points_from_files = np.asarray(all_points_from_files)
+count_right_files = len(files_dictionary['right'])
 count_straight_files = len(files_dictionary['straight'])
 count_left_files = len(files_dictionary['left'])
-count_right_files = len(files_dictionary['right'])
 
-all_straight = []
-for i in range(count_straight_files):
-    [xn, yn] = interpolate_dist(all_points_from_files[i][:, 1], all_points_from_files[i][:, 2], Number_Of_Points)
-    points = np.vstack((xn, yn)).T
-    all_straight.append(points)
 
 all_rights = []
 for i in range(count_straight_files, count_straight_files + count_right_files):
     [xn, yn] = interpolate_dist(all_points_from_files[i][:, 1], all_points_from_files[i][:, 2], Number_Of_Points)
     points = np.vstack((xn, yn)).T
     all_rights.append(points)
+
+all_straight = []
+for i in range(count_straight_files):
+    [xn, yn] = interpolate_dist(all_points_from_files[i][:, 1], all_points_from_files[i][:, 2], Number_Of_Points)
+    points = np.vstack((xn, yn)).T
+    all_straight.append(points)
 
 all_lefts = []
 for i in range(count_straight_files + count_right_files,
@@ -95,8 +97,8 @@ all_lefts = np.asarray(all_lefts)
 """
 Step 4: Calculate and plot mean for each class i.e. all trajectories for that class
 """
-means_straight = np.mean(all_straight, axis=0)
 means_right = np.mean(all_rights, axis=0)
+means_straight = np.mean(all_straight, axis=0)
 means_left = np.mean(all_lefts, axis=0)
 
 """
@@ -115,9 +117,9 @@ t = 10
 
 Pobs = []
 for i in range(1, T):
-    Pobs.append([ simple_probability(random_trajectory[i], means_left[i], covariance_left[i]),
-                             simple_probability(random_trajectory[i], means_right[i], covariance_right[i]),
-                             simple_probability(random_trajectory[i], means_straight[i], covariance_straight[i]) ])
+    Pobs.append([ simple_probability(random_trajectory[i], means_right[i], covariance_right[i]),
+                  simple_probability(random_trajectory[i], means_straight[i], covariance_straight[i]),
+                  simple_probability(random_trajectory[i], means_left[i], covariance_left[i])])
 
 Pobs = np.array(Pobs)
 
@@ -165,9 +167,9 @@ Step 6b: Comparison of belief updates between 100 and 10 steps (Without Scaling)
 
 Pobs = []
 for i in range(1, T):
-    Pobs.append([ simple_probability(random_trajectory[i], means_left[i], covariance_left[i]),
-                             simple_probability(random_trajectory[i], means_right[i], covariance_right[i]),
-                             simple_probability(random_trajectory[i], means_straight[i], covariance_straight[i]) ])
+    Pobs.append([simple_probability(random_trajectory[i], means_right[i], covariance_right[i]),
+                 simple_probability(random_trajectory[i], means_straight[i], covariance_straight[i]),
+                 simple_probability(random_trajectory[i], means_left[i], covariance_left[i])])
 
 Pobs = np.array(Pobs)
 
@@ -213,9 +215,9 @@ Step 7a: Plotting (with scaling)
 
 # color map for graph
 color_map = {
-    'left': 'green',
     'right': 'blue',
-    'straight': 'magenta'
+    'straight': 'magenta',
+    'left': 'green'
 }
 
 # plot graph
@@ -226,29 +228,30 @@ plt.xlabel('Time Steps')
 plt.ylabel('Belief over Class')
 
 labels = {
-    'left100': 'Belief for going left_100 steps',
+
     'right100': 'Belief for going right_100 steps',
     'straight100': 'Belief for going straight_100 steps',
-    'left10': 'Belief for going left_10 steps',
+    'left100': 'Belief for going left_100 steps',
     'right10': 'Belief for going right_10 steps',
-    'straight10': 'Belief for going straight_10 steps'
+    'straight10': 'Belief for going straight_10 steps',
+    'left10': 'Belief for going left_10 steps'
 }
 
 b10_counter = 0
 for i in range(0, T):
 
-    # plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
     # plt.plot(i, b100_all[i][1], marker=".", color="blue", label=labels['right100'], alpha=0.4)
     # plt.plot(i, b100_all[i][2], marker=".", color="magenta", label=labels['straight100'], alpha=0.4)
+    # plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
 
     if i % t == 0:
-        plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
         plt.plot(i, b100_all[i][1], marker=".", color="blue", label=labels['right100'], alpha=0.4)
         plt.plot(i, b100_all[i][2], marker=".", color="magenta", label=labels['straight100'], alpha=0.4)
+        plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
 
-        plt.plot(i, b10_all[b10_counter][0], marker="D", color="green", label=labels['left10'], alpha=0.4)
         plt.plot(i, b10_all[b10_counter][1], marker="D", color="blue", label=labels['right10'], alpha=0.4)
         plt.plot(i, b10_all[b10_counter][2], marker="D", color="magenta", label=labels['straight10'], alpha=0.4)
+        plt.plot(i, b10_all[b10_counter][0], marker="D", color="green", label=labels['left10'], alpha=0.4)
         b10_counter+=1
 
     # ignore legend after first print
@@ -281,25 +284,25 @@ plt.xlabel('Time Steps')
 plt.ylabel('Belief over Class')
 
 labels_ws = {
-    'left100': 'Belief for going left_100 steps',
     'right100': 'Belief for going right_100 steps',
     'straight100': 'Belief for going straight_100 steps',
-    'left10': 'Belief for going left_10 steps',
+    'left100': 'Belief for going left_100 steps',
     'right10': 'Belief for going right_10 steps',
-    'straight10': 'Belief for going straight_10 steps'
+    'straight10': 'Belief for going straight_10 steps',
+    'left10': 'Belief for going left_10 steps'
 }
 
 b10_counter = 0
 for i in range(0, T):
 
-    plt.plot(i, b100_all_ws[i][0], marker=".", color="green", label=labels_ws['left100'], alpha=0.4)
     plt.plot(i, b100_all_ws[i][1], marker=".", color="blue", label=labels_ws['right100'], alpha=0.4)
     plt.plot(i, b100_all_ws[i][2], marker=".", color="magenta", label=labels_ws['straight100'], alpha=0.4)
+    plt.plot(i, b100_all_ws[i][0], marker=".", color="green", label=labels_ws['left100'], alpha=0.4)
 
     if i % t == 0:
-        plt.plot(i, b10_all_ws[b10_counter][0], marker="D", color="green", label=labels_ws['left10'], alpha=0.4)
         plt.plot(i, b10_all_ws[b10_counter][1], marker="D", color="blue", label=labels_ws['right10'], alpha=0.4)
         plt.plot(i, b10_all_ws[b10_counter][2], marker="D", color="magenta", label=labels_ws['straight10'], alpha=0.4)
+        plt.plot(i, b10_all_ws[b10_counter][0], marker="D", color="green", label=labels_ws['left10'], alpha=0.4)
         b10_counter+=1
 
     # ignore legend after first print
