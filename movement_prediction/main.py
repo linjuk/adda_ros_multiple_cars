@@ -23,9 +23,9 @@ plt.style.use("seaborn")
 Step 1: Recognize map
 """
 # map_type = recognize_map('maps/testmap.png') # X-intersection
-# map_type = recognize_map('maps/testmap6_0_.png') # T-intersection
+map_type = recognize_map('/home/linjuk/adda_ros/src/code_lina/simple_sim_car/pomdp_car_launch/maps/testmap.png') # T-intersection
 # map_type = 'x-intersection'
-map_type = 't-intersection'
+# map_type = 't-intersection'
 
 """
 Step 2:
@@ -35,7 +35,7 @@ Step 2:
 """
 
 # set number of points
-Number_Of_Points=10
+Number_Of_Points=100
 
 # fill files directionary with file paths of all csv files
 files_dictionary = {
@@ -303,7 +303,7 @@ for i in range(0, Number_Of_Points):
     plt.scatter(x=interpolated_random_trajectory[0][i], y=interpolated_random_trajectory[1][i], c="red", s=7, zorder=10)
 
     # commented for time being to avoid animation and get faster
-    plt.pause(INTERVAL)
+    # plt.pause(INTERVAL)
 
     # Now clear the plot
     clear_plot()

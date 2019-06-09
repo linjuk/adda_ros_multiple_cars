@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+
+<launch>
+<node name="trajectory_viz_node" pkg="trajectory_viz" type="trajectory_viz_2.py" respawn="true" output="screen" />
+</launch>

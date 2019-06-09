@@ -130,8 +130,8 @@ if map_type == "t-intersection":
     b100 = np.array([prior_left, prior_right, 0.0])
     b10 = np.array([prior_left, prior_right, 0.0])
 else:
-    b100 = np.array([0.3, 0.3, 0.3])
-    b10 = np.array([0.3, 0.3, 0.3])
+    b100 = np.array([0.333, 0.333, 0.333])
+    b10 = np.array([0.333, 0.333, 0.333])
 
 
 b100_all = []
@@ -240,18 +240,18 @@ labels = {
 b10_counter = 0
 for i in range(0, T):
 
-    # plt.plot(i, b100_all[i][1], marker=".", color="blue", label=labels['right100'], alpha=0.4)
-    # plt.plot(i, b100_all[i][2], marker=".", color="magenta", label=labels['straight100'], alpha=0.4)
-    # plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
+    # plt.plot(i, b100_all[i][0], marker=".", color="blue", label=labels['right100'], alpha=0.4)
+    # plt.plot(i, b100_all[i][1], marker=".", color="magenta", label=labels['straight100'], alpha=0.4)
+    # plt.plot(i, b100_all[i][2], marker=".", color="green", label=labels['left100'], alpha=0.4)
 
     if i % t == 0:
-        plt.plot(i, b100_all[i][1], marker=".", color="blue", label=labels['right100'], alpha=0.4)
-        plt.plot(i, b100_all[i][2], marker=".", color="magenta", label=labels['straight100'], alpha=0.4)
-        plt.plot(i, b100_all[i][0], marker=".", color="green", label=labels['left100'], alpha=0.4)
+        plt.plot(i, b100_all[i][0], marker=".", color="blue", label=labels['right100'], alpha=0.4)
+        plt.plot(i, b100_all[i][1], marker=".", color="magenta", label=labels['straight100'], alpha=0.4)
+        plt.plot(i, b100_all[i][2], marker=".", color="green", label=labels['left100'], alpha=0.4)
 
-        plt.plot(i, b10_all[b10_counter][1], marker="D", color="blue", label=labels['right10'], alpha=0.4)
-        plt.plot(i, b10_all[b10_counter][2], marker="D", color="magenta", label=labels['straight10'], alpha=0.4)
-        plt.plot(i, b10_all[b10_counter][0], marker="D", color="green", label=labels['left10'], alpha=0.4)
+        plt.plot(i, b10_all[b10_counter][0], marker="D", color="blue", label=labels['right10'], alpha=0.4)
+        plt.plot(i, b10_all[b10_counter][1], marker="D", color="magenta", label=labels['straight10'], alpha=0.4)
+        plt.plot(i, b10_all[b10_counter][2], marker="D", color="green", label=labels['left10'], alpha=0.4)
         b10_counter+=1
 
     # ignore legend after first print
@@ -295,14 +295,14 @@ labels_ws = {
 b10_counter = 0
 for i in range(0, T):
 
-    plt.plot(i, b100_all_ws[i][1], marker=".", color="blue", label=labels_ws['right100'], alpha=0.4)
-    plt.plot(i, b100_all_ws[i][2], marker=".", color="magenta", label=labels_ws['straight100'], alpha=0.4)
-    plt.plot(i, b100_all_ws[i][0], marker=".", color="green", label=labels_ws['left100'], alpha=0.4)
+    plt.plot(i, b100_all_ws[i][0], marker=".", color="blue", label=labels_ws['right100'], alpha=0.4)
+    plt.plot(i, b100_all_ws[i][1], marker=".", color="magenta", label=labels_ws['straight100'], alpha=0.4)
+    plt.plot(i, b100_all_ws[i][2], marker=".", color="green", label=labels_ws['left100'], alpha=0.4)
 
     if i % t == 0:
-        plt.plot(i, b10_all_ws[b10_counter][1], marker="D", color="blue", label=labels_ws['right10'], alpha=0.4)
-        plt.plot(i, b10_all_ws[b10_counter][2], marker="D", color="magenta", label=labels_ws['straight10'], alpha=0.4)
-        plt.plot(i, b10_all_ws[b10_counter][0], marker="D", color="green", label=labels_ws['left10'], alpha=0.4)
+        plt.plot(i, b10_all_ws[b10_counter][0], marker="D", color="blue", label=labels_ws['right10'], alpha=0.4)
+        plt.plot(i, b10_all_ws[b10_counter][1], marker="D", color="magenta", label=labels_ws['straight10'], alpha=0.4)
+        plt.plot(i, b10_all_ws[b10_counter][2], marker="D", color="green", label=labels_ws['left10'], alpha=0.4)
         b10_counter+=1
 
     # ignore legend after first print

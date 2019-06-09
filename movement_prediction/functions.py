@@ -1,6 +1,7 @@
 import cv2
 from scipy.stats import multivariate_normal
 from scipy.interpolate import NearestNDInterpolator
+# from dtw import dtw
 import numpy as np
 import pandas as pd
 import glob
@@ -25,7 +26,7 @@ def replace_zeros_in_list(list):
     """
     for (i, item) in enumerate(list):
         if item == 0:
-            list[i] = 0.00001
+            list[i] = 2.2250738585072014e-308
     return list
 
 def read_csv_fast(file):
@@ -41,51 +42,11 @@ def recognize_map(map_file):
        type of map it is.
        """
 
-    img1 = cv2.imread('maps/testmap5.png')
-    img2 = cv2.imread('maps/testmap6_0_.png')
-    gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
-    gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
-    ret1, thresh1 = cv2.threshold(gray1, 127, 255, 1)
-    ret2, thresh2 = cv2.threshold(gray2, 127, 255, 1)
-    img1, contours1, h1 = cv2.findContours(thresh1, 1, 2)
-    img2, contours2, h2 = cv2.findContours(thresh2, 1, 2)
-    x = 0
-    y = 0
-
-    for cnt1 in contours1:
-        approx1 = cv2.approxPolyDP(cnt1, 0.01 * cv2.arcLength(cnt1, True), True)
-
-        if len(approx1) == 4:
-            x = x + 1
-            cv2.drawContours(img1, [cnt1], 0, (0, 0, 255), -1)
-
-    for cnt2 in contours2:
-        approx2 = cv2.approxPolyDP(cnt2, 0.01 * cv2.arcLength(cnt2, True), True)
-
-        if len(approx2) == 4:
-            y = y + 1
-            cv2.drawContours(img2, [cnt2], 0, (0, 0, 255), -1)
-
-    print("x = ", x)
-    print("y = ", y)
-
-    if x > y:
-        cv2.waitKey(0)
-        cv2.imwrite('output/X.png', img1)
-        cv2.imwrite('output/T.png', img2)
-        cv2.destroyAllWindows()
-    elif x < y:
-        cv2.waitKey(0)
-        cv2.imwrite('output/T.png', img1)
-        cv2.imwrite('output/X.png', img2)
-        cv2.destroyAllWindows()
-
     img1 = cv2.imread(map_file)
     gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
     ret1, thresh1 = cv2.threshold(gray1, 127, 255, 1)
-    im1, contours1, h1 = cv2.findContours(thresh1, 1, 2)
+    h1, contours1, h1 = cv2.findContours(thresh1, 1, 2)
     x = 0
-
     for cnt1 in contours1:
         approx1 = cv2.approxPolyDP(cnt1, 0.01 * cv2.arcLength(cnt1, True), True)
 
@@ -263,6 +224,9 @@ def belief_update(belief_input, observation_probability, number_points):
 def distance_formula(p1, p2):
     return math.sqrt( ((p1[0]-p2[0])**2)+((p1[1]-p2[1])**2))
 
+def distance_formula_dtw(p1, p2):
+    return dtw.distance(p1, p2)
+
 def comb_dataset(Number_Of_Points):
     """
     Go through all trajectory files of dataset, interpolate each and return accumulated values
@@ -274,7 +238,7 @@ def comb_dataset(Number_Of_Points):
 
     # fill files directionary with file paths of all csv files
     files_dictionary = {
-        'right': glob.glob(os.path.dirname(os.path.realpath(__file__))+'/trajectories/right*.csv'),  # return all files starting with right in the folder
+        'right': glob.glob(os.path.dirname(os.path.realpath(__file__))+'/trajectories/right_*.csv'),  # return all files starting with right in the folder
         'straight': glob.glob(os.path.dirname(os.path.realpath(__file__))+'/trajectories/straight_*.csv'),  # return all files starting with straight in the folder
         'left': glob.glob(os.path.dirname(os.path.realpath(__file__)) + '/trajectories/left_*.csv') # return all files starting with left_ in the folder
 
@@ -297,6 +261,11 @@ def comb_dataset(Number_Of_Points):
     count_right_files = len(files_dictionary['right'])
     count_straight_files = len(files_dictionary['straight'])
     count_left_files = len(files_dictionary['left'])
+
+    print('Count of dataset')
+    print('right', count_right_files)
+    print('left', count_left_files)
+    print('straight', count_straight_files)
 
     all_rights = []
     for i in range(count_straight_files, count_straight_files + count_right_files):
@@ -605,20 +574,36 @@ def plot_scaling_results(all_results):
     #
     #     plt.legend(loc='center right')
 
-def belief_update_for_rviz(input_cordinates, mean, covariance, belief_array):
+def belief_update_for_rviz(input_cordinates, mean, covariance, belief_array, map_type, files_dictionary):
 
     mean =  np.array(mean)
     covariance = np.array(covariance)
 
-    #  probability
-    Pobs = []
-    Pobs.append([simple_probability(input_cordinates, mean[0], covariance[0]),
-                 simple_probability(input_cordinates, mean[1], covariance[1]),
-                 simple_probability(input_cordinates, mean[2], covariance[2])])
-    Pobs = np.array(Pobs)
+    # prior based on map type
+    if(map_type == 't-intersection'):
+        print('Calculating belief for t-intersection map')
+        #  probability
+        Pobs = []
+        Pobs.append([simple_probability(input_cordinates, mean[0], covariance[0]),
+                     0,
+                     simple_probability(input_cordinates, mean[2], covariance[2])])
+        Pobs = np.array(Pobs)
 
-    # prior
-    prior_belief = np.array([0.3, 0.3, 0.3])
+
+        prior_right = len(files_dictionary['right']) / float(len(files_dictionary['left']) + len(files_dictionary['right']))
+        prior_left = len(files_dictionary['left']) / float(len(files_dictionary['left']) + len(files_dictionary['right']))
+        prior_belief = np.array([prior_right, 0.0, prior_left])
+
+
+    elif(map_type == 'x-intersection'):
+        #  probability
+        Pobs = []
+        Pobs.append([simple_probability(input_cordinates, mean[0], covariance[0]),
+                     simple_probability(input_cordinates, mean[1], covariance[1]),
+                     simple_probability(input_cordinates, mean[2], covariance[2])])
+        Pobs = np.array(Pobs)
+
+        prior_belief = np.array([0.3, 0.3, 0.3])
 
     # beleif without scaling
     if len(belief_array) == 0:

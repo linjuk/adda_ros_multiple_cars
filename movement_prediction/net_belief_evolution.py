@@ -11,44 +11,44 @@ plt.style.use("seaborn")
 
 # input_trajectories = [
     # 'trajectories/test_right.csv',
-    # 'trajectories/right_01.csv',
-    # 'trajectories/right_02.csv',
-    # 'trajectories/right_03.csv',
-    # 'trajectories/right_04.csv',
-    # 'trajectories/right_05.csv',
-    # 'trajectories/right_06.csv',
-    # 'trajectories/right_07.csv',
-    # 'trajectories/right_08.csv',
-    # 'trajectories/right_09.csv',
-    # 'trajectories/right_10.csv'
+    # 'trajectories/right_101.csv',
+    # 'trajectories/right_102.csv',
+    # 'trajectories/right_103.csv',
+    # 'trajectories/right_104.csv',
+    # 'trajectories/right_105.csv',
+    # 'trajectories/right_106.csv',
+    # 'trajectories/right_107.csv',
+    # 'trajectories/right_108.csv',
+    # 'trajectories/right_109.csv',
+    # 'trajectories/right_110.csv'
 # ]
 
 # input_trajectories = [
     # 'trajectories/test_straight.csv',
-    # 'trajectories/straight_01.csv',
-    # 'trajectories/straight_02.csv',
-    # 'trajectories/straight_03.csv',
-    # 'trajectories/straight_04.csv',
-    # 'trajectories/straight_05.csv',
-    # 'trajectories/straight_06.csv',
-    # 'trajectories/straight_07.csv',
-    # 'trajectories/straight_08.csv',
-    # 'trajectories/straight_09.csv',
-    # 'trajectories/straight_10.csv'
+    # 'trajectories/straight_101.csv',
+    # 'trajectories/straight_102.csv',
+    # 'trajectories/straight_103.csv',
+    # 'trajectories/straight_104.csv',
+    # 'trajectories/straight_105.csv',
+    # 'trajectories/straight_106.csv',
+    # 'trajectories/straight_107.csv',
+    # 'trajectories/straight_108.csv',
+    # 'trajectories/straight_109.csv',
+    # 'trajectories/straight_110.csv'
 # ]
 
 input_trajectories = [
     # 'trajectories/test_left.csv',
-    'trajectories/left_01.csv',
-    'trajectories/left_02.csv',
-    'trajectories/left_03.csv',
-    'trajectories/left_04.csv',
-    'trajectories/left_05.csv',
-    'trajectories/left_06.csv',
-    'trajectories/left_07.csv',
-    'trajectories/left_08.csv',
-    'trajectories/left_09.csv',
-    'trajectories/left_10.csv'
+    # 'trajectories/left_101.csv',
+    # 'trajectories/left_102.csv',
+    'trajectories/left_103.csv',
+    # 'trajectories/left_104.csv',
+    # 'trajectories/left_105.csv',
+    # 'trajectories/left_106.csv',
+    # 'trajectories/left_107.csv',
+    # 'trajectories/left_108.csv',
+    # 'trajectories/left_109.csv',
+    # 'trajectories/left_100.csv'
 ]
 
 all_results = []
@@ -60,8 +60,8 @@ all_means = calculate_mean(dataset)
 all_covariances = calculate_covariance(dataset)
 
 # map_type = recognize_map('maps/testmap.png')
-# map_type = 'x-intersection'
-map_type = 't-intersection'
+map_type = 'x-intersection'
+# map_type = 't-intersection'
 
 
 # calculate scaling results for all input trajectories

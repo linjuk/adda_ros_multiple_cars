@@ -1,40 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/../movement_prediction/test.py" description="######## 1st Radial Basis Function ########&#10;&#10;x1 = ..." line="17" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f927b2e8-1f96-4323-b57d-1f4e571808bf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/0-introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/0-introduction.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/1-motivation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/1-motivation.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/belief_evolution_comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/belief_evolution_comparison.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/main_old.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/main_see how trajectory looks like.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/maps/testmap6_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/maps/testmap6_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/maps/testmap6_0_.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/net_belief_evolution.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/net_belief_evolution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/test_.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/test_10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/test_19.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/test_30.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/test_40.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/test_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/test_76.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectory_interpolation_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/trajectory_interpolation_plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/ClassName.py" beforeDir="false" afterPath="$PROJECT_DIR$/../policy_gui/lib/ClassName.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap6_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/test_.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/test_10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/test_19.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/test_30.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/test_40.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/test_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trajectories/test_76.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_35.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_36.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_37.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_38.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_39.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_40.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_41.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_42.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_43.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_44.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_45.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_46.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_47.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_48.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/right_49.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap6_0_.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/trajectory_viz (copy).py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/trajectory_viz.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/trajectory_viz.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,45 +40,49 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/trajectory_viz$trajectory_viz.coverage" NAME="trajectory_viz Coverage Results" MODIFIED="1556739396912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/trajectory_viz$trajectory_viz.coverage" NAME="trajectory_viz Coverage Results" MODIFIED="1559478671473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1708296219">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="5073" />
+          <entry key="py" value="6658" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="5073" />
+          <entry key="Python" value="6658" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="1" />
-          <entry key="py" value="3" />
+          <entry key="pstat" value="1" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="3" />
+          <entry key="Profiler Session" value="1" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -98,24 +98,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="39" column="39" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="39" />
+            <state relative-caret-position="3690">
+              <caret line="262" selection-start-line="262" selection-end-line="262" />
               <folding>
                 <element signature="e#24#36#0" expanded="true" />
-                <element signature="e#1978#2167#0" />
-                <element signature="e#2211#2771#0" />
-                <element signature="e#2830#4451#0" />
-                <element signature="e#4513#5276#0" />
-                <element signature="e#5334#6093#0" />
-                <element signature="e#6138#6805#0" />
-                <element signature="e#10081#10530#0" />
-                <marker date="1558282776689" expanded="true" signature="851:852" ph="..." />
-                <marker date="1558282776689" expanded="true" signature="2821:2830" ph="..." />
-                <marker date="1558282776689" expanded="true" signature="2852:2867" ph="..." />
-                <marker date="1558282776689" expanded="true" signature="6973:6982" ph="..." />
+                <marker date="1559489913678" expanded="true" signature="866:867" ph="..." />
+                <marker date="1559489913678" expanded="true" signature="2970:2979" ph="..." />
+                <marker date="1559489913678" expanded="true" signature="3001:3016" ph="..." />
+                <marker date="1559489913678" expanded="true" signature="7125:7134" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz_2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+              <folding>
+                <element signature="e#24#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,6 +152,9 @@
       <find>show_belief</find>
       <find>print</find>
       <find>rospy.Duration</find>
+      <find>subs</find>
+      <find>lifetime</find>
+      <find>life</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,6 +172,8 @@
         <option value="$PROJECT_DIR$/scripts/experiment_ral.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
         <option value="$PROJECT_DIR$/scripts/functions.py" />
+        <option value="$PROJECT_DIR$/scripts/trajectory_viz_2.py" />
+        <option value="$PROJECT_DIR$/../listener/scripts/listener.py" />
         <option value="$PROJECT_DIR$/scripts/trajectory_viz.py" />
       </list>
     </option>
@@ -174,10 +184,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="-4" />
-    <option name="width" value="1920" />
-    <option name="height" value="1084" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="430" />
+    <option name="y" value="223" />
+    <option name="width" value="1535" />
+    <option name="height" value="848" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -212,7 +223,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../movement_prediction" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rbfnet" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -313,23 +324,23 @@
     <option name="totallyTimeSpent" value="4380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25453323" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22553897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49899262" visible="true" weight="0.32860824" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49832103" visible="true" weight="0.32860824" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010074" side_tool="true" visible="true" weight="0.28092784" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49966422" weight="0.3298969" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501679" side_tool="true" visible="true" weight="0.2667364" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -338,6 +349,7 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="JuliaSciView" order="5" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,6 +390,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/functions.py" />
+    <entry file="file://$PROJECT_DIR$/../movement_prediction/belief_evolution_comparison.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../listener/scripts/listener.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -387,21 +409,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="39" />
+        <state relative-caret-position="3690">
+          <caret line="262" selection-start-line="262" selection-end-line="262" />
           <folding>
             <element signature="e#24#36#0" expanded="true" />
-            <element signature="e#1978#2167#0" />
-            <element signature="e#2211#2771#0" />
-            <element signature="e#2830#4451#0" />
-            <element signature="e#4513#5276#0" />
-            <element signature="e#5334#6093#0" />
-            <element signature="e#6138#6805#0" />
-            <element signature="e#10081#10530#0" />
-            <marker date="1558282776689" expanded="true" signature="851:852" ph="..." />
-            <marker date="1558282776689" expanded="true" signature="2821:2830" ph="..." />
-            <marker date="1558282776689" expanded="true" signature="2852:2867" ph="..." />
-            <marker date="1558282776689" expanded="true" signature="6973:6982" ph="..." />
+            <marker date="1559489913678" expanded="true" signature="866:867" ph="..." />
+            <marker date="1559489913678" expanded="true" signature="2970:2979" ph="..." />
+            <marker date="1559489913678" expanded="true" signature="3001:3016" ph="..." />
+            <marker date="1559489913678" expanded="true" signature="7125:7134" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding>
+            <element signature="e#24#36#0" expanded="true" />
           </folding>
         </state>
       </provider>

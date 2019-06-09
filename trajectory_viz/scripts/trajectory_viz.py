@@ -18,7 +18,7 @@ from pomdp_car_msgs.srv import ActionObservation, ActionObservationRequest, \
 # from ..movement_prediction.functions import comb_dataset
 import sys
 sys.path.insert(0, '/home/linjuk/adda_ros/src/code_lina/movement_prediction/')
-from functions import comb_dataset, calculate_mean, calculate_covariance, calculate_std, belief_update_for_rviz, distance_formula
+from functions import comb_dataset, calculate_mean, calculate_covariance, calculate_std, belief_update_for_rviz, distance_formula, recognize_map
 
 class TrajectoryInteractiveMarkers:
 
@@ -34,7 +34,10 @@ class TrajectoryInteractiveMarkers:
         self.goal_client2.wait_for_server()
         self.marker_publisher = rospy.Publisher('/visualization_marker', Marker, queue_size=100)
         self.marker_publisher_mean = rospy.Publisher('/marker_mean', Marker, queue_size=100)
+
         # self.path_publisher = rospy.Publisher('/visualizaton_path', Path, queue_size=100)
+
+        self.recognized_map = recognize_map('/home/linjuk/adda_ros/src/code_lina/simple_sim_car/pomdp_car_launch/maps/testmap.png')
 
         self.dataset = comb_dataset(100)
         self.all_means = calculate_mean(self.dataset)
@@ -116,7 +119,7 @@ class TrajectoryInteractiveMarkers:
         marker.scale = Vector3(self.all_std[0][i][0] * 2, self.all_std[0][i][1] * 2, 0.1)
         marker.color = ColorRGBA(0.0, 0.0, 1.0, opacity)
         self.count += 1
-        marker.lifetime = rospy.Duration(0.5)
+        marker.lifetime = rospy.Duration(0.25)
         self.marker_publisher_mean.publish(marker)
 
     def show_mean_straight_in_rviz(self, opacity):
@@ -140,7 +143,7 @@ class TrajectoryInteractiveMarkers:
         marker.scale = Vector3(self.all_std[1][i][0] * 2, self.all_std[1][i][1] * 2, 0.1)
         marker.color = ColorRGBA(1.0, 0.0, 0.0, opacity)
         self.count += 1
-        marker.lifetime = rospy.Duration(0.5)
+        marker.lifetime = rospy.Duration(0.25)
         self.marker_publisher_mean.publish(marker)
 
     def show_mean_left_in_rviz(self, opacity):
@@ -164,7 +167,7 @@ class TrajectoryInteractiveMarkers:
         marker.scale = Vector3(self.all_std[2][i][0] * 2, self.all_std[2][i][1] * 2, 0.1)
         marker.color = ColorRGBA(0.0, 1.0, 0.0, opacity)
         self.count += 1
-        marker.lifetime = rospy.Duration(0.5)
+        marker.lifetime = rospy.Duration(0.25)
         self.marker_publisher_mean.publish(marker)
 
     def show_belief_in_rviz(self):
@@ -193,6 +196,7 @@ class TrajectoryInteractiveMarkers:
 
         input_cordinates = [self.pos_car2[0], self.pos_car2[1]]
 
+        # calculate distance from input cordinate to all points in mean
         for i in range(len(self.all_means[0])):
             distance_between_coordinates_right = distance_formula(input_cordinates, self.all_means[0][i])
             distance_between_coordinates_straight = distance_formula(input_cordinates, self.all_means[1][i])
@@ -202,7 +206,7 @@ class TrajectoryInteractiveMarkers:
             all_distances_straight.append(distance_between_coordinates_straight)
             all_distances_left.append(distance_between_coordinates_left)
 
-
+        # find shortest distance for each direction
         t_right = 0
         for i in range(len(all_distances_right)):
             if all_distances_right[i] < all_distances_right[t_right]:
@@ -219,12 +223,6 @@ class TrajectoryInteractiveMarkers:
             if all_distances_left[i] < all_distances_left[t_left]:
                 t_left = i
 
-
-        print("t_right: ", t_right)
-        print("t_straight: ", t_straight)
-        print("t_left: ", t_left)
-
-
         mean_for_this_step = [self.all_means[0][t_right], self.all_means[1][t_straight],
                               self.all_means[2][t_left]]
         covariance_for_this_step = [self.all_covariance[0][t_right],
@@ -235,29 +233,17 @@ class TrajectoryInteractiveMarkers:
         print('mean: ', mean_for_this_step)
         print('covariance" ', covariance_for_this_step)
 
+
+        # take map type into account while calculating belief update
         calculated_belief = belief_update_for_rviz(input_cordinates, mean_for_this_step, covariance_for_this_step,
-                                                   self.belief_array)
+                                                   self.belief_array, self.recognized_map, self.dataset[3])
         self.belief_array.append(calculated_belief)
         print('calculated belief: ', calculated_belief)
         #self.belief_counter += 1
 
-
-        if calculated_belief[0] > calculated_belief[1] and calculated_belief[0] > calculated_belief[2]:
-            self.show_mean_right_in_rviz(opacity=calculated_belief[0])
-            self.show_mean_straight_in_rviz(opacity=calculated_belief[1])
-            self.show_mean_left_in_rviz(opacity=calculated_belief[2])
-        elif calculated_belief[1] > calculated_belief[0] and calculated_belief[1] > calculated_belief[2]:
-            self.show_mean_right_in_rviz(opacity=calculated_belief[0])
-            self.show_mean_straight_in_rviz(opacity=calculated_belief[1])
-            self.show_mean_left_in_rviz(opacity=calculated_belief[2])
-        elif calculated_belief[2] > calculated_belief[0] and calculated_belief[2] > calculated_belief[1]:
-            self.show_mean_right_in_rviz(opacity=calculated_belief[0])
-            self.show_mean_straight_in_rviz(opacity=calculated_belief[1])
-            self.show_mean_left_in_rviz(opacity=calculated_belief[2])
-        elif calculated_belief[0] == calculated_belief[1] and calculated_belief[0] == calculated_belief[2] and calculated_belief[1] == calculated_belief[2]:
-            self.show_mean_right_in_rviz(opacity=calculated_belief[0])
-            self.show_mean_straight_in_rviz(opacity=calculated_belief[1])
-            self.show_mean_left_in_rviz(opacity=calculated_belief[2])
+        self.show_mean_right_in_rviz(opacity=calculated_belief[0])
+        self.show_mean_straight_in_rviz(opacity=calculated_belief[1])
+        self.show_mean_left_in_rviz(opacity=calculated_belief[2])
 
 
     def tick(self):
@@ -280,7 +266,7 @@ if __name__ == '__main__':
     trajectory_interactive_markers = TrajectoryInteractiveMarkers()
     rospy.sleep(0.5)
 
-    rate = rospy.Rate(1)
+    rate = rospy.Rate(1.5)
     while not rospy.is_shutdown():
         rate.sleep()
         trajectory_interactive_markers.tick()
