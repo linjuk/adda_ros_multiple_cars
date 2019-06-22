@@ -23,8 +23,8 @@ plt.style.use("seaborn")
 Step 1: Recognize map
 """
 # map_type = recognize_map('maps/testmap.png') # X-intersection
-map_type = recognize_map('/home/linjuk/adda_ros/src/code_lina/simple_sim_car/pomdp_car_launch/maps/testmap.png') # T-intersection
-# map_type = 'x-intersection'
+# map_type = recognize_map('/home/linjuk/adda_ros/src/code_lina/simple_sim_car/pomdp_car_launch/maps/testmap.png') # T-intersection
+map_type = 'x-intersection'
 # map_type = 't-intersection'
 
 """

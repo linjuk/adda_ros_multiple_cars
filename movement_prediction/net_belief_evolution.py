@@ -23,10 +23,10 @@ plt.style.use("seaborn")
     # 'trajectories/right_110.csv'
 # ]
 
-# input_trajectories = [
-    # 'trajectories/test_straight.csv',
-    # 'trajectories/straight_101.csv',
-    # 'trajectories/straight_102.csv',
+input_trajectories = [
+    'trajectories/test_straight.csv',
+    'trajectories/straight_101.csv',
+    'trajectories/straight_102.csv',
     # 'trajectories/straight_103.csv',
     # 'trajectories/straight_104.csv',
     # 'trajectories/straight_105.csv',
@@ -35,13 +35,13 @@ plt.style.use("seaborn")
     # 'trajectories/straight_108.csv',
     # 'trajectories/straight_109.csv',
     # 'trajectories/straight_110.csv'
-# ]
-
-input_trajectories = [
+]
+#
+# input_trajectories = [
     # 'trajectories/test_left.csv',
     # 'trajectories/left_101.csv',
     # 'trajectories/left_102.csv',
-    'trajectories/left_103.csv',
+    # 'trajectories/left_103.csv',
     # 'trajectories/left_104.csv',
     # 'trajectories/left_105.csv',
     # 'trajectories/left_106.csv',
@@ -49,7 +49,7 @@ input_trajectories = [
     # 'trajectories/left_108.csv',
     # 'trajectories/left_109.csv',
     # 'trajectories/left_100.csv'
-]
+# ]
 
 all_results = []
 points = 100

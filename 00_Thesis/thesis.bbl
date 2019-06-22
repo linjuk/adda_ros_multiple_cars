@@ -15,6 +15,18 @@ C.~L. Stéphanie~Lefèvre, Dizan~Vasquez, ``{A survey on motion prediction and
 V.~L. Thing and J.~Wu, ``{Autonomous Vehicle Security: A Taxonomy of Attacks
   and Defences},'' 2016.
 
+\bibitem{blackBox1}
+I.~G. S. J. Z. B.~C. Nicolas~Papernot, Patrick~McDaniel and A.~Swami,
+  ``{Practical Black-Box Attacks against Machine Learning},'' 2017.
+
+\bibitem{signs}
+E.~F. B. L. A. R. C. X. A. P. T.~K. Kevin~Eykholt, Ivan~Evtimov and D.~Song,
+  ``{Robust Physical-World Attacks on Deep Learning Visual Classification},''
+  2018.
+
+\bibitem{PicPrivacy}
+F.~STAFF, ``{Infographic: Data and the Connected Car – Version 1.0}.''
+
 \bibitem{americanDriving}
 A.~F. for Traffic~Safety., ``{American Driving Survey, 2015 – 2016}.''
 
@@ -232,6 +244,35 @@ D.~Lagutin, ``{Packet Level Authentication Overview},'' 2010.
 \bibitem{attacTax1}
 K.-T. Cho and K.~G. Shin, ``{Fingerprinting electronic control units for
   vehicle intrusion detection},'' 2016.
+
+\bibitem{AttacksOnSensors}
+F.~K. Jonathan~Petit, Michael~Feiri, ``{Remote Attacks on Automated Vehicles
+  Sensors: Experiments on Camera and LiDAR},'' 2015.
+
+\bibitem{AttackModel}
+F.~K. Jonathan~Petit, Michael~Feiri, ``{Revisiting Attacker Model for Smart
+  Vehicles},'' p.~1–5, 2014.
+
+\bibitem{diffWaveLenght}
+H.~M. Xuesong~Mao, Daisuke~Inoue and M.~Kagami, ``{Demonstration of In-Car
+  Doppler Laser Radar for Range and Speed Measurement},'' p.~599–607, 3013.
+
+\bibitem{signs2}
+E.~Ackerman, ``{Slight Street Sign Modifications Can Completely Fool Machine
+  Learning Algorithms}.''
+
+\bibitem{ThreatenPrivacy}
+A.~LaFrance, ``{How Self-Driving Cars Will Threaten Privacy}.''
+
+\bibitem{ThreatenPrivacyII}
+A.~Marshall, ``{Congress Units (GASP) to Spread Self-Driving Cars Across
+  America}.''
+
+\bibitem{ThreatenPrivacyIII}
+A.~Kharpal, ``{Apple vs FBI: All you need to know}.''
+
+\bibitem{ThreatenPrivacyIV}
+B.~Cresitello-Dittmar, ``{Privacy Concerns of Self Driving Cars}.''
 
 \bibitem{TimeRep}
 A.~M. Matthias~Althoff, ``{Comparison of Markov chain abstraction and Monte

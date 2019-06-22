@@ -51,7 +51,11 @@
 \contentsline {figure}{\numberline {5.31}{\ignorespaces Belief updates using scaling. Direction of the testing trajectory is right\relax }}{31}{figure.caption.62}
 \contentsline {figure}{\numberline {5.32}{\ignorespaces Belief updates using scaling. Direction of the testing trajectory is left\relax }}{31}{figure.caption.63}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Autonomous Vehicle Attack Taxonomy \cite {sec}\relax }}{35}{figure.caption.64}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Autonomous Vehicle Defense Taxonomy \cite {sec}\relax }}{37}{figure.caption.65}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Autonomous Vehicle Attack Taxonomy \cite {sec}\relax }}{35}{figure.caption.66}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Autonomous Vehicle Defense Taxonomy \cite {sec}\relax }}{37}{figure.caption.67}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The upper line of pictures shows the correctly recognized images (pictures had no adversarial information combined with original image). The bottom line of pictures shows captured pictures, combined with adversarial information, and what is recognized with the same algorithm \cite {blackBox1}\relax }}{41}{figure.caption.75}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Subtle perturbations on signs resulted in misclassification of stop signs and think that it is speed limit 45 sign. The sign to turn right was recognized as a stop sign \cite {signs}\relax }}{42}{figure.caption.76}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Camouflage graffiti and art stickers caused visual recognition algorithms to recognize stop sign as speed limit 45 \cite {signs}\relax }}{42}{figure.caption.77}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The Basic Data-Generating Devices and Flows in Autonomous Cars \cite {PicPrivacy}\relax }}{43}{figure.caption.78}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -31,11 +31,11 @@ y_right, e_y_right, w_y_right = f.run(y_test_tr_right, x1)
 print("weights_right_y: ", len(w_y_right), w_y_right)
 
 # # plot results
-# plt.figure(figsize=(8,5))
-# plt.plot(x1, y1, label='$\phi_1$')
-# # plt.axis([0, 1, 0, 1])
-# plt.legend(loc='center left')
-# plt.show()
+plt.figure(figsize=(8,5))
+plt.plot(x1, y1, label='$\phi_1$')
+# plt.axis([0, 1, 0, 1])
+plt.legend(loc='center left')
+plt.show()
 
 plt.plot(x1)
 plt.show()

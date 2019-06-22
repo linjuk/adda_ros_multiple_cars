@@ -1,0 +1,4 @@
+1. roscore
+2. roslaunch listener listener.launch 
+3. rosbag play 2019-06-14-12-06-07.bag 
+

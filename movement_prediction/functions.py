@@ -264,8 +264,9 @@ def comb_dataset(Number_Of_Points):
 
     print('Count of dataset')
     print('right', count_right_files)
-    print('left', count_left_files)
     print('straight', count_straight_files)
+    print('left', count_left_files)
+
 
     all_rights = []
     for i in range(count_straight_files, count_straight_files + count_right_files):
