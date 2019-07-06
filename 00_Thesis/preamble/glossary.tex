@@ -5,10 +5,7 @@
 %%
 %% folder: preamble/
 
-
-
 %% acronyms:
-
 \newacronym{WHO}{WHO}{World Health Organization}
 \newacronym{ADAS}{ADAS}{Automotive Driver Assistance Systems}
 \newacronym{TuD}{TuD}{University of Darmstadt}
@@ -17,6 +14,7 @@
 \newacronym{LCSS}{LCSS}{Longest Common Subsequence}
 \newacronym{GMR}{GMR}{Gaussian Mixture Regression}
 \newacronym{VGMM}{VGMM}{Variational Gaussian Mixture Model}
+\newacronym{GMM}{GMM}{Gaussian Mixture Model}
 \newacronym{SVM}{SVM}{Support Vector Machine}
 \newacronym{HMM}{HMM}{Hidden Markov Model}
 \newacronym{LSTM}{LSTM}{Long Short Term Memory}
@@ -27,6 +25,7 @@
 \newacronym{GP}{GP}{Gaussian Processes}
 \newacronym{RRT}{RRT}{Rapidly-exploring Random Tree}
 \newacronym{POMDP}{POMDP}{Partially observable Markov decision process}
+\newacronym{MDP}{MDP}{Markov decision process}
 \newacronym{ROS}{ROS}{Robot Operating System}
 \newacronym{FL}{FL}{Fuzzy Logic}
 \newacronym{VANET}{VANET}{Vehicular Ad Hoc Network}
@@ -44,31 +43,232 @@
 \newacronym{UAV}{UAV}{Unmanned Aerial Vehicle}
 \newacronym{RViz}{RViz}{ROS visualization}
 \newacronym{LED}{LED}{Light Emitting Diode}
+\newacronym{ProMPs}{ProMPs}{Probabilistic Movement Primitives}
+\newacronym{RBF}{RBF}{Radial Basis Function}
+\newacronym{DB}{DB}{Database}
+\newacronym{SSIM}{SSIM}{The Structural SIMilarity}
+\newacronym{ADMA}{ADMA}{Automotive Dynamic Motion Analyzer}
+\newacronym{PDMP}{PDMP}{Probabilistic Dynamic Movement Primitive}
+\newacronym{OpenCV}{OpenCV}{Open Source Computer Vision Library}
 %\newacronym[\glslongpluralkey={Markov Decision Processes}]{MDP}{MDP}{Markov Decision Process}
 %\newacronym[\glsshortpluralkey={KL}]{KL}{KL}{Kullback-Leibler divergence}
 
 %% OPERATORS
 \newglossary[opg]{operator}{opi}{opo}{List of Operators}
-\newglossaryentry{ln}{
-  sort        = {natural logarithm},
-  name        = {\ensuremath{\mathrm{ln}}},
-  symbol      = {\ensuremath{\mathrm{ln}\left(\; \bullet \;\right)} },
-  description = {the natural logarithm},
-  type        = operator
+%\newglossaryentry{ln}{
+%  sort        = {natural logarithm},
+%  name        = {\ensuremath{\mathrm{ln}}},
+%  symbol      = {\ensuremath{\mathrm{ln}\left(\; \bullet \;\right)} },
+%  description = {the natural logarithm},
+%  type        = operator
+%}
+
+\newglossaryentry{b0}{
+	sort        = {initial belie},
+	name        = {\ensuremath{\mathrm{b_{0}}}},
+	symbol      = {\ensuremath{\mathrm {b_{0}(k)}}},
+	description = {The initial belief for a movement class k},
+	type        = operator
 }
 
+\newglossaryentry{bt}{
+	sort        = {belief},
+	name        = {\ensuremath{\mathrm{b_{t}}}},
+	symbol      = {\ensuremath{\mathrm {b_{t}(k)}}},
+	description = {The belief for a movement class k at time step t},
+	type        = operator
+}
+
+\newglossaryentry{meanTrajectory}{
+	sort        = {mean},
+	name        = {\ensuremath{\mathrm \mu_{x}, \mu_{y}}},
+	symbol      = {\ensuremath{\mathrm \mu_{x}(traj.), \mu_{y}(traj.)}},
+	description = {Mean value of x and v of all trajectories per each time step},
+	type        = operator
+}
+
+\newglossaryentry{SigmaTrajectory}{
+	sort        = {},
+	name        = {\ensuremath{\mathrm \mu_{x}, \mu_{y}}},
+	symbol      = {\ensuremath{\mathrm \mu_{x}(traj.), \mu_{y}(traj.)}},
+	description = {Mean value of x and y of all trajectories per each time step},
+	type        = operator
+}
+
+\newglossaryentry{cov}{
+	sort        = {covariance},
+	name        = {\ensuremath{\mathrm \sigma x, \sigma y}},
+	symbol      = {\ensuremath{\mathrm \sigma x(t), \sigma y(t)}},
+	description = {Covariance matrix of x and y positions at every time step t},
+	type        = operator
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newglossaryentry{Xrec}{
+	sort        = {reconstructedX},
+	name        = {\ensuremath{\mathrm{x_{reconstructed}}}},
+	symbol      = {\ensuremath{\mathrm {x_{reconstructed}(t)}}},
+	description = {Reconstructed x position at every time step t},
+	type        = operator
+}
+
+\newglossaryentry{Yrec}{
+	sort        = {reconstructedY},
+	name        = {\ensuremath{\mathrm{y_{reconstructed}}}},
+	symbol      = {\ensuremath{\mathrm {y_{reconstructed}(t)}}},
+	description = {Reconstructed y position at every time step t},
+	type        = operator
+}
+
+\newglossaryentry{weights}{
+	sort        = {w},
+	name        = {\ensuremath{\mathrm{\omega}}},
+	symbol      = {\ensuremath{\mathrm {\omega_{i}}}},
+	description = {Weights for each Radial Basis Function},
+	type        = operator
+}
+
+\newglossaryentry{error}{
+	sort        = {error},
+	name        = {\ensuremath{\mathrm{\epsilon}}},
+	symbol      = {\ensuremath{\mathrm {\epsilon(N)}}},
+	description = {Error value for each reconstructed trajectory},
+	type        = operator
+}
 
 %% SYMBOLS
 \newglossary[syg]{symbol}{sys}{syo}{List of Symbols}
-\newglossaryentry{theta}{
-  sort        = {parameters theta},
-  name        = {\ensuremath{\cvec{\theta}}},
-  description = {vector of parameters from a probability distribution},
-  type        = symbol
+%\newglossaryentry{theta}{
+%  sort        = {parameters theta},
+%  name        = {\ensuremath{\cvec{\theta}}},
+%  description = {vector of parameters from a probability distribution},
+%  type        = symbol
+%}
+
+\newglossaryentry{leftDB}{
+	sort        = {left},
+	name        = {\ensuremath{L}},
+	description = {Number of demonstrations going to the left in database},
+	type        = symbol
+}
+
+\newglossaryentry{rightDB}{
+	sort        = {right},
+	name        = {\ensuremath{R}},
+	description = {Number of demonstrations going to the right in database},
+	type        = symbol
+}
+
+\newglossaryentry{contrast}{
+	sort        = {contrast},
+	name        = {\ensuremath{Cont}},
+	description = {Color Contrast in the picture, used for map recognition, using SSIM},
+	type        = symbol
+}
+
+\newglossaryentry{SCont}{
+	sort        = {SCont},
+	name        = {\ensuremath{SCont}},
+	description = {Estimated Signal Contrast in the picture, used for map recognition, using SSIM},
+	type        = symbol
+}
+
+\newglossaryentry{I}{
+	sort        = {I},
+	name        = {\ensuremath{I}},
+	description = {Estimated Intensity in the picture, used for map recognition, using SSIM},
+	type        = symbol
+}
+
+\newglossaryentry{xB, yB}{
+	sort        = {xB, yB},
+	name        = {\ensuremath{x_{B}, y_{B}}},
+	description = {Coordinated for point B},
+	type        = symbol
+}
+
+\newglossaryentry{xA, yA}{
+	sort        = {xA, yA},
+	name        = {\ensuremath{x_{A}, y_{A}}},
+	description = {Coordinated for point A},
+	type        = symbol
+}
+
+\newglossaryentry{xINT, yINT}{
+	sort        = {xINT, yINT},
+	name        = {\ensuremath{x_{int.}, y_{int}}},
+	description = {Coordinates of interpolated point between points A and B},
+	type        = symbol
+}
+
+\newglossaryentry{x}{
+	sort        = {x},
+	name        = {\ensuremath{x}},
+	description = {X position of the car},
+	type        = symbol
+}
+
+\newglossaryentry{y}{
+	sort        = {y},
+	name        = {\ensuremath{y}},
+	description = {Y position of the car},
+	type        = symbol
+}
+
+\newglossaryentry{n}{
+	sort        = {n},
+	name        = {\ensuremath{n}},
+	description = {Number of trajectories},
+	type        = symbol
+}
+
+\newglossaryentry{time}{
+	sort        = {time},
+	name        = {\ensuremath{t}},
+	description = {Time Step},
+	type        = symbol
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newglossaryentry{PHI}{
+	sort        = {PHI},
+	name        = {\ensuremath{\Phi}},
+	description = {Model for Radial Basis Functions},
+	type        = symbol
+}
+
+\newglossaryentry{phi}{
+	sort        = {phi},
+	name        = {\ensuremath{\phi}},
+	description = {Radial Basis Function},
+	type        = symbol
+}
 
 %% CREATE GLOSSARY
 \makeglossaries

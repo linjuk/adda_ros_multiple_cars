@@ -7,67 +7,34 @@
 \chapter{Introduction}
 \label{chap:0}
 
-People nowadays can hardly imagine their life without driving. And it is natural since traveling brings independence and freedom to human life. For example, an average American person makes $2.2$ driving trips per day and spends $50.6$ minutes on the road, which makes over $300$ hours every year people spend in their cars \cite{americanDriving}. Despite the joy driving brings to people, traffic safety is a major aspect which cannot be ignored. With increasing time which people spend on the cars, a number of a vehicle-related accident is far away from being perfect. The \gls{WHO} annually announce a report which includes a total number of people lives which were taken away due to car accidents. The latest report was published in December of $2018$ and stated that during this year there was more than $1.35$ million death worldwide \cite{WHOstatistics}. \\
-Recent years were full of massive developments towards autonomous driving in autonomous industry. Achievements in one area can be helpful in developing other areas, i.e. great success in image recognition and perception can allow computers to achieve super-human performance \cite{SuperComputer}, etc. Unfortunately, image recognition and environmental perception alone are not enough to solve all the problems of autonomous cars. In ideal circumstances achieving full autonomy of the cars would help not only to save the environment, as well it would benefit traffic participants with more smoothly traffic and more safety on the roads. Industrial innovation experts from ARK Invest strongly believe that with fully autonomous cars accidents on the road would drop to $80$\% \cite{ARKInvest}.\\
-Although autonomous cars are something that engaging a wide range of engineers for some time already, this area not fully developed yet and will continue engage engineers even more in the future. At the moment big achievement which is equipped into the majority of new cars is \gls{ADAS}, which for the fact does not enable yet full autonomy of the cars, but it successfully assists driver while driving a car.\\
-It is not a secret that all drivers need to interact with each other non-stop in one way or another while they are driving. This communication together with the individual behaviour of a driver is the main key to traffic safety. The behaviour of the driver can be considered as a combination of current traffic observations, short future forecast, decision making and completing actions. The driver should make decisions and actions with full safety concept for himself and other traffic participants. The same is with fully autonomous vehicles: algorithm which is running while a car is driving should ensure all passengers in the car and other traffic participants safety while making decisions and maneuvering through traffic. It is not hard to understand that one of the biggest problem with both the \gls{ADAS} systems and the full autonomous cars is the human factor. To improve \gls{ADAS} systems and achieve safety in fully autonomous cars, prediction methods are essential. Requirements for prediction are precision preciseness (with some time in advance), efficiency and reliability. This thesis will focus on the movement and intention prediction of humans in other cars.
+\section{Motivation}
 
-\begin{figure}[h]
+Recent years were full of massive developments towards autonomous driving in automotive industry. Achievements in one area can be helpful in developing other areas, i.e. great success in image recognition and perception can allow computers to achieve super-human performance \cite{SuperComputer}. Unfortunately, image recognition and environmental perception alone are not enough to solve all the problems which autonomous cars are facing. In ideal circumstances achieving full autonomy in the cars would help not only to save the environment, but it would be beneficial for other participants as well, since autonomous cars would bring more smoothness and safety to the roads. Industrial innovation experts from ARK Invest strongly believe that with fully autonomous cars, accidents on the road would drop to $80$\% \cite{ARKInvest}.\\
+Although autonomous cars have engaged a wide range of engineering disciplines for some time already, this area not fully developed yet and will continue to engage engineers even more in the future. At the moment one of the biggest achievements, which is equipped into the majority of new cars is \gls{ADAS}, which does not enable yet full autonomy of the cars, but it successfully assists driver while driving a car.\\
+The critical part of driving, whereas it is driver included or driverless car, is interaction with other traffic participants. Being not alone on the road requires the ability to evaluate situations and predict the intentions of other drivers on the cars. For human, this task does not seem so complicated, since they can see the environment, traffic signs, lights, turning signals, the situation on the road, etc. and act on these intuitively. For a driverless car, this task is a bit more complicated since there are a lot of information vectors which need to be considered. But to be able to function properly algorithms of the car should be able to predict the future action and some trajectory in advance. To make these kinds of predictions, the algorithms should get and use all information which is available from sensors and which was stored while driving (past observations of other cars). Additionally the algorithm should use information which was used to teach the algorithm how to separate one action from another or/and additional collaborations with infrastructures. Prediction making is a difficult task, which is easier to solve having and understanding information about the possible behavior of other traffic users \cite{IntroI}. \\
+For motion and intention prediction, an algorithm must predict the intention or the goal of another traffic user and to predict motion which possibly will be made in order to achieve a predicted goal \cite{IntroII, IntroIII}. To make this type of prediction, a general approach is to consider each movement class separately and to include prior information about each movement class into prediction making process. Lately, there were several methods proposed for motion and intention prediction: \gls{GMM} \cite{GausianMM},  \gls{DBN} and \gls{BN} in respectively in \cite{BN1} and \cite{BN2}. \gls{HMM} \cite{Markov3, Markov4}, \gls{PDMP} \cite{DMP},  \gls{ProMPs} \cite{ProMPs} and others, more information in the next Chapter. While designing implementation model for our probabilistic intention prediction algorithm, we chose it to be based on Gaussian. Differently from the most other methods, using Gaussian distribution is useful when distribution of values is now known and it does not require information about the final trajectory goal, which is hard to predict while driving.  As well, Gaussian distribution are able to give good results even with noisy measurements. \\
+
+\begin{figure}[H]
 	\centering  	
-	\includegraphics[width=5cm]{img/4.jpg}
-	\caption{Insertion Areas (Colored Regions) Under Different Driving Scenarios \cite{pic}}
-	\label{fig:intersectionAreas}    
+	\includegraphics[width=14cm]{img/intro.png}
+	\caption{The left side shows the \gls{aDDa} car, the right side illustrates the results of one of the experiments cases when the prediction, where the car is going, was made. Hereby the probabilistic model considers also the variance in the demonstrated trajectories, depicted in green, blue and pink}
+	\label{fig:intro}    
 \end{figure}
 
-\section{Background}
-
-Beyond trendy names like Tesla, Google, Aptiv, etc., chasing driverless cars, beyond a large number of automobile brands and other tech engineers, \gls{TuD} has its own \gls{aDDa} working group \cite{aDDa}. \gls{aDDa} initiative started \textcolor{red}{on October 2017}. A group of students and their supervisors from eight different departments at \gls{TuD} are working for one purpose to develop fully autonomous car by themselves, here, at University. All participants of the working group closely cooperate bringing together interdisciplinary know-how experience to jointly set up and operate an autonomous vehicle. One special feature of \gls{aDDa} is that the main work is done in the context of student projects (final thesis, semester work, permanent work at the team, etc.). By working together on the complex tasks of autonomous driving, participants are solving problems for tomorrow. \\
-In not so long period of gls{aDDa} existing, it is made a lot of developments and improvement of existing systems. Some works to mention: "Development and Implementation of a Long-Term Dynamics Control for Automated Driving", "Collision Avoidance in Uncertain Environments for Autonomous Vehicles using POMDPs", "Conception and Design of a Camera Mounting and Calibration for Test Vehicle", "Development of an IT Security Concept for an Automated Vehicle, Pedestrian Detection", "Tracking and Intention Prediction in the Context of Autonomous Driving" and much more \textcolor{red}{\cite{aDDa}}. This thesis is also a part of \gls{aDDa} project.
-
-\section{Purpose}
-
-Humans are very irrational and unpredictable and because of that, it is very hard to model them. Moreover, there are no two exact same people, what makes the task to model human behavior almost impossible, since every possible scenario as an endless possible outcome. When an individual is driving it is nearly always necessary to take into account surrounding cars and other traffic participants due to ensure safe, fast and energy optimized journey. \\
-Due to the irrationality of humans and recent success and a still big interest in autonomous cars, the purpose of this thesis is to provide an initial step in a probabilistic collision prediction and decision-making system which aims at producing a risk field for the vehicle that predicts
-upcoming risks. This step will include creating an algorithm which will use a probabilistic approach and tries to predict future movement and intention of surrounding cars in urban areas.\textcolor{red}{change pictures and maybe explain more about thesis approach in general}.\\
-The overall research question is defined
-as:
-\begin{itemize}
-	\item How can probabilistic movement prediction using future estimations be applied for an autonomous vehicle?
-\end{itemize}
-This research question is then subdivided into smaller questions and task to achieve during in this research work. \textcolor{red}{Three} of these tasks, which are the focus of this thesis, are defined as
-\begin{itemize}
-	\item Find/create a probabilistic model that learns from various demonstrations. And use this model for trajectory and intention prediction of the car in front of ego vehicle.
-	\item Investigate if prior information about environment can improve quality of predictions.
-	\item Investigate, how feasible is a probabilistic future movement estimation system, in terms of accuracy and computational time, for real-time applications?
-\end{itemize}
-
-\begin{figure}[h]
-	\centering  	
-	\includegraphics[width=7cm]{img/3.jpg}
-	\caption{Scheme of Simple Model Based Approach \cite{pic2}}
-	\label{fig:ModBasedApp}    
-\end{figure}
-
-The most important thing in driving independent of the car is driverless or need a driver is safety. Safety is not possible without security, and considering this, this thesis will provide an overview of the main security and privacy issues on autonomous driving considering movement prediction. Which leads us to the forth and the final research question for this thesis:
-\begin{itemize}
-	\item \textcolor{red}{FINALLY DECIDE} 
-\end{itemize}
-
-\subsection{Scope of the Thesis}
-
-Autonomous systems are very complex by its' nature and it is natural to make substantial limitations to obtain a reasonable scope for a master’s thesis. This thesis has been decided to use \gls{ROS} environment system, RViz as its' simulation visualization tool, programming part is done in Python and C++ programming languages. Additionally, the evaluated scenarios have been chosen to be T-intersections and crossroads (four-way intersection) with a known environment, limited to only include a single vehicle in addition to the ego vehicle. This choice has been made due to the system complexity, concerning interactions, that multiple cars would introduce. The vehicles in these scenarios are considered to be cars. \\
-Furthermore, some research areas which include image processing, object tracking, mapping and trajectory planning will not be addressed since these areas constitute research areas single-handedly. Incorporating any of these areas would make this thesis even more complex and remove attention from what should be the main focus of the thesis: the probabilistic future movement estimation.
+Even though to understand human behavior is a crucial task for further development of autonomous car, humans are very irrational and unpredictable and due to that, it is very hard to model them. However, in this document, we present a probabilistic intention prediction algorithm to predict motion and intentions from early observation for autonomous cars. To achieve this goal, the algorithm first learns the examples for all possible movement classes. When a car starts to move, it collects observations of the current position and predicts what intention for future movement is. Considering that the most important thing while driving is safety. We did a literature review which are the most common attacks on sensors (which information is using for prediction making) of autonomous car and made suggestions on how to protect the system from being attacked, as well as described the main privacy issues. \\
+Probabilistic intention prediction algorithm was developed using two programming languages: Python and C++. The experiments were modeled and ran in \gls{ROS} environment. \gls{ROS} - an easy to use framework for developing robot software. In order to simplify the task for creating a complex robot model, it contains a lot of libraries and tools from a lot of robotic platforms. Additionally it has a wide community of users who provide big help while solving problems \cite{aboutROS}. \gls{RViz} was used as \gls{ROS} simulation visualization tool. \\
+Beyond big giants like Tesla, Google, Aptiv, etc., chasing the dream of driverless cars, big number of academic institutions are also carrying out research in this field. \gls{TuD} has its own \gls{aDDa} working group \cite{aDDa}. \gls{aDDa} initiative started on February of $2017$. $8$ different departments at \gls{TuD} are working for one purpose to develop fully autonomous car by themselves, here, at University. All participants of the working group closely cooperate bringing together interdisciplinary know-how experience to jointly set up and operate an autonomous vehicle. One special feature of \gls{aDDa} is that the main work is done in the context of student projects (final thesis, semester work, permanent work at the team, etc.). By working together on the complex tasks of autonomous driving, participants are solving problems for tomorrow. \\
+This thesis aims to investigate a probabilistic approach for intention prediction based in trajectory data. In particular, the approach is also tested with trajectory data, recorded with the real \gls{aDDa} car.
 
 \section{Thesis Outline}
 
-This study focuses on developing and evaluating probabilistic based movement and intention prediction algorithm. This
-the algorithm uses external cues to predict surrounding vehicles movement in urban situation. \\
-The thesis is organized as follows:
+This thesis focuses on developing and evaluating probabilistic based movement and intention prediction algorithm. The thesis is organized as follows:
+
 \begin{itemize}
-	\item Chapter 2. \textbf{Fundamentals and Related works} focuses foundation of the work and presents a theory behind the scope of the thesis.
-	\item Chapter 3. \textbf{Approach} describes approaches of the thesis.
-	\item Chapter 4. \textbf{Simulation Setup} defines how and why simulation was set in the way in was. Defines inputs for the system and experiments.
-	\item Chapter 5. \textbf{Experiments and Results} describes experiments done during the thesis writing period and evaluate results which were received by performing various experiments.
-	\item Chapter 6. \textbf{Security Aspects} is based on the fact that "there is no safety without security" and tries to explain the main security and privacy issues of autonomous cars related to movement predictions.
-	\item Chapter 7. \textbf{Conclusion and Future Works} wind up this thesis with conclusions and future works based on the findings of previous chapters.
+	\item Chapter $2$. \textbf{Literature Review} focuses on the literature review on the intention prediction.
+	\item Chapter $3$. \textbf{Probabilistic Trajectory Prediction} describes theoretical tools which help to formalize the problem for intention prediction.
+	\item Chapter $4$. \textbf{Setup and Implementation} defines how and why simulation was set the way in was. Defines inputs for the system and experiments.	
+	\item Chapter $5$. \textbf{Experiments and Results} describes experiments which were done during the thesis writing period and evaluate results which were received by performing various experiments.
+	\item Chapter $6$. \textbf{Security Aspects} is based on the fact that "there is no safety without security" and tries to explain the main security and privacy issues of autonomous cars related to movement predictions.
+	\item Chapter $7$. \textbf{Conclusion and Future Works} wind up this thesis with conclusions and future works based on the findings of previous chapters.
 \end{itemize}

@@ -1,7 +1,9 @@
-\chapter{Fundamentals and Related Work}
+\chapter{Literature Review}
 \label{chap:1}
 %
-\section{State of the Art}
+This chapter introduces the state of the art for prediction making. Explains the most common methods for movement prediction in literature and in practice, outlines its' advantages and disadvantages. 
+
+\section{State of the Art for Movement Prediction Making}
 
 The most studies related to movement prediction on vehicles focus on lane change predictions. And there are various different methods are proposed to solve this task, the most popular are: \gls{DBN}, \gls{BN}, \gls{SVM}, \gls{HMM}, Mind-tracing and \gls{FL}. \\
 \gls{BN} could be considered as a graphical representation of probability distribution. In \cite{BN1, BN2} \gls{DBN} and \gls{BN} are used to recognize actions which driver is intend to perform. Lateral movement of a vehicle is expressed using \gls{BN}, having several various nodes for probability. The probability distribution for every node is determined by doing an analysis of driver behaviour in the past while driving. And ultimately, the final prediction is obtained by calculating the probability of a certain movement with respect to the possibility for every node. \\
@@ -11,33 +13,6 @@ Author of \cite{Mind} proposed new method for prediction making, which was named
 higher than using the binary Logit model. The high prediction accuracy received using this model results in prediction accuracy made using this model overall. \\
 \cite{VectMash} tested the validity and  accuracy of \gls{SVM} in movement prediction. After choosing proper hints for movement changing, data recorded by doing test were divided into different groups which were used for training classifier. Predictions were made using current information of the vehicle and classification hints at the current time. \\
 Even though all methods have the same purpose, it is very hard to compare them directly. Results received having measurements in different situations and in different time steps, e.g. one research paper gives prediction two seconds in advance before a lateral position of vehicle’s overlaps with the lane border, while other paper gives prediction only one second before crossing the lane. Furthermore, there is no exact definition of \textit{lane crossing} moment, usually, it is the moment when vehicle cross edge of a lane, but in some paper, it is not clear enough. \\
-Since it is not possible to make a clear comparison between methods due to essential differences in testing environments and different data sets, the Table \ref{table:DA} lists the best timing accuracy for each method. \\
-
-\begin{table}[h]
-	\caption{Different Methods Performance Comparison} 
-	\centering 
-	\scalebox{0.65}{
-		\begin{tabular}{||c| c |c |c |c||}
-			\hline\hline 
-			\textbf{Method} & \textbf{References} & \textbf{Accuracy} & \textbf{Time}\\ [0.ex] 
-			\hline\hline
-			
-			\textbf{(Dynamic) Bayesian Network} & \cite{BN1} & $80$\% & $1.5$s before changing movement \\
-			& \cite{BN2} & 89\% & $0.5$s after changing movement \\ \hline   
-			
-			\textbf{Support Vector Machine}  & \cite{VectMash} & $87$\% & $0.3$s after changing movement  \\ \hline 
-			
-			\textbf{Hidden Markov Model}  & \cite{Markov1} & $89.4$\% & $2$s after changing movement \\ 
-			& \cite{Markov2} & $95.2$\% & $2$s after changing movement \\
-			& \cite{Markov3, Markov4} & Unknown & $0.4$s before any sign of changing movement appears \\ \hline 
-			
-			\textbf{Mind-tracing}  & \cite{Mind} & $82$\% & $1.1$s before changing movement \\ \hline 
-			\textbf{Fuzzy Logic}  & \cite{Fuzz} & $86.8$\% & Unknown \\[1ex] 
-			\hline  \hline
-		\end{tabular}}
-		\label{table:DA}
-	\end{table}
-
 As it is possible from the results shown in the table the best methods for predicting movement changes is received by using \gls{BN} and \gls{SVM}. These two methods are able to predict quite accurate and with a relatively short period of time, what will lead in having more time in advance to decide which action to make. \\
 For further work, any Bayesian filter/classifier could be an acceptable method for examining behaviour of the driver for various reasons: 
 
@@ -47,60 +22,6 @@ For further work, any Bayesian filter/classifier could be an acceptable method f
 	\item Bayesian filter/classifier are robust to over-fitting problem and rely on margin maximization instead of finding an edge for prediction directly from the training data.
 \end{itemize}
 
-\section{Probabilistic Estimation Methods}
-
-Reasonable prediction and following decision-making process require considering uncertainty and objectives for the current situation. In this section, uncertainty will be represented as a probability distribution. \\
-Uncertainty can be a result of partial information about the state of the world. In a real world trying to fulfil any given task, it is possible to meet various reasons which do not allow to finish a task without any difficulties. What means, that with information we have at hand, it is hardly possible to make a task evaluation with being completely certain. \\
-Uncertainty can appear from practical and theoretical limitations while trying to predict future events, e.g., trying to exactly predict how a human would react in one situation or another, a decision support system would need to consider a model of the human brain. Even if the operation is known very well, it is still difficult to predict the end state and next actions which will be taken, due to spontaneous failures or other agent actions. \\
-A robust prediction (and later decision) making system need to take into account sources of uncertainty, which exist in the current state and consider it when computing the future outcomes for events. In order to describe uncertainty
-computationally, it needs to have a formal representation. 
-
-\subsection{Belief State and Probability}
-
-Solving tasks which involve uncertainty, it is very important to be able to compare the credibility of different statements. For example, if belief for action E is stronger than our belief for action T, then E $\succ$ T. If E and T have the same degree of belief, then E $\sim$ T. \\
-It is also beneficial to be able to compare beliefs about statements considering some given information, e.g., we can say that likelihood for action C may happen while E condition is happening is bigger than having T, then this expression would be written (E | C ) $\succ$ (T | C ). \\
-In order to make particular assumptions about the relationships of the operators $\succ$, $\prec$ and $\sim$. The assumption of \textit{universal comparability} and \textit{transitivity} assumptions requires to hold the same mathematical rules. Both assumptions allow representing degrees of belief by a real-valued function \cite{BOOK}, i.e. probability function P can be expressed like that:
-\[ P(A|C) > P(B|C) \iff (A|C) \succ (B|C) \]
-\[P(A|C) = P(B|C) \iff (A|C) \sim (B|C). \]
-If new assumptions about the probability P form, then P need to satisfy the main axioms of probability: 0 $\leqslant$ P (A | B ) $\leqslant$ 1. If we are sure that A action will happen when B action is given then P (A | B ) = 1. If A action will not happen when B action is given, then
-P (A | B ) = 0. \\
-Deep review about probability theory won't be provided in here, but this work relies on important probabilities properties. The first of them is a definition of \textit{contidion probability}:
-
-\begin{equation}
-P(A|B)=\frac{P(A,B)}{P(B)},
-\end{equation}
-
-where P(A, B) shows the probability of A and B both being true. \\
-Another property which is important is the \textit{law of total probability}, which states that if $\beta$ is a set of "mutually exclusive and exhaustive propositions" \cite{BOOK}, then
-
-\begin{equation}
-P(A|C)=\displaystyle \sum_{B \epsilon \beta}{P(A|B,C)P(B|C)}
-\end{equation}
-
-Finally, the most important rule for further work comes from the definition of \textit{conditional probability}:
-
-\begin{equation}
-P(A|B)=\frac{P(B|A)P(A)}{P(B)}.
-\end{equation}
-
-This equation is known as \textbf{\textit{Bayes’ rule}}, and as mentioned earlier, it will be very important for the following work. \\
-But still, after this short introduction, question what exactly belied state is, still exists. One option to answer this would be the most believable next state for an examined object, considering experience in the past, which is given. This idea can be sound and save the basis for predictions in some cases, but in general, this idea is not sufficient. Being able to operate efficiently the degree of uncertainty must be taken into account, e.g. if the main agent is confused what future state could be, it could be proper to ask directions, take a look into the map, search for reference point, etc. \\
-Other options for belief computation would be using probability distributions over states of the world, which we have. In this case, distributions encode the subjective probability for the main agent and include information about the state of the world and give a basis for taking action under uncertainty we have.  Moreover, sufficient statistical information of action made in the past and initial belief state of the agent is comprised, i.e. computed belief state for the current agent’s state and additional information about its past observations and/or action made, would provide any further information about the current state of the world \cite{belief}. \\
-\textbf{Computing belief states}\cite{belief}: \\
-A belief \textit{b} is a probability distribution over state space $\mathscr{S}$, \textit{b(s)} is the probability set to world state \textit{s} by belief state \textit{b}. The axioms for belief state is the same as for probabilities: 0 $\leqslant$ b(s) $\leqslant$ 1, for all s $\epsilon$ $\mathscr{S}$ and $\sum_{s \epsilon \mathscr{S} } b(s) = 1.$ At every new step, new belief \textit{b'} must be  computed given old belief \textit{b}, an action \textit{a} and an observation \textit{o}. The new belief of an new state \textit{b'(s')} can be calculated using formula:
-
-\begin{equation}
-\begin{split}
-b'(s') = & \displaystyle Pr(s'|o, a, b) \\ 
-& = \displaystyle \frac{Pr(o|s', a, b) Pr(s'|a, b)}{Pr(o|a, b)} \\
-& = \displaystyle \frac{Pr(o|s', a) \sum_{s \epsilon \mathscr{S}} Pr(s'|a, b, s) Pr(s|a, b)}{Pr(o|a, b)} \\
-& = \displaystyle \frac{O(s', a, o) \sum_{s \epsilon \mathscr{S}} T(s, a, s') b(s)}{Pr(o|a, b) }
-\end{split}
-\end{equation}
-
-The denominator of equation (2.4), Pr(o | a, b), can be interpreted as a normalizing factor, which is independent of next state s', which causes the sum of belief of all possible next states to 1. The state estimator function SE(b, a, o), which task is to update the belief state based on the \textit{a, o} and the previous \textit{b}, as its output gives new belief for new state \textit{b'}. \\
-Please note, that this subsection and the computation of belief states description is taken directly from \gls{POMDP} steps description. In later work, belief update will act an important role, but it will be computed using different components. Detail description of belief computation related to this work will be provided in next chapters. \\
-To have particular classifier is not enough for making accurate trajectory and movement predictions. Next chapter introduce with the most popular model for movement predictions.
 
 \section{Movement Prediction}
 
@@ -120,13 +41,6 @@ Figure~\ref{fig:MotModOv} summarizes motion models defined in \cite{Classificati
 	\includegraphics[width=13cm]{img/2.jpg}
 	\caption{Motion Modeling Overview \cite{ClassificationI}}
 	\label{fig:MotModOv}    
-\end{figure}
-
-\begin{figure}[h]
-	\centering  	
-	\includegraphics[width=13cm]{img/5.jpg}
-	\caption{Examples of motion prediction with the different types of motion models \cite{ClassificationI}}
-	\label{fig:MotModOv2}    
 \end{figure}
 
 Together with above-mentioned categories, authors of \cite{ClassificationII} introduced one more category to predict movements - \textbf{\textit{data-driven based}}.

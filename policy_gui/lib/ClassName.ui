@@ -20,7 +20,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>Darias Supervision</string>
+   <string>GUI Interface for Data Colection</string>
   </property>
   <layout class="QVBoxLayout" stretch="0,0,0,0,0">
    <item>

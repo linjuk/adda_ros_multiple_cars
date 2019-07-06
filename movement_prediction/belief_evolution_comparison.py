@@ -35,7 +35,7 @@ files_dictionary = {
     'left': glob.glob('trajectories/left_*.csv'),  # return all files starting with left_ in the folder
 }
 
-random_trajectory = read_csv_fast('trajectories/test_straight.csv')
+random_trajectory = read_csv_fast('trajectories/straight_101.csv')
 interpolated_random_trajectory = interpolate_dist(random_trajectory[:, 1], random_trajectory[:, 2], Number_Of_Points)
 
 random_trajectory = np.asarray(random_trajectory)

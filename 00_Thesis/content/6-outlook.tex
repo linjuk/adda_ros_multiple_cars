@@ -1,4 +1,38 @@
-\chapter{Conclusions and Future Works}
+\chapter{Conclusion and Future Work}
 \label{chap:6}
 %
-TODO
+\section{Conclusion}
+
+In this work, we described and proposed probabilistic intention prediction algorithm, which can be used with frameworks (such as \glspl{MDP}, \glspl{POMDP}, etc.), which requires to have a prediction model. The proposed algorithm is working based on an initial probabilistic model which is learned at initial stage form the demonstrations made before. With a learned initial probabilistic model, the proposed algorithm is able to predict the future motions, having the current position by conditioning the mean and variance values from predefined trajectories of each class to match the early observed data points. The proposed algorithm has some additional extensions: it is able to work in different environments: X and T intersection, with a different initial probabilistic model. As well, the algorithm was tested with a different type of testing trajectories: \textit{previously prerecorded trajectory} - where we have a full trajectory and \textit{real time trajectory} - where we are getting the position of the car real time while controlling it through visualization tool. Understanding that computational time and precision is one of the most important things while making a prediction, we proposed and described trajectory scaling, with which we achieved the more precision of prediction, but with less time running the algorithm. And eventually, using \gls{ProMPs} we tried to predict how full trajectory looks like while only having early observations of the movement. Chapter~\ref{chap:2} contains all theoretical framework of what working principles of the algorithm are. \\
+Experiments were run with both: the real and the simulated data sets. In our experiments, the algorithm learns a set of motions respectively to different movement classes, from a number of demonstrations provided by us before. Having this prior knowledge and probabilistic model, the algorithm is able to make predictions about the intention of the car moving. When the car starts to drive, the probabilistic intention prediction algorithm uses observations to understand which movement class is chosen and which future direction is going to be. \\
+Considering that security is a very important part of autonomous driving we made an overview of how it is possible to trick sensors to give false data to an algorithm which are making motion intention predictions. Since our algorithm is using only position data, only attacks on \gls{GPS} are common (but for now these attacks are more experimental and made only on research purposes, only the matter of time when they will become real). However, to make predictions more accurate and while implementing suggestions in future work, it would be wise to consider cyber attacks which are described in Chapter~\ref{chap:5}. \\
+Even though the probabilistic intention prediction algorithm is quite accurate while making predictions, it can always be improved. The section below described future works for improving the algorithm.
+
+\section{Future Work}
+
+While our proposed probabilistic intention prediction algorithm has quite precise results and some advantages in predicting intentions, there are the number of improvements which can be done to make the method even better.
+
+\subparagraph{Improving Prediction Making Process}
+
+One of the most important thing for future investigations is to answer the question of how to improve prediction making process by adding more information to the algorithm. Even though to consider position of the car alone can be enough for a simulated environment, for prediction making in the real world it can be too less information. Additionally having visual and vehicle dynamic information can help to improve intention prediction.
+
+\subparagraph{Changing the Starting Point of the Car}
+
+We made all our test from the same direction with a small inaccuracy for a starting point. We did not try to start moving from other direction on the map, so it would be nice to test algorithm when e.g. the starting point of the car is upper right wing in T intersection and available directions are straight and left.
+
+\subparagraph{Prediction With Error}
+
+Our proposed algorithm was tested in two maps environments: X and T. T intersection have only two directions, in our case, it was left and right. Predictions for future intentions were made quite accurate, but we did not check what is happening if due to some reasons an algorithm predicts wrongly and says that car is going to straight (when there is no straight). What is happening when the prediction is wrong? How to re-predict the direction, having wrong data? If the "car is unsure" about the correctness of prediction what should it do: continue to drive or stop? These questions need to be considered while improving probabilistic intention prediction algorithm in the future.
+
+\subparagraph{Increase Level of Security}
+
+When the proposed algorithm will be improved with additional steps to consider before making a prediction, e.g. some information from sensors, such as a camera or \gls{LiDAR} it is important to consider attacks against sensors which can result with sensors giving the wrong information to algorithm which will cause the wrong prediction and wrong decision making. This false information can end up with accidents and can cause a lot of problems for all road users and for traffic. To make sure that system is secure against attack is a very important task to make. \\
+With this thesis, we did a literature review on the most common attacks on sensors and possible ways to avoid it. Since no security was implemented it is important to consider this task with future development of the algorithm. 
+
+\subparagraph{More Testing Environments}
+
+We tested our algorithm only on T and X intersections. For future works, more city-like maps can be added to which combine solutions for T and X intersections together.
+
+\subparagraph{Improving Computation Time}
+
+Computation time for critical systems is crucial. $0.5$s delay, which for a human can look not so important, can make a huge difference in machines. So any improvement considering time can make a big improvement in algorithm adaptation. 

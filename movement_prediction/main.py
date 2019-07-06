@@ -10,6 +10,8 @@ from functions import \
     clear_plot
 from tabulate import tabulate
 from matplotlib.collections import PatchCollection
+from matplotlib.patches import Rectangle
+import matplotlib.pyplot as plt
 import numpy as np
 import glob
 import math
@@ -24,8 +26,8 @@ Step 1: Recognize map
 """
 # map_type = recognize_map('maps/testmap.png') # X-intersection
 # map_type = recognize_map('/home/linjuk/adda_ros/src/code_lina/simple_sim_car/pomdp_car_launch/maps/testmap.png') # T-intersection
-map_type = 'x-intersection'
-# map_type = 't-intersection'
+# map_type = 'x-intersection'
+map_type = 't-intersection'
 
 """
 Step 2:
@@ -45,7 +47,7 @@ files_dictionary = {
     'straight': glob.glob('trajectories/straight_*.csv'), # return all files starting with straight in the folder
 }
 
-random_trajectory = read_csv_fast('trajectories/test_right.csv')
+random_trajectory = read_csv_fast('trajectories/test_right_100.csv')
 interpolated_random_trajectory = interpolate_dist(random_trajectory[:, 1], random_trajectory[:, 2], Number_Of_Points)
 
 random_trajectory = np.asarray(random_trajectory)
@@ -69,7 +71,7 @@ color_map = {
 # plot graph
 fig, ax = plt.subplots()
 plt.figure(1)
-plt.title('Movement Classification f = y(x)')
+plt.title('Movement Classification f = y(x)') #, fontsize=800)
 plt.xlabel('x [m]')
 plt.ylabel('y [m]')
 
@@ -89,11 +91,11 @@ for key in files_dictionary:
         trajectory_csv_data[key] = (file_raw_data)                                 # read file
         trajectory_csv_file_wise_data[key][index] = []                             # aggregate data in container for averaging
         trajectory_csv_file_wise_data[key][index].append(trajectory_csv_data[key])
-        x, y = trajectory_csv_data[key][:, 1], trajectory_csv_data[key][:, 2]      # segregate x and y for plotting
-        if map_type == "t-intersection" and key == "straight":
-            continue
-        else:
-            p = plt.plot(x, y, color=color_map[key], alpha=0.3)
+        # x, y = trajectory_csv_data[key][:, 1], trajectory_csv_data[key][:, 2]      # segregate x and y for plotting
+        # if map_type == "t-intersection" and key == "straight":
+        #     continue
+        # else:
+        #     p = plt.plot(x, y, color=color_map[key], alpha=0.3)
 
 """
 Step 4: Interpolate the accumulated trajectories in the previous step to NUMBER_POINTS defined in STEP 1
@@ -134,10 +136,13 @@ means_right = np.mean(all_rights, axis=0)
 means_left = np.mean(all_lefts, axis=0)
 
 if map_type != "t-intersection":
-    plt.plot(means_straight[:, 0], means_straight[:, 1], color="black")
+    plt.plot(means_straight[:, 0], means_straight[:, 1], color="darkmagenta", alpha=1.0)
 
-plt.plot(means_right[:, 0], means_right[:, 1], color="black")
-plt.plot(means_left[:, 0], means_left[:, 1], color="black")
+plt.plot(means_right[:, 0], means_right[:, 1], color="darkblue", alpha=1.0)
+plt.plot(means_left[:, 0], means_left[:, 1], color="darkgreen", alpha = 1.0)
+
+# rect = Rectangle((14.0,1.5),1.0,1.0,linewidth=1,edgecolor='b',facecolor='red', alpha = 1.0)
+# ax.add_patch(rect)
 
 """
 Step 6: Calculate and plot standard deviation for each class i.e. all trajectories for that classes
@@ -295,6 +300,11 @@ Step 11: Plot results of belief calculation on the graph for each timestep [with
 print("\n\nPlotting belief calculation (without scaling)\n")
 INTERVAL = 0.001  # in seconds
 
+
+labels = {
+        'Trajectory for experiments': 'Trajectory for experiments'
+        }
+
 for i in range(0, Number_Of_Points):
     print("step: ", i, "[left, right, straight]: ", b100_all_ws[i])
 
@@ -308,6 +318,7 @@ for i in range(0, Number_Of_Points):
     # Now clear the plot
     clear_plot()
 
+plt.scatter(x=interpolated_random_trajectory[0][0], y=interpolated_random_trajectory[1][0], c="red", s=7, zorder=10, label='Trajectory for experiments')
 plt.legend(loc='lower right')
 # plt.show()
 
@@ -402,5 +413,4 @@ plt.legend(loc='center right')
 """
 Show all figures
 """
-
 plt.show()

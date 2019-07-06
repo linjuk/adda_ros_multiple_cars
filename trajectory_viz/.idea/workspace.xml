@@ -1,36 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/../movement_prediction/test.py" description="######## 1st Radial Basis Function ########&#10;&#10;x1 = ..." line="17" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="f927b2e8-1f96-4323-b57d-1f4e571808bf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/IAS.sty" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/IAS.sty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/0-introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/0-introduction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/1-motivation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/1-motivation.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/2-foundations.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/2-foundations.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/6-outlook.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/6-outlook.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_left.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_left.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_right.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_right.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_straight.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_straight.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10Rights_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_100_compared_left.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_100_compared_left_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_100_compared_right.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_100_compared_right_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_100_compared_straight.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_Left_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_lefts.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_straights.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Ros.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Scaling_Left_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Scaling_Left_X.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Scaling_Right_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Scaling_Right_X.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Scaling_Straight_X.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/T-int.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/X-int.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/bad_left_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/bad_right_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/bad_straight_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/good_left_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/good_right_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/good_straight_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/interesting_straight_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/interpolation_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/interpolation_example.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/left_org.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/left_org_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/pseudo_belief update.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/right_org.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/right_org_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/straight_org.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/meta/abstract.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/meta/abstract.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/meta/acknowledgements.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/meta/acknowledgements.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/meta/appendix.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/meta/appendix.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/preamble/packages.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/preamble/packages.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.acn" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.acn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.bbl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.blg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.lof" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.lof" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.lot" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.lot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.opo" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.opo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.out" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.syo" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.syo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../listener/scripts/listener.py" beforeDir="false" afterPath="$PROJECT_DIR$/../listener/scripts/listener.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/RBF.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/RBF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/RBF_Code from Doro.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/RBF_Code from Doro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/belief_evolution_comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/belief_evolution_comparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/dtw.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/main2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/main2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/net_belief_evolution.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/net_belief_evolution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../movement_prediction/real_data_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/real_data_plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../movement_prediction/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_real_left.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_real_right.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_real_straight.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/00000_real_left_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_left_00.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_left_01.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_left_02.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_left_03.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_left_04.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_left_05.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_left_06.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_left_07.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_left_08.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_left_09.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_right_00.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_right_01.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_right_02.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_right_03.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_right_04.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_right_05.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_right_06.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_right_07.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_right_08.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movement_prediction/trajectories/0_RealData_right_09.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/ClassName.ui" beforeDir="false" afterPath="$PROJECT_DIR$/../policy_gui/lib/ClassName.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/trajectory_viz.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/trajectory_viz.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,30 +120,35 @@
     <session id="-1708296219">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.13" value="4" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="6658" />
+          <entry key="py" value="6674" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="6658" />
+          <entry key="Python" value="6674" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -98,29 +178,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3690">
-              <caret line="262" selection-start-line="262" selection-end-line="262" />
+            <state relative-caret-position="188">
+              <caret line="195" column="16" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="16" />
               <folding>
                 <element signature="e#24#36#0" expanded="true" />
-                <marker date="1559489913678" expanded="true" signature="866:867" ph="..." />
-                <marker date="1559489913678" expanded="true" signature="2970:2979" ph="..." />
-                <marker date="1559489913678" expanded="true" signature="3001:3016" ph="..." />
-                <marker date="1559489913678" expanded="true" signature="7125:7134" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz_2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="262" column="11" selection-start-line="262" selection-start-column="11" selection-end-line="262" selection-end-column="11" />
-              <folding>
-                <element signature="e#24#36#0" expanded="true" />
+                <marker date="1561999400921" expanded="true" signature="866:867" ph="..." />
+                <marker date="1561999400921" expanded="true" signature="2970:2979" ph="..." />
+                <marker date="1561999400921" expanded="true" signature="3001:3016" ph="..." />
+                <marker date="1561999400921" expanded="true" signature="7205:7214" ph="..." />
               </folding>
             </state>
           </provider>
@@ -155,6 +223,8 @@
       <find>subs</find>
       <find>lifetime</find>
       <find>life</find>
+      <find>lifet</find>
+      <find>self.count</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -184,9 +254,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-28" />
     <option name="width" value="1535" />
     <option name="height" value="904" />
   </component>
@@ -196,6 +265,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,7 +287,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -324,10 +393,10 @@
     <option name="totallyTimeSpent" value="4380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
+    <frame x="64" y="-11" width="1537" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28081813" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18401612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -340,7 +409,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49966422" weight="0.3298969" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501679" side_tool="true" visible="true" weight="0.32845187" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501679" side_tool="true" visible="true" weight="0.41623712" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -400,6 +469,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="262" column="11" selection-start-line="262" selection-start-column="11" selection-end-line="262" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -409,24 +485,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3690">
-          <caret line="262" selection-start-line="262" selection-end-line="262" />
+        <state relative-caret-position="188">
+          <caret line="195" column="16" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="16" />
           <folding>
             <element signature="e#24#36#0" expanded="true" />
-            <marker date="1559489913678" expanded="true" signature="866:867" ph="..." />
-            <marker date="1559489913678" expanded="true" signature="2970:2979" ph="..." />
-            <marker date="1559489913678" expanded="true" signature="3001:3016" ph="..." />
-            <marker date="1559489913678" expanded="true" signature="7125:7134" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/trajectory_viz_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="262" column="11" selection-start-line="262" selection-start-column="11" selection-end-line="262" selection-end-column="11" />
-          <folding>
-            <element signature="e#24#36#0" expanded="true" />
+            <marker date="1561999400921" expanded="true" signature="866:867" ph="..." />
+            <marker date="1561999400921" expanded="true" signature="2970:2979" ph="..." />
+            <marker date="1561999400921" expanded="true" signature="3001:3016" ph="..." />
+            <marker date="1561999400921" expanded="true" signature="7205:7214" ph="..." />
           </folding>
         </state>
       </provider>

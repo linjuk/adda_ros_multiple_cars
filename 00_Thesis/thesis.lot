@@ -2,14 +2,24 @@
 \select@language {english}
 \select@language {ngerman}
 \select@language {english}
-\select@language {ngerman}
-\select@language {english}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Different Methods Performance Comparison\relax }}{6}{table.caption.24}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Average time-steps needed to predict trajectory. The same trajectories were tested, just were interpolated differently. The second row, says after how many steps direction was recognized correctly (belief for going to that direction is >0.5 and after that step prediction for other directions do not occur). The third row shows how much trajectory needed to be seen to make a correct prediction. Trajectory direction is right\relax }}{24}{table.caption.41}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Average time-steps needed to predict trajectory. The same trajectories were tested, just were interpolated differently. The second row, says after how many steps direction was recognized correctly (belief for going to that direction is >0.5 and after that step prediction for other directions do not occur). The third row shows how much trajectory needed to be seen to make a correct prediction. Trajectory direction is straight\relax }}{24}{table.caption.42}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Average time-steps needed to predict trajectory. The same trajectories were tested, just were interpolated differently. The second row, says after how many steps direction was recognized correctly (belief for going to that direction is >0.5 and after that step prediction for other directions do not occur). The third row shows how much trajectory needed to be seen to make a correct prediction. Trajectory direction is left\relax }}{25}{table.caption.43}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Average time-steps needed to predict trajectory. The same trajectories were tested, just were interpolated differently. The second row, says after how many steps direction was recognized correctly (belief for going to that direction is >0.5 and after that step prediction for other directions do not occur). The third row shows how much trajectory needed to be seen to make a correct prediction. Trajectory direction is right\relax }}{31}{table.caption.62}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Average time-steps needed to predict trajectory. The same trajectories were tested, just were interpolated differently. The second row, says after how many steps direction was recognized correctly (belief for going to that direction is >0.5 and after that step prediction for other directions do not occur). The third row shows how much trajectory needed to be seen to make a correct prediction. Trajectory direction is left\relax }}{31}{table.caption.63}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Belief Update Over Time for straight trajectory. Algorithm knew to which direction car is going from the very beginning\relax }}{32}{table.caption.65}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Belief Update Over Time for straight trajectory. Algorithm knew to which direction car is going from the very beginning\relax }}{33}{table.caption.70}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Average length of trajectory needed to predict movement class correctly in X intersection\relax }}{34}{table.caption.75}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Average length of trajectory needed to predict movement class correctly in T intersection\relax }}{34}{table.caption.76}
+\contentsline {table}{\numberline {5.10}{\ignorespaces Maximum, average and minimum length of trajectory needed to predict movement class correctly in X intersection per each movement class\relax }}{35}{table.caption.77}
+\contentsline {table}{\numberline {5.11}{\ignorespaces Maximum, average and minimum length of trajectory needed to predict movement class correctly in T intersection per each movement class\relax }}{35}{table.caption.78}
+\contentsline {table}{\numberline {5.12}{\ignorespaces Belief Update Over Time for straight trajectory. Algorithm knew to which direction car is going from the very beginning\relax }}{39}{table.caption.89}
+\contentsline {table}{\numberline {5.13}{\ignorespaces Belief Update Over Time for left trajectory. Algorithm was pretty sure to which direction car is going from the very beginning\relax }}{39}{table.caption.91}
+\contentsline {table}{\numberline {5.14}{\ignorespaces Belief Update Over Time for right trajectory. While recognizing right trajectory algorithm thought that car is moving to left direction, but at the end it recognized direction correctly\relax }}{40}{table.caption.93}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

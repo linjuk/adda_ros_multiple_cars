@@ -104,7 +104,8 @@ class TrajectoryInteractiveMarkers:
         marker.header.frame_id = "map"
         marker.header.stamp = rospy.Time.now()
         marker.ns = "mean_right"
-        marker.id = self.count
+        # marker.id = self.count
+        marker.id = 1
         marker.type = Marker.LINE_STRIP
         marker.action = Marker.ADD
 
@@ -119,7 +120,7 @@ class TrajectoryInteractiveMarkers:
         marker.scale = Vector3(self.all_std[0][i][0] * 2, self.all_std[0][i][1] * 2, 0.1)
         marker.color = ColorRGBA(0.0, 0.0, 1.0, opacity)
         self.count += 1
-        marker.lifetime = rospy.Duration(0.25)
+        # marker.lifetime = rospy.Duration(0.25)
         self.marker_publisher_mean.publish(marker)
 
     def show_mean_straight_in_rviz(self, opacity):
@@ -128,7 +129,8 @@ class TrajectoryInteractiveMarkers:
         marker.header.frame_id = "map"
         marker.header.stamp = rospy.Time.now()
         marker.ns = "mean_straight"
-        marker.id = self.count
+        # marker.id = self.count
+        # marker.id = 2
         marker.type = Marker.LINE_STRIP
         marker.action = Marker.ADD
 
@@ -143,7 +145,7 @@ class TrajectoryInteractiveMarkers:
         marker.scale = Vector3(self.all_std[1][i][0] * 2, self.all_std[1][i][1] * 2, 0.1)
         marker.color = ColorRGBA(1.0, 0.0, 0.0, opacity)
         self.count += 1
-        marker.lifetime = rospy.Duration(0.25)
+        # marker.lifetime = rospy.Duration(0.25)
         self.marker_publisher_mean.publish(marker)
 
     def show_mean_left_in_rviz(self, opacity):
@@ -152,7 +154,8 @@ class TrajectoryInteractiveMarkers:
         marker.header.frame_id = "map"
         marker.header.stamp = rospy.Time.now()
         marker.ns = "mean_left"
-        marker.id = self.count
+        # marker.id = self.count
+        marker.id = 3
         marker.type = Marker.LINE_STRIP
         marker.action = Marker.ADD
 
@@ -167,7 +170,7 @@ class TrajectoryInteractiveMarkers:
         marker.scale = Vector3(self.all_std[2][i][0] * 2, self.all_std[2][i][1] * 2, 0.1)
         marker.color = ColorRGBA(0.0, 1.0, 0.0, opacity)
         self.count += 1
-        marker.lifetime = rospy.Duration(0.25)
+        # marker.lifetime = rospy.Duration(0.25)
         self.marker_publisher_mean.publish(marker)
 
     def show_belief_in_rviz(self):

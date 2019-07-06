@@ -228,3 +228,69 @@ class ProMP():
     def print_state(self):
         print "phase (z): " + str(self.z)
         print "zd: " + str(self.zd)
+
+
+
+from ..utils import prepare_observation_matrix, psi_block_diag, nan_matrix
+import numpy as np
+import scipy
+
+def completion_ProMPs_with_GMMs(observation, obs_start, obs_end,
+obs_dof, inv_obs_noise, PSI_matrix, mu, covariance, T, nr_dof):
+    """compute mean vector and covariance matrix of trajectory
+conditioned on observation according to equations (
+    16), (17)
+
+    :param observation: observed points from a trajectory
+    :param obs_start: start index of observation
+    :param end_obs: end index of observation
+    :param inv_obs_noise: variance of observation
+    :param PSI_matrix: matrix of basis functions from regression
+    :param mu: mean vector for Gaussian Mixture component
+    :param covariance: variance matrix for Gaussian Mixture component
+    :param T: number of timesteps
+    :param nr_dof: total dof
+    :return: mean vector and covariance matrix for the trajectory
+    """
+
+    # expand the observation to full size an reshapes it to an column verctor
+    observation, indexObs = prepare_observation_matrix(observation,
+obs_start, obs_end, obs_dof, T, nr_dof)
+
+    # 1st column: index of observed values; 2nd column: observed values
+    data = np.vstack((indexObs, observation[indexObs]))
+
+    A = psi_block_diag(PSI_matrix, nr_dof)
+
+    # take exactly the lines of A that correspond to observed values
+    obsA = A[indexObs, :]
+    a = inv_obs_noise
+
+    # add some noise to avoid numerical problems
+    #covariance = covariance + 1e-11* np.eye(np.size(covariance, 0),
+np.size(covariance, 1))
+
+    # Parameters of posterior in weight space
+    b = scipy.linalg.inv(covariance)
+    #np.testing.assert_array_almost_equal(np.dot(b, covariance),
+np.diag(np.ones(270)), decimal=3)
+    # calc lambda
+    lam = a*(np.dot(obsA.T, obsA)) + b
+
+    w_mu_posterior = np.dot(scipy.linalg.inv(lam), (a * np.dot(obsA.T,
+data[1].reshape(data[1].shape[0], 1)) + np.dot(b, mu)))
+
+    # Parameters of posterior in trajectory space
+    u = np.dot(A, w_mu_posterior)
+
+    variance = 1./a*np.eye(np.size(A, 0)) + np.dot(np.dot(A,
+scipy.linalg.inv(lam)), A.T)
+
+    matrix_u = np.reshape(u, (T, nr_dof), order='F')
+
+    matrix_variance = nan_matrix((T, nr_dof))
+    for i in xrange(nr_dof):
+        matrix_variance[:,i] = np.diag(variance[(i * T):(i * T + T),
+(i * T):(i * T + T)])
+
+    return (matrix_u, matrix_variance)

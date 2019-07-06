@@ -1,12 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{pic}
-W.~Z. Yeping~Hu and M.~Tomizuka, ``{Probabilistic Prediction of Vehicle
-  Semantic Intention and Motion},'' 2018.
-
-\bibitem{pic2}
-A.~Singh, ``{PREDICTION in Autonomous Vehicle - All You Need To Know}.''
-
 \bibitem{ClassificationI}
 C.~L. Stéphanie~Lefèvre, Dizan~Vasquez, ``{A survey on motion prediction and
   risk assessment for intelligent vehicles},'' {\em ROBOMECH Journal}, 2014.
@@ -27,12 +20,6 @@ E.~F. B. L. A. R. C. X. A. P. T.~K. Kevin~Eykholt, Ivan~Evtimov and D.~Song,
 \bibitem{PicPrivacy}
 F.~STAFF, ``{Infographic: Data and the Connected Car – Version 1.0}.''
 
-\bibitem{americanDriving}
-A.~F. for Traffic~Safety., ``{American Driving Survey, 2015 – 2016}.''
-
-\bibitem{WHOstatistics}
-WHO, ``{Global Status Report On Road Safety 2018}.''
-
 \bibitem{SuperComputer}
 S.~R. Kaiming~He, Xiangyu~Zhang and J.~Sun, ``{Delving Deep into Rectifiers:
   Surpassing Human-Level Performance on ImageNet Classification},'' 2015.
@@ -41,8 +28,24 @@ S.~R. Kaiming~He, Xiangyu~Zhang and J.~Sun, ``{Delving Deep into Rectifiers:
 T.~Keeney, ``{Mobility-As-A-Servive: Why Self-Driving Cars Could Change
   Everything},'' 2017.
 
-\bibitem{aDDa}
-TuD, ``{aDDa for Students}.''
+\bibitem{IntroI}
+H.~R.~S. Zhou~Wang, Alan Conrad~Bovik and E.~P. Simoncelli, ``{Image Quality
+  Assessment: From Error Visibility to Structural Similarity},'' p.~600–612,
+  2004.
+
+\bibitem{IntroII}
+M.~P. D. H. B. A. D. V. B.~S. Zhikun~Wang, Katharina~Mülling and J.~Peters,
+  ``{Probabilistic movement modeling for intention inference in human-robot
+  interaction},'' p.~841–858, 2013.
+
+\bibitem{IntroIII}
+C.~F. Angelika~Zube, Jonas~Hofmann, ``{Model Predictive Contact Control for
+  Human-Robot Interaction},'' p.~279–285, 2016.
+
+\bibitem{GausianMM}
+D.~B. Sylvain~Calinon and D.~G. Caldwell1, ``{A Task-Parameterized
+  Probabilistic Model with Minimal Intervention Control},'' p.~3339–3344,
+  2014.
 
 \bibitem{BN1}
 G.~B. Ismail~Dagli, Michael~Brost, ``{Action recognition and prediction for
@@ -54,14 +57,6 @@ K.~T. Shigeki~Tezuka, Hitoshi~Soma, ``{A study of driver behavior inference
   model at time of lane change using bayesian networks},'' p.~2308–2313,
   2006.
 
-\bibitem{Markov1}
-A.~P. Andrew~Liu, ``{Towards real-time recognition of driver intentions},''
-  p.~236–241, 1997.
-
-\bibitem{Markov2}
-A.~P. Andrew~Liu, ``{Modeling and prediction of human behavior},''
-  p.~229–242, 1999.
-
 \bibitem{Markov3}
 A.~P. Nuria~Oliver, ``{Driver behavior recognition and prediction in a
   smartcar,},'' p.~280–290, 2000.
@@ -69,6 +64,27 @@ A.~P. Nuria~Oliver, ``{Driver behavior recognition and prediction in a
 \bibitem{Markov4}
 A.~P. Nuria~Oliver, ``{Graphical models for driver behavior recognition in a
   smartcar},'' p.~7–12, 2000.
+
+\bibitem{DMP}
+F.~Meier and S.~Schaal, ``{A Probabilistic Representation for Dynamic Movement
+  Primitives},'' 2016.
+
+\bibitem{ProMPs}
+
+
+\bibitem{aboutROS}
+ROS, ``{About ROS}.''
+
+\bibitem{aDDa}
+TuD, ``{aDDa for Students}.''
+
+\bibitem{Markov1}
+A.~P. Andrew~Liu, ``{Towards real-time recognition of driver intentions},''
+  p.~236–241, 1997.
+
+\bibitem{Markov2}
+A.~P. Andrew~Liu, ``{Modeling and prediction of human behavior},''
+  p.~229–242, 1999.
 
 \bibitem{Mind}
 D.~D. Salvucci, ``{Inferring driver intent: A case study in lane-change
@@ -81,14 +97,6 @@ C.~S. Yi~Hou, Praveen~Edara, ``{A genetic fuzzy system for modeling mandatory
 \bibitem{VectMash}
 D.~D.~S. Hiren M.~Mandalia, ``{Using support vector machines for lane change
   detection},'' 2005.
-
-\bibitem{BOOK}
-M.~J. Kochenderfer, ``{Decision Making Under Uncertainty: Theory and
-  Application},'' p.~11–57, 2015.
-
-\bibitem{belief}
-A.~R.~C. Leslie Pack~Kaelbling, Michael L.~Littman, ``{Planning and acting in
-  partially observable stochastic domains},'' p.~99–134, 1998.
 
 \bibitem{ClassificationII}
 A.~R. Nachiket~Deo and M.~M. Trived, ``{How Would Surround Vehicles Move? A
@@ -224,11 +232,53 @@ N.~R. J. P.~H. Georges S.~Aoude, Joshua~Joseph, ``{Mobile agent trajectory
   prediction using Bayesian nonparametric reachability trees},''
   p.~1587–1593, 2011.
 
-\bibitem{ROSjoy}
-ROS, ``{ROS joy package summary}.''
+\bibitem{aboutOpenCV}
+OpenCV, ``{About OpenCV}.''
+
+\bibitem{contours}
+OpenCV, ``{Contours in OpenCV}.''
+
+\bibitem{aprox}
+Wikipedia, ``{Ramer–Douglas–Peucker algorithm}.''
+
+\bibitem{SSIM}
+H.~R.~S. Zhou~Wang, Alan Conrad~Bovik and E.~P. Simoncelli, ``{Image Quality
+  Assessment: From Error Visibility to Structural Similarity},'' p.~600–612,
+  2004.
+
+\bibitem{SSIMII}
+A.~Rosebrock, ``{How-To: Python Compare Two Images}.''
+
+\bibitem{BOOK}
+M.~J. Kochenderfer, ``{Decision Making Under Uncertainty: Theory and
+  Application},'' p.~11–57, 2015.
+
+\bibitem{belief}
+A.~R.~C. Leslie Pack~Kaelbling, Michael L.~Littman, ``{Planning and acting in
+  partially observable stochastic domains},'' p.~99–134, 1998.
 
 \bibitem{ToyPr}
 S.~Scholar, ``{Toy Problem}.''
+
+\bibitem{DTW}
+M.~E. R. L. O.~K. Guilherme~Maeda, Gerhard~Neumann and J.~Peters,
+  ``{Probabilistic Movement Primitives for Coordination of Multiple Human-Robot
+  Collaborative Tasks},'' p.~1–20, 2016.
+
+\bibitem{PossExecution}
+R.~L. H. B. A. J.~P. Marco~Ewerton, Gerhard~Neumann and G.~Maeda, ``{Learning
+  multiple collaborative tasks with a mixture of interaction primitives},''
+  p.~1535–1542, 2015.
+
+\bibitem{ROSjoy}
+ROS, ``{ROS joy package summary}.''
+
+\bibitem{selfDrivingCarSec}
+I.~M. Institute, ``{Self Driving Car Security}.''
+
+\bibitem{ChinaAttack}
+D.~M. West, ``{Moving forward: Self-driving vehicles in China, Europe, Japan,
+  Korea, and the United States}.''
 
 \bibitem{carspeak}
 N.~A. S. G. D.~K. Swarun~Kumar, Lixin~Shi and D.~Rus, ``{CarSpeak: A
@@ -245,9 +295,25 @@ D.~Lagutin, ``{Packet Level Authentication Overview},'' 2010.
 K.-T. Cho and K.~G. Shin, ``{Fingerprinting electronic control units for
   vehicle intrusion detection},'' 2016.
 
+\bibitem{Spoof2}
+J.~A. B. T. E.~H. Andrew J.~Kerns, Daniel P.~Shepard, ``{Unmanned aircraft
+  capture and control via GPS spoofing},'' p.~617–636, 2014.
+
+\bibitem{IIIspoof}
+A.~Couts, ``{Want to see this 80 million super yacht sink? With GPS spoofing,
+  now you can!}.''
+
 \bibitem{AttacksOnSensors}
 F.~K. Jonathan~Petit, Michael~Feiri, ``{Remote Attacks on Automated Vehicles
   Sensors: Experiments on Camera and LiDAR},'' 2015.
+
+\bibitem{secsec}
+M.~T.~R. Mostofa Kamal~Nasir, A.K.M. Kamrul~Islam and M.~K. Sohel, ``{Taxonomy
+  of Security in Vehicular Ad-Hoc Network},'' 2013.
+
+\bibitem{intrution}
+M.-J. Kang and J.-W. Kang, ``Intrusion detection system using deep neural
+  network for in-vehicle network security.''
 
 \bibitem{AttackModel}
 F.~K. Jonathan~Petit, Michael~Feiri, ``{Revisiting Attacker Model for Smart
@@ -273,10 +339,5 @@ A.~Kharpal, ``{Apple vs FBI: All you need to know}.''
 
 \bibitem{ThreatenPrivacyIV}
 B.~Cresitello-Dittmar, ``{Privacy Concerns of Self Driving Cars}.''
-
-\bibitem{TimeRep}
-A.~M. Matthias~Althoff, ``{Comparison of Markov chain abstraction and Monte
-  Carlo simulation for the safety assessment of autonomous cars},''
-  p.~1237–1247, 2011.
 
 \end{thebibliography}

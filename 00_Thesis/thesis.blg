@@ -3,33 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: ieeetr.bst
 Database file #1: literature/lit.bib
-Warning--entry type for "americanDriving" isn't style-file defined
---line 1 of file literature/lit.bib
-Warning--entry type for "WHOstatistics" isn't style-file defined
---line 8 of file literature/lit.bib
 Warning--entry type for "aDDa" isn't style-file defined
 --line 30 of file literature/lit.bib
 Warning--entry type for "def" isn't style-file defined
 --line 125 of file literature/lit.bib
-Warning--entry type for "pic2" isn't style-file defined
---line 401 of file literature/lit.bib
 Warning--entry type for "ROSjoy" isn't style-file defined
 --line 449 of file literature/lit.bib
 Warning--entry type for "ToyPr" isn't style-file defined
 --line 456 of file literature/lit.bib
 Warning--entry type for "ThreatenPrivacy" isn't style-file defined
---line 489 of file literature/lit.bib
+--line 488 of file literature/lit.bib
 Warning--entry type for "PicPrivacy" isn't style-file defined
---line 496 of file literature/lit.bib
+--line 495 of file literature/lit.bib
 Warning--entry type for "ThreatenPrivacyII" isn't style-file defined
---line 503 of file literature/lit.bib
+--line 502 of file literature/lit.bib
 Warning--entry type for "ThreatenPrivacyIII" isn't style-file defined
---line 510 of file literature/lit.bib
+--line 509 of file literature/lit.bib
 Warning--entry type for "ThreatenPrivacyIV" isn't style-file defined
---line 517 of file literature/lit.bib
+--line 516 of file literature/lit.bib
 Warning--entry type for "signs2" isn't style-file defined
---line 541 of file literature/lit.bib
-Warning--empty journal in pic
+--line 540 of file literature/lit.bib
+Warning--entry type for "contours" isn't style-file defined
+--line 564 of file literature/lit.bib
+Warning--entry type for "aprox" isn't style-file defined
+--line 571 of file literature/lit.bib
+Warning--entry type for "SSIMII" isn't style-file defined
+--line 587 of file literature/lit.bib
+Warning--entry type for "aboutROS" isn't style-file defined
+--line 643 of file literature/lit.bib
+Warning--entry type for "aboutOpenCV" isn't style-file defined
+--line 650 of file literature/lit.bib
+Warning--entry type for "selfDrivingCarSec" isn't style-file defined
+--line 657 of file literature/lit.bib
+Warning--entry type for "ChinaAttack" isn't style-file defined
+--line 664 of file literature/lit.bib
+Warning--entry type for "IIIspoof" isn't style-file defined
+--line 679 of file literature/lit.bib
+Warning--entry type for "intrution" isn't style-file defined
+--line 694 of file literature/lit.bib
 Warning--empty journal in sec
 Too many commas in name 1 of "Nicolas Papernot, Patrick McDaniel, Ian Goodfellow, Somesh Jha, Z. Berkay Celik and Ananthram Swami" for entry blackBox1
 while executing---line 969 of file ieeetr.bst
@@ -49,17 +60,30 @@ while executing---line 969 of file ieeetr.bst
 Warning--empty journal in signs
 Warning--empty journal in SuperComputer
 Warning--empty journal in ARKInvest
+Warning--empty journal in IntroI
+Too many commas in name 1 of "Zhikun Wang, Katharina Mülling, Marc Peter Deisenroth, Heni Ben Amor, David Vogt, Bernhard Schölkopf and Jan Peters" for entry IntroII
+while executing---line 969 of file ieeetr.bst
+Too many commas in name 1 of "Zhikun Wang, Katharina Mülling, Marc Peter Deisenroth, Heni Ben Amor, David Vogt, Bernhard Schölkopf and Jan Peters" for entry IntroII
+while executing---line 969 of file ieeetr.bst
+Too many commas in name 1 of "Zhikun Wang, Katharina Mülling, Marc Peter Deisenroth, Heni Ben Amor, David Vogt, Bernhard Schölkopf and Jan Peters" for entry IntroII
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in IntroII
+Warning--empty journal in IntroIII
+Warning--empty journal in GausianMM
 Warning--empty journal in BN1
 Warning--empty journal in BN2
-Warning--empty journal in Markov1
-Warning--empty journal in Markov2
 Warning--empty journal in Markov3
 Warning--empty journal in Markov4
+Warning--empty journal in DMP
+Warning--empty author in ProMPs
+Warning--empty title in ProMPs
+Warning--empty journal in ProMPs
+Warning--empty year in ProMPs
+Warning--empty journal in Markov1
+Warning--empty journal in Markov2
 Warning--empty journal in Mind
 Warning--empty journal in Fuzz
 Warning--empty journal in VectMash
-Warning--empty journal in BOOK
-Warning--empty journal in belief
 Warning--empty journal in ClassificationII
 Warning--empty journal in dynamic
 Warning--empty journal in kinematicI
@@ -117,6 +141,19 @@ Warning--empty journal in DataDrivenVII
 Too many commas in name 1 of "Georges S. Aoude, Joshua Joseph, Nicholas Roy, Jonathan P. How" for entry RRT
 while executing---line 969 of file ieeetr.bst
 Warning--empty journal in RRT
+Warning--empty journal in SSIM
+Warning--empty journal in BOOK
+Warning--empty journal in belief
+Too many commas in name 1 of "Guilherme Maeda, Gerhard Neumann, Marco Ewerton, Rudolf Lioutikov, Oliver Kroemer and Jan Peters" for entry DTW
+while executing---line 969 of file ieeetr.bst
+Too many commas in name 1 of "Guilherme Maeda, Gerhard Neumann, Marco Ewerton, Rudolf Lioutikov, Oliver Kroemer and Jan Peters" for entry DTW
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in DTW
+Too many commas in name 1 of "Marco Ewerton, Gerhard Neumann, Rudolf Lioutikov, Heni Ben Amor, Jan Peters and Guilherme Maeda" for entry PossExecution
+while executing---line 969 of file ieeetr.bst
+Too many commas in name 1 of "Marco Ewerton, Gerhard Neumann, Rudolf Lioutikov, Heni Ben Amor, Jan Peters and Guilherme Maeda" for entry PossExecution
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in PossExecution
 Too many commas in name 1 of "Swarun Kumar, Lixin Shi, Nabeel Ahmed, Stephanie Gil, Dina Katabi and Daniela Rus" for entry carspeak
 while executing---line 969 of file ieeetr.bst
 Too many commas in name 1 of "Swarun Kumar, Lixin Shi, Nabeel Ahmed, Stephanie Gil, Dina Katabi and Daniela Rus" for entry carspeak
@@ -127,49 +164,52 @@ while executing---line 969 of file ieeetr.bst
 Warning--empty journal in secanalysis
 Warning--empty journal in pla
 Warning--empty journal in attacTax1
+Too many commas in name 1 of "Andrew J. Kerns, Daniel P. Shepard, Jahshan A. Bhatti, Todd E. Humphreys" for entry Spoof2
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in Spoof2
 Warning--empty journal in AttacksOnSensors
+Warning--empty journal in secsec
 Warning--empty journal in AttackModel
 Warning--empty journal in diffWaveLenght
-Warning--empty journal in TimeRep
-You've used 69 entries,
+You've used 84 entries,
             1876 wiz_defined-function locations,
-            822 strings with 14115 characters,
-and the built_in function-call counts, 17239 in all, are:
-= -- 1846
-> -- 360
+            889 strings with 16088 characters,
+and the built_in function-call counts, 20550 in all, are:
+= -- 2178
+> -- 449
 < -- 0
-+ -- 159
-- -- 90
-* -- 574
-:= -- 1954
-add.period$ -- 56
-call.type$ -- 69
-change.case$ -- 69
++ -- 196
+- -- 112
+* -- 690
+:= -- 2328
+add.period$ -- 64
+call.type$ -- 84
+change.case$ -- 83
 chr.to.int$ -- 0
-cite$ -- 125
-duplicate$ -- 1290
-empty$ -- 1614
-format.name$ -- 90
-if$ -- 4586
+cite$ -- 152
+duplicate$ -- 1519
+empty$ -- 1944
+format.name$ -- 112
+if$ -- 5461
 int.to.chr$ -- 0
-int.to.str$ -- 69
-missing$ -- 56
-newline$ -- 210
-num.names$ -- 69
-pop$ -- 398
+int.to.str$ -- 84
+missing$ -- 65
+newline$ -- 255
+num.names$ -- 83
+pop$ -- 485
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1283
+skip$ -- 1535
 stack$ -- 0
-substring$ -- 786
-swap$ -- 735
+substring$ -- 910
+swap$ -- 859
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 56
-while$ -- 111
-width$ -- 71
-write$ -- 512
-(There were 23 error messages)
+warning$ -- 68
+while$ -- 132
+width$ -- 86
+write$ -- 615
+(There were 31 error messages)

@@ -108,6 +108,7 @@ def calculate_covariance_for_class(trajectories_in_class, number_points):
         cov_for_all_timesteps.append(cov_for_this_timestep)
     return cov_for_all_timesteps
 
+
 # simple probability formula for one point instead of full trajectory like
 def simple_probability(point, mean, covariance):
     return multivariate_normal.pdf(point, mean, covariance)
@@ -224,9 +225,6 @@ def belief_update(belief_input, observation_probability, number_points):
 def distance_formula(p1, p2):
     return math.sqrt( ((p1[0]-p2[0])**2)+((p1[1]-p2[1])**2))
 
-def distance_formula_dtw(p1, p2):
-    return dtw.distance(p1, p2)
-
 def comb_dataset(Number_Of_Points):
     """
     Go through all trajectory files of dataset, interpolate each and return accumulated values
@@ -241,6 +239,74 @@ def comb_dataset(Number_Of_Points):
         'right': glob.glob(os.path.dirname(os.path.realpath(__file__))+'/trajectories/right_*.csv'),  # return all files starting with right in the folder
         'straight': glob.glob(os.path.dirname(os.path.realpath(__file__))+'/trajectories/straight_*.csv'),  # return all files starting with straight in the folder
         'left': glob.glob(os.path.dirname(os.path.realpath(__file__)) + '/trajectories/left_*.csv') # return all files starting with left_ in the folder
+
+    }
+
+    # loop over trajectories i.e. left, right, straight
+    for key in files_dictionary:
+
+        trajectory_csv_file_wise_data[key] = {}
+
+        for index, file in enumerate(files_dictionary[key]):  # loop over files in each trajectory
+            file_raw_data = read_csv_fast(file)
+            all_points_from_files.append(file_raw_data)
+            trajectory_csv_data[key] = (file_raw_data)  # read file
+            trajectory_csv_file_wise_data[key][index] = []  # aggregate data in container for averaging
+            trajectory_csv_file_wise_data[key][index].append(trajectory_csv_data[key])
+
+    # Interpolate the accumulated trajectories
+    all_points_from_files = np.asarray(all_points_from_files)
+    count_right_files = len(files_dictionary['right'])
+    count_straight_files = len(files_dictionary['straight'])
+    count_left_files = len(files_dictionary['left'])
+
+    print('Count of dataset')
+    print('right', count_right_files)
+    print('straight', count_straight_files)
+    print('left', count_left_files)
+
+
+    all_rights = []
+    for i in range(count_straight_files, count_straight_files + count_right_files):
+        [xn, yn] = interpolate_dist(all_points_from_files[i][:, 1], all_points_from_files[i][:, 2], Number_Of_Points)
+        points = np.vstack((xn, yn)).T
+        all_rights.append(points)
+
+    all_straights = []
+    for i in range(count_straight_files):
+        [xn, yn] = interpolate_dist(all_points_from_files[i][:, 1], all_points_from_files[i][:, 2], Number_Of_Points)
+        points = np.vstack((xn, yn)).T
+        all_straights.append(points)
+
+    all_lefts = []
+    for i in range(count_straight_files + count_right_files,
+                   count_straight_files + count_right_files + count_left_files):
+        [xn, yn] = interpolate_dist(all_points_from_files[i][:, 1], all_points_from_files[i][:, 2], Number_Of_Points)
+        points = np.vstack((xn, yn)).T
+        all_lefts.append(points)
+
+    all_rights = np.asarray(all_rights)
+    all_straights = np.asarray(all_straights)
+    all_lefts = np.asarray(all_lefts)
+
+
+    #Return interpolated values for all trajectory directions, files dictonary and number of points for later use
+    return all_rights, all_straights, all_lefts, files_dictionary, Number_Of_Points
+
+def comb_dataset_RealData(Number_Of_Points):
+    """
+    Go through all trajectory files of dataset, interpolate each and return accumulated values
+    """
+    # Load and accumulate all files
+    trajectory_csv_data = {}  # container dictionary for ploting graphs
+    trajectory_csv_file_wise_data = {}  # container dictionary for averaging
+    all_points_from_files = []  # big array container for all points from all trajectories
+
+    # fill files directionary with file paths of all csv files
+    files_dictionary = {
+        'left': glob.glob('trajectories/0_RealData_left_*.csv'),  # return all files starting with left_ in the folder
+        'right': glob.glob('trajectories/0_RealData_right_*.csv'),  # return all files starting with right in the folder
+        'straight': glob.glob('trajectories/0_RealData_straight_*.csv'), # return all files starting with straight in the folder
 
     }
 

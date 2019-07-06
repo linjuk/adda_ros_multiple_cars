@@ -1,37 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/main.py" line="383" />
-    <bookmark url="file://$PROJECT_DIR$/test.py" line="32" mnemonic="7" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf623fc-05f0-48b1-92ac-7f0584ad0d78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/IAS.sty" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/IAS.sty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/0-introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/0-introduction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/1-motivation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/1-motivation.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/2-foundations.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/2-foundations.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/3-experiments.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/4-results.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/5-discussion.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/content/6-outlook.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/content/6-outlook.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_left.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_left.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_right.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_right.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_straight.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/img/0_prediction_straight.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10Rights_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_100_compared_left.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_100_compared_left_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_100_compared_right.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_100_compared_right_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_100_compared_straight.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_Left_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_lefts.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/10_straights.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Ros.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Scaling_Left_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Scaling_Left_X.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Scaling_Right_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Scaling_Right_X.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/Scaling_Straight_X.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/T-int.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/X-int.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/bad_left_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/bad_right_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/bad_straight_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/good_left_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/good_right_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/good_straight_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/interesting_straight_tr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/interpolation_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/interpolation_example.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/left_org.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/left_org_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/pseudo_belief update.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/right_org.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/right_org_T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/img/straight_org.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/literature/lit.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/meta/abstract.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/meta/abstract.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/meta/acknowledgements.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/meta/acknowledgements.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/meta/appendix.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/meta/appendix.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/preamble/glossary.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/preamble/packages.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/preamble/packages.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.acn" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.acn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.bbl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.blg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.lof" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.lof" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.lot" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.lot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.opo" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.opo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.out" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.syo" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.syo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" beforeDir="false" afterPath="$PROJECT_DIR$/../00_Thesis/thesis.xdy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../listener/scripts/listener.py" beforeDir="false" afterPath="$PROJECT_DIR$/../listener/scripts/listener.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RBF.py" beforeDir="false" afterPath="$PROJECT_DIR$/RBF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RBF_Code from Doro.py" beforeDir="false" afterPath="$PROJECT_DIR$/RBF_Code from Doro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/belief_evolution_comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/belief_evolution_comparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtw.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main2.py" beforeDir="false" afterPath="$PROJECT_DIR$/main2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/net_belief_evolution.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_belief_evolution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real_data_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/real_data_plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trajectories/0_real_left.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trajectories/0_real_right.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trajectories/0_real_straight.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/00000_real_left_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_left_00.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_left_01.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_left_02.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_left_03.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_left_04.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_left_05.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_left_06.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_left_07.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_left_08.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_left_09.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_right_00.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_right_01.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_right_02.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_right_03.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_right_04.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_right_05.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_right_06.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_right_07.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_right_08.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trajectories/0_RealData_right_09.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../policy_gui/lib/ClassName.ui" beforeDir="false" afterPath="$PROJECT_DIR$/../policy_gui/lib/ClassName.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple_sim_car/pomdp_car_launch/maps/testmap1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../trajectory_viz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trajectory_viz/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trajectory_viz/scripts/trajectory_viz.py" beforeDir="false" afterPath="$PROJECT_DIR$/../trajectory_viz/scripts/trajectory_viz.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,31 +119,41 @@
     <SUITE FILE_PATH="coverage/movement_prediction$RBF_Code_from_Doro.coverage" NAME="RBF_Code from Doro Coverage Results" MODIFIED="1560104023587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$Left.coverage" NAME="Left Coverage Results" MODIFIED="1552599262879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$Testing.coverage" NAME="Testing Coverage Results" MODIFIED="1554329222184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/movement_prediction$RBF.coverage" NAME="RBF Coverage Results" MODIFIED="1561188862932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$RBF.coverage" NAME="RBF Coverage Results" MODIFIED="1562313792087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$main_see_how_trajectory_looks_like.coverage" NAME="main_see how trajectory looks like Coverage Results" MODIFIED="1557661022374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$scaling_Joni_s_method.coverage" NAME="scaling_Joni's method Coverage Results" MODIFIED="1554324780163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$belief_evolution_comparison_2.coverage" NAME="belief_evolution_comparison_2 Coverage Results" MODIFIED="1558274318088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/movement_prediction$belief_evolution_comparison.coverage" NAME="belief_evolution_comparison Coverage Results" MODIFIED="1558287644044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$Map_Recognition_1.coverage" NAME="Map_Recognition_1 Coverage Results" MODIFIED="1561883918492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$RBF_full.coverage" NAME="RBF_full Coverage Results" MODIFIED="1562166959930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$belief_evolution_comparison.coverage" NAME="belief_evolution_comparison Coverage Results" MODIFIED="1562250587249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$Right__1_.coverage" NAME="Right (1) Coverage Results" MODIFIED="1552655739176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$Random.coverage" NAME="Random Coverage Results" MODIFIED="1553639480269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$test_final.coverage" NAME="test_final Coverage Results" MODIFIED="1560809354200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/movement_prediction$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1559475861657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1561543005693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$learn_trajectories.coverage" NAME="learn_trajectories Coverage Results" MODIFIED="1562309771081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$RunConfigurationWithRandomTrajectory.coverage" NAME="Random Coverage Results" MODIFIED="1552599233899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/movement_prediction$net_belief_evolution.coverage" NAME="net_belief_evolution Coverage Results" MODIFIED="1559481960677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$RBF_RealData.coverage" NAME="RBF_RealData Coverage Results" MODIFIED="1561562943777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$net_belief_evolution.coverage" NAME="net_belief_evolution Coverage Results" MODIFIED="1561638285184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$Right.coverage" NAME="Right Coverage Results" MODIFIED="1555532377833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$Map_Recignition_1.coverage" NAME="Map_Recignition_1 Coverage Results" MODIFIED="1559474821592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$test_1.coverage" NAME="test_1 Coverage Results" MODIFIED="1560101373942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/movement_prediction$main.coverage" NAME="main Coverage Results" MODIFIED="1560808213550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/movement_prediction$real_data_plot.coverage" NAME="real_data_plot Coverage Results" MODIFIED="1560805806499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$main.coverage" NAME="main Coverage Results" MODIFIED="1562250441884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$real_data_plot.coverage" NAME="real_data_plot Coverage Results" MODIFIED="1561542271139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$learn_trajectories_test.coverage" NAME="learn_trajectories_test Coverage Results" MODIFIED="1562310204797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$RBF_full_NEW.coverage" NAME="RBF_full_NEW Coverage Results" MODIFIED="1562340061689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$test_0.coverage" NAME="test_0 Coverage Results" MODIFIED="1559854577660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$DEMO.coverage" NAME="DEMO Coverage Results" MODIFIED="1561396858959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$scaling2.coverage" NAME="scaling2 Coverage Results" MODIFIED="1556721988233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$scaling_consolidated.coverage" NAME="scaling_consolidated Coverage Results" MODIFIED="1556722057659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/movement_prediction$trajectory_interpolation_plot.coverage" NAME="trajectory_interpolation_plot Coverage Results" MODIFIED="1558284424682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/movement_prediction$dtw.coverage" NAME="dtw Coverage Results" MODIFIED="1560101455669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$trajectory_interpolation_plot.coverage" NAME="trajectory_interpolation_plot Coverage Results" MODIFIED="1561746377291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$test.coverage" NAME="test Coverage Results" MODIFIED="1560798485895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$dtw.coverage" NAME="dtw Coverage Results" MODIFIED="1561669318510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$scaling.coverage" NAME="scaling Coverage Results" MODIFIED="1556721469282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$RBF_2.coverage" NAME="RBF_2 Coverage Results" MODIFIED="1559228006620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$RBF_realData.coverage" NAME="RBF_realData Coverage Results" MODIFIED="1561573922373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$Map_Recognition_2_for_pictues.coverage" NAME="Map_Recognition_2_for pictues Coverage Results" MODIFIED="1562410603797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$_Straight__main_old.coverage" NAME="[Straight] main_old Coverage Results" MODIFIED="1556750129450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/movement_prediction$main_forRealData.coverage" NAME="main_forRealData Coverage Results" MODIFIED="1561562066592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/movement_prediction$Map_Recignition_2.coverage" NAME="Map_Recignition_2 Coverage Results" MODIFIED="1559475432116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -90,32 +174,32 @@
     <session id="1785179788">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.10" value="4" />
+          <entry key="project.open.time.10" value="6" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="4" />
           <entry key="project.open.time.13" value="4" />
           <entry key="project.open.time.14" value="2" />
-          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="35" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.9" value="6" />
+          <entry key="project.opened" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="pstat" value="2" />
-          <entry key="py" value="106" />
+          <entry key="py" value="230" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -123,7 +207,7 @@
         <counts>
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Profiler Session" value="2" />
-          <entry key="Python" value="106" />
+          <entry key="Python" value="230" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -131,46 +215,51 @@
           <entry key="Python Console" value="13" />
           <entry key="dummy" value="154" />
           <entry key="gitignore" value="9" />
-          <entry key="py" value="32295" />
+          <entry key="py" value="45134" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="163" />
-          <entry key="Python" value="32308" />
+          <entry key="Python" value="45147" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RBF.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RBF_full_NEW.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+            <state relative-caret-position="294">
+              <caret line="185" column="81" lean-forward="true" selection-start-line="185" selection-start-column="81" selection-end-line="185" selection-end-column="81" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#176#767#0" />
-                <element signature="e#836#1958#0" />
-                <element signature="e#8366#8431#0" />
+                <element signature="e#176#636#0" />
+                <element signature="e#695#900#0" />
+                <element signature="e#1611#3099#0" />
+                <element signature="e#3147#4169#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RBF_Code from Doro.py">
+        <entry file="file://$PROJECT_DIR$/trajectory_interpolation_plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="57" column="18" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="18" />
+            <state relative-caret-position="285">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="80" selection-start-line="80" selection-end-line="91" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#4504#6139#0" />
-                <element signature="e#7120#7309#0" />
-                <element signature="e#7627#7783#0" />
-                <element signature="e#7830#8002#0" />
-                <element signature="e#8039#8108#0" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,36 +276,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>norm_data</find>
-      <find>prior_cov_w</find>
-      <find>100</find>
-      <find>h</find>
-      <find>n_basis</find>
-      <find>ridgeregression_lambda</find>
-      <find>z</find>
-      <find>mean</find>
-      <find>plt</find>
-      <find>dim</find>
-      <find>for</find>
-      <find>shape</find>
-      <find>testing_trajectory</find>
-      <find>figure</find>
-      <find>labe</find>
-      <find>labels</find>
-      <find>fig1</find>
-      <find>append</find>
-      <find>data</find>
+      <find>ompute_predicted_trajectory_dermy</find>
+      <find>_obs_variance</find>
+      <find>pl</find>
+      <find>phase</find>
+      <find>plot</find>
+      <find>compute_predicted_trajectory_dermy</find>
+      <find>comb_</find>
+      <find>phi_</find>
+      <find>comb_da</find>
+      <find>w_mean_new</find>
+      <find>der</find>
+      <find>dermy</find>
+      <find>dar</find>
+      <find>tau</find>
+      <find>interpolate_timestamps</find>
+      <find>per</find>
+      <find>compute_feature_matrix</find>
+      <find>phases</find>
+      <find>combined_weights_mean_xy</find>
+      <find>combined_cov_right_xy</find>
+      <find>psi_new</find>
+      <find>Dermy</find>
+      <find>positions</find>
       <find>learn_weights</find>
-      <find>shad</find>
-      <find>shadedErrorBar</find>
-      <find>errBar</find>
-      <find>error_up</find>
-      <find>error</find>
-      <find>err</find>
-      <find>c_traj</find>
-      <find>cov</find>
-      <find>n_dof</find>
-      <find>cova</find>
+      <find>learn_weights_distribution</find>
+      <find>weights_dis</find>
+      <find>diag</find>
+      <find>define_basis_functions</find>
+      <find>shaded</find>
+      <find>obs_variance</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -235,23 +324,36 @@
         <option value="$PROJECT_DIR$/main_see how trajectory looks like.py" />
         <option value="$PROJECT_DIR$/trajectory_interpolation_plot.py" />
         <option value="$PROJECT_DIR$/belief_evolution_comparison_2.py" />
-        <option value="$PROJECT_DIR$/belief_evolution_comparison.py" />
         <option value="$PROJECT_DIR$/Map_Recignition_1.py" />
         <option value="$PROJECT_DIR$/Map_Recignition_2.py" />
-        <option value="$PROJECT_DIR$/main2.py" />
         <option value="$PROJECT_DIR$/RBF_2.py" />
-        <option value="$PROJECT_DIR$/dtw.py" />
         <option value="$PROJECT_DIR$/test_0.py" />
         <option value="$PROJECT_DIR$/test_1.py" />
-        <option value="$PROJECT_DIR$/net_belief_evolution.py" />
-        <option value="$PROJECT_DIR$/RBF_Code from Doro.py" />
         <option value="$PROJECT_DIR$/test_final.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/../listener/scripts/listener.py" />
+        <option value="$PROJECT_DIR$/DEMO.py" />
         <option value="$PROJECT_DIR$/real_data_plot.py" />
-        <option value="$PROJECT_DIR$/functions.py" />
+        <option value="$PROJECT_DIR$/main2.py" />
+        <option value="$PROJECT_DIR$/main_forRealData.py" />
+        <option value="$PROJECT_DIR$/RBF_RealData.py" />
+        <option value="$PROJECT_DIR$/RBF_realData.py" />
+        <option value="$PROJECT_DIR$/net_belief_evolution.py" />
+        <option value="$PROJECT_DIR$/dtw.py" />
+        <option value="$PROJECT_DIR$/Map_Recognition_1.py" />
+        <option value="$PROJECT_DIR$/Map_Recognition_2_for pictues.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$USER_HOME$/Downloads/2_5246964634157581056.py" />
+        <option value="$USER_HOME$/Downloads/2_5246826413520061228.py" />
+        <option value="$PROJECT_DIR$/RBF_Code from Doro.py" />
+        <option value="$PROJECT_DIR$/RBF_full.py" />
+        <option value="$PROJECT_DIR$/belief_evolution_comparison.py" />
+        <option value="$PROJECT_DIR$/functions.py" />
+        <option value="$USER_HOME$/snap/telegram-sergiusens/68/Downloads/Telegram Desktop/belief_computation.py" />
+        <option value="$PROJECT_DIR$/learn_trajectories.py" />
+        <option value="$PROJECT_DIR$/learn_trajectories_test.py" />
         <option value="$PROJECT_DIR$/RBF.py" />
+        <option value="$PROJECT_DIR$/RBF_full_NEW.py" />
       </list>
     </option>
   </component>
@@ -261,11 +363,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="2129" />
+    <option name="y" value="36" />
     <option name="width" value="1535" />
-    <option name="height" value="904" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -275,7 +377,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -291,6 +392,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,7 +420,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.RBF">
+  <component name="RunManager" selected="Python.Map_Recognition_2_for pictues">
+    <configuration name="Map_Recognition_2_for pictues" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="movement_prediction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Map_Recognition_2_for pictues.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="RBF" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="movement_prediction" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -333,6 +457,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RBF.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RBF_full_NEW" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="movement_prediction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RBF_full_NEW.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -363,7 +509,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="learn_trajectories" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="movement_prediction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -376,7 +522,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn_trajectories.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -385,7 +531,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="real_data_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="learn_trajectories_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="movement_prediction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -398,51 +544,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/real_data_plot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="movement_prediction" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_final" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="movement_prediction" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_final.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn_trajectories_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -476,19 +578,19 @@
     <list>
       <item itemvalue="Python.trajectory_interpolation_plot" />
       <item itemvalue="Python.belief_evolution_comparison" />
-      <item itemvalue="Python.test_final" />
-      <item itemvalue="Python.real_data_plot" />
+      <item itemvalue="Python.RBF_full_NEW" />
+      <item itemvalue="Python.learn_trajectories" />
+      <item itemvalue="Python.learn_trajectories_test" />
       <item itemvalue="Python.RBF" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.main" />
+      <item itemvalue="Python.Map_Recognition_2_for pictues" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Map_Recognition_2_for pictues" />
+        <item itemvalue="Python.RBF_full_NEW" />
         <item itemvalue="Python.RBF" />
-        <item itemvalue="Python.test_final" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.real_data_plot" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.learn_trajectories_test" />
+        <item itemvalue="Python.learn_trajectories" />
       </list>
     </recent_temporary>
   </component>
@@ -515,16 +617,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="2129" y="36" width="1535" height="876" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13985628" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21020819" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3079897" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21129707" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39304122" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27673796" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39046392" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32860824" />
@@ -533,7 +635,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32635984" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32845187" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.2656904" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -542,13 +644,13 @@
       <window_info anchor="right" id="Database" order="5" weight="0.32946378" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16789792" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21654338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3079897" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39304122" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22198276" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39225942" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32860824" />
@@ -557,7 +659,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32635984" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32845187" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.2656904" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -590,6 +692,20 @@
           <line>74</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/snap/telegram-sergiusens/68/Downloads/Telegram Desktop/learn_trajectories.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/functions.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/functions.py</url>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -608,82 +724,12 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/main_see how trajectory looks like.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/belief_evolution_comparison_2.py" />
     <entry file="file://$PROJECT_DIR$/main_old.py" />
-    <entry file="file://$PROJECT_DIR$/belief_evolution_comparison.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1354">
-          <caret line="304" column="45" selection-start-line="304" selection-start-column="45" selection-end-line="304" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trajectory_interpolation_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Map_Recognition_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Map_Recognition_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/padasip/filters/lms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
           <caret line="86" column="53" lean-forward="true" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-419">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_belief_evolution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="57" column="23" lean-forward="true" selection-start-line="56" selection-end-line="57" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -697,23 +743,6 @@
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/real_data_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../listener/scripts/listener.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -721,9 +750,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DEMO.py" />
+    <entry file="file://$PROJECT_DIR$/main2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RBF_RealData.py" />
+    <entry file="file://$PROJECT_DIR$/Map_Recognition_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="42" column="42" lean-forward="true" selection-start-line="3" selection-end-line="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_final.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
+        <state relative-caret-position="-537">
           <caret line="91" column="45" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="45" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -734,50 +800,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RBF_Code from Doro.py">
+    <entry file="file://$PROJECT_DIR$/RBF_realData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="18" />
+        <state relative-caret-position="18">
+          <caret line="278" column="22" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_forRealData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dtw.py" />
+    <entry file="file://$USER_HOME$/Downloads/2_5246964634157581056.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1409">
+          <caret line="1299" column="63" selection-start-line="1299" selection-start-column="60" selection-end-line="1299" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/2_5246826413520061228.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="375" column="104" selection-start-line="375" selection-start-column="86" selection-end-line="375" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RBF_full.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="77" column="108" lean-forward="true" selection-start-line="77" selection-end-line="77" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_belief_evolution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/snap/telegram-sergiusens/68/Downloads/Telegram Desktop/belief_computation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="1317" selection-start-line="1317" selection-end-line="1317" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/snap/telegram-sergiusens/68/Downloads/Telegram Desktop/learn_trajectories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="61" column="14" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="61" selection-end-column="14" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#4504#6139#0" />
-            <element signature="e#7120#7309#0" />
-            <element signature="e#7627#7783#0" />
-            <element signature="e#7830#8002#0" />
-            <element signature="e#8039#8108#0" />
+            <element signature="e#20#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.py">
+    <entry file="file://$PROJECT_DIR$/learn_trajectories_test.py" />
+    <entry file="file://$PROJECT_DIR$/RBF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="107" column="59" lean-forward="true" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
+        <state relative-caret-position="391">
+          <caret line="269" column="59" lean-forward="true" selection-start-line="269" selection-start-column="7" selection-end-line="269" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RBF_full_NEW_backup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_trajectories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="205" selection-start-line="205" selection-end-line="209" selection-end-column="85" />
+          <folding>
+            <element signature="e#20#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RBF_Code from Doro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="125" column="84" lean-forward="true" selection-start-line="125" selection-start-column="65" selection-end-line="125" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="183" column="49" selection-start-line="183" selection-start-column="19" selection-end-line="183" selection-end-column="49" />
+        <state relative-caret-position="292">
+          <caret line="366" lean-forward="true" selection-start-line="329" selection-end-line="366" />
           <folding>
             <element signature="e#0#236#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RBF.py">
+    <entry file="file://$PROJECT_DIR$/real_data_plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+        <state relative-caret-position="105">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map_Recognition_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/belief_evolution_comparison.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/belief_computation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="1310" column="23" selection-start-line="1310" selection-start-column="19" selection-end-line="1310" selection-end-column="23" />
+          <folding>
+            <element signature="e#17#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map_Recognition_2_for pictues.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RBF_full_NEW.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="185" column="81" lean-forward="true" selection-start-line="185" selection-start-column="81" selection-end-line="185" selection-end-column="81" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#176#767#0" />
-            <element signature="e#836#1958#0" />
-            <element signature="e#8366#8431#0" />
+            <element signature="e#176#636#0" />
+            <element signature="e#695#900#0" />
+            <element signature="e#1611#3099#0" />
+            <element signature="e#3147#4169#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trajectory_interpolation_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="80" selection-start-line="80" selection-end-line="91" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

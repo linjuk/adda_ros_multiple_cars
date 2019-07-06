@@ -1,28 +1,68 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Background}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Purpose}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Thesis Outline}{chapter.1}% 4
-\BOOKMARK [0][-]{chapter.2}{Fundamentals and Related Work}{}% 5
-\BOOKMARK [1][-]{section.2.1}{State of the Art}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.2}{Probabilistic Estimation Methods}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.3}{Movement Prediction}{chapter.2}% 8
-\BOOKMARK [0][-]{chapter.3}{TBD}{}% 9
-\BOOKMARK [0][-]{chapter.4}{Setup and Implementation}{}% 10
-\BOOKMARK [1][-]{section.4.1}{Data Collection}{chapter.4}% 11
-\BOOKMARK [1][-]{section.4.2}{Brief Algorithm Explanation}{chapter.4}% 12
-\BOOKMARK [1][-]{section.4.3}{Modeling Belief for Prediction Making}{chapter.4}% 13
-\BOOKMARK [1][-]{section.4.4}{Trajectory Scaling}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.5}{Online Method for Prediction Making}{chapter.4}% 15
-\BOOKMARK [0][-]{chapter.5}{Experiments and Results}{}% 16
-\BOOKMARK [1][-]{section.5.1}{Vehicle is Moving Through X-Intersection}{chapter.5}% 17
-\BOOKMARK [1][-]{section.5.2}{Vehicle is Moving Through T-Intersection}{chapter.5}% 18
-\BOOKMARK [1][-]{section.5.3}{Results Comparison Before and After Scaling}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.4}{Prediction Making in Online Method}{chapter.5}% 20
-\BOOKMARK [0][-]{chapter.6}{Security Aspects}{}% 21
-\BOOKMARK [1][-]{section.6.1}{General Overview. Background}{chapter.6}% 22
-\BOOKMARK [1][-]{section.6.2}{General Overview. Attack Taxonomy}{chapter.6}% 23
-\BOOKMARK [1][-]{section.6.3}{General Overview. Defense against Attacks Taxonomy}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.4}{The Most Dangerous Attacks}{chapter.6}% 25
-\BOOKMARK [0][-]{chapter.7}{Conclusions and Future Works}{}% 26
-\BOOKMARK [0][-]{section*.81}{Bibliography}{}% 27
-\BOOKMARK [0][-]{appendix.A}{Some Appendix}{}% 28
+\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Thesis Outline}{chapter.1}% 3
+\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 4
+\BOOKMARK [1][-]{section.2.1}{State of the Art for Movement Prediction Making}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Movement Prediction}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.1}{Movement Prediction Using Physics-Based Models}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.2}{Movement Prediction Using Maneuver-Based Models}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.3}{Movement Prediction Using Intention Aware Models}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.4}{Movement Prediction Using Data-Driven Model}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.5}{Limitations of Methods for Movement Prediction}{section.2.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Probabilistic Trajectory Prediction}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Including Prior Information To Algorithm}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.1.1}{Map Recognition using Contours}{section.3.1}% 14
+\BOOKMARK [2][-]{subsection.3.1.2}{Map Recognition using SSIM}{section.3.1}% 15
+\BOOKMARK [1][-]{section.3.2}{Trajectory Preprocessing}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{Learning Probabilistic Trajectory Models From Demonstrations}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Probabilistic Estimation Methods for Movement and Intention Prediction}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.4.1}{Belief State and Probability}{section.3.4}% 19
+\BOOKMARK [2][-]{subsection.3.4.2}{Modeling Belief for Prediction Making}{section.3.4}% 20
+\BOOKMARK [1][-]{section.3.5}{Trajectory Scaling}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.6}{Making Prediction While Working With Real Time Data}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.6.1}{Probabilistic Movement Primitives \(ProMPs\)}{section.3.6}% 23
+\BOOKMARK [0][-]{chapter.4}{Setup and Implementation}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Data Collection}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.1.1}{Data Collection with ROS}{section.4.1}% 26
+\BOOKMARK [2][-]{subsection.4.1.2}{Data Collection from Real Car}{section.4.1}% 27
+\BOOKMARK [1][-]{section.4.2}{Brief Algorithm Explanation}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{Experiments and Results}{}% 29
+\BOOKMARK [1][-]{section.5.1}{Future Trajectory Prediction, Using Pre-Recorded Data}{chapter.5}% 30
+\BOOKMARK [2][-]{subsection.5.1.1}{Experiments Made Using X-Intersection}{section.5.1}% 31
+\BOOKMARK [3][-]{subsubsection*.39}{Experiments Made Using X-Intersection. Movement Classification}{subsection.5.1.1}% 32
+\BOOKMARK [2][-]{subsection.5.1.2}{Experiments Made Using T-Intersection}{section.5.1}% 33
+\BOOKMARK [3][-]{subsubsection*.60}{Experiments Made Using T-Intersection. Movement Classification}{subsection.5.1.2}% 34
+\BOOKMARK [3][-]{subsubsection*.74}{Experiments Using Pre-Recorded Data. Comparison of Results in Different Environments}{subsection.5.1.2}% 35
+\BOOKMARK [2][-]{subsection.5.1.3}{Trajectory Scaling}{section.5.1}% 36
+\BOOKMARK [3][-]{subsubsection*.79}{Trajectory Scaling. X-Intersection. Movement Classes}{subsection.5.1.3}% 37
+\BOOKMARK [3][-]{subsubsection*.83}{Trajectory Scaling. T-Intersection. Movement Classes}{subsection.5.1.3}% 38
+\BOOKMARK [2][-]{subsection.5.1.4}{Full Trajectory Prediction, using ProMPs}{section.5.1}% 39
+\BOOKMARK [1][-]{section.5.2}{Experiments Using The Real Car Data}{chapter.5}% 40
+\BOOKMARK [2][-]{subsection.5.2.1}{The Whole Trajectory Reconstruction using ProMPs}{section.5.2}% 41
+\BOOKMARK [1][-]{section.5.3}{Future Trajectory Prediction, Using Data, Collected In Real Time}{chapter.5}% 42
+\BOOKMARK [2][-]{subsection.5.3.1}{Real Time Prediction Making In ROS Simulation}{section.5.3}% 43
+\BOOKMARK [0][-]{chapter.6}{Security Aspects}{}% 44
+\BOOKMARK [1][-]{section.6.1}{General Overview. Attack Taxonomy}{chapter.6}% 45
+\BOOKMARK [2][-]{subsection.6.1.1}{Attacker}{section.6.1}% 46
+\BOOKMARK [2][-]{subsection.6.1.2}{Attack Vector}{section.6.1}% 47
+\BOOKMARK [3][-]{subsubsection*.100}{Physical Access}{subsection.6.1.2}% 48
+\BOOKMARK [3][-]{subsubsection*.101}{Remote Access}{subsection.6.1.2}% 49
+\BOOKMARK [2][-]{subsection.6.1.3}{Attack Target}{section.6.1}% 50
+\BOOKMARK [2][-]{subsection.6.1.4}{Attack Motive}{section.6.1}% 51
+\BOOKMARK [2][-]{subsection.6.1.5}{\(Potential\) Consequences}{section.6.1}% 52
+\BOOKMARK [1][-]{section.6.2}{General Overview. Defense against Attacks Taxonomy}{chapter.6}% 53
+\BOOKMARK [2][-]{subsection.6.2.1}{Preventive Defense}{section.6.2}% 54
+\BOOKMARK [2][-]{subsection.6.2.2}{Active Defense}{section.6.2}% 55
+\BOOKMARK [2][-]{subsection.6.2.3}{Passive Defense}{section.6.2}% 56
+\BOOKMARK [1][-]{section.6.3}{Attacks Related To Intention and Movement Prediction Making}{chapter.6}% 57
+\BOOKMARK [2][-]{subsection.6.3.1}{Attacks on GPS}{section.6.3}% 58
+\BOOKMARK [3][-]{subsubsection*.103}{GPS Jamming and Spoofing}{subsection.6.3.1}% 59
+\BOOKMARK [2][-]{subsection.6.3.2}{Visual Sensors Attacks}{section.6.3}% 60
+\BOOKMARK [3][-]{subsubsection*.105}{Attacks on LiDAR}{subsection.6.3.2}% 61
+\BOOKMARK [3][-]{subsubsection*.109}{Attacks on Cameras}{subsection.6.3.2}% 62
+\BOOKMARK [2][-]{subsection.6.3.3}{Slight Object, Captured with the Camera, Modification and How Does that Affect Images Recognition}{section.6.3}% 63
+\BOOKMARK [2][-]{subsection.6.3.4}{Privacy Issues}{section.6.3}% 64
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 65
+\BOOKMARK [1][-]{section.7.1}{Conclusion}{chapter.7}% 66
+\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 67
+\BOOKMARK [0][-]{section*.124}{Bibliography}{}% 68
