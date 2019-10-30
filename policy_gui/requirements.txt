@@ -62,7 +62,7 @@ oauth==1.0.1
 PAM==0.4.2
 pandas==0.23.4
 paramiko==1.16.0
-Pillow==3.1.2
+Pillow==6.2.0
 pluginlib==1.11.3
 psutil==3.4.2
 pyasn1==0.1.9
