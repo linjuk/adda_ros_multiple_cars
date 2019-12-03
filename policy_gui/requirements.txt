@@ -25,7 +25,7 @@ diagnostic-common-diagnostics==1.9.3
 diagnostic-updater==1.9.3
 docutils==0.12
 dynamic-reconfigure==1.5.50
-ecdsa==0.13
+ecdsa==0.13.3
 empy==3.3.2
 enum34==1.1.2
 futures==3.0.5
