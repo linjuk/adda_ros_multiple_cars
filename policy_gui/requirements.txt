@@ -64,7 +64,7 @@ pandas==0.23.4
 paramiko==1.16.0
 Pillow==3.1.2
 pluginlib==1.11.3
-psutil==3.4.2
+psutil==5.6.6
 pyasn1==0.1.9
 pyasn1-modules==0.0.7
 pycrypto==2.6.1
