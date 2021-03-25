@@ -83,7 +83,7 @@ python-qt-binding==0.3.4
 python-snappy==0.5
 python-xlib==0.25
 pytz==2018.5
-PyYAML==3.11
+PyYAML==5.4
 qt-dotgraph==0.3.11
 qt-gui==0.3.11
 qt-gui-cpp==0.3.11
