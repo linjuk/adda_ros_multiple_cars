@@ -2,7 +2,7 @@ actionlib==1.11.13
 adium-theme-ubuntu==0.3.4
 angles==1.9.11
 attrs==15.2.0
-autobahn==0.10.3
+autobahn==20.12.3
 backports.functools-lru-cache==1.5
 base-local-planner==1.14.4
 bondpy==1.8.3
