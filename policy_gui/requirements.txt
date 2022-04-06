@@ -167,7 +167,7 @@ tf2-py==0.5.18
 tf2-ros==0.5.18
 topic-tools==1.12.14
 trollius==2.0.1
-Twisted==16.0.0
+Twisted==22.2.0
 txaio==1.0.0
 unity-lens-photos==1.0
 vcstools==0.1.40
